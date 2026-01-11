@@ -7037,6 +7037,13 @@ autocratic_journalist = {
 		drift_defence_factor = 0.15
 		sprite = 13
 	}
+
+###------> ELS <><> <><> <><> <><> <><>
+	former_president = {
+		political_power_gain = 0.1
+		stability_weekly = 0.1
+		democratic_drift = 0.15
+	}
 }
 #####-----------------------------------------------------------> Mod by Sig "Greatexperiment" Altre
 

@@ -96,6 +96,19 @@ characters={
 			expire="1965.1.1"
 			id=-1
 		}
+		advisor={
+			slot = political_advisor
+			idea_token = ELS_arturo_araujo
+			allowed  = {
+				original_tag  = ELS
+			}
+			available = {	
+				has_completed_focus = ELS_bring_araujo_home		
+			}
+			traits = {
+				former_president 
+			}
+		}
 	}
 
 	ELS_miguel_marmol={
@@ -781,4 +794,5 @@ characters={
 			legacy_id=-1
 		}
 	}
+
 }

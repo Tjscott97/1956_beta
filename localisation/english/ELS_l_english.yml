@@ -1,6 +1,6 @@
 ﻿l_english:
 
-#Characters
+###Characters###
 
  ELS_miguel_angel_espino:0 "Miguel Ángel Espino"
  ELS_hector_david_castro:0 "Héctor David Castro"
@@ -11,8 +11,9 @@
  ELS_jose_dutriz:0 "José Dutriz"
  ELS_alfonso_quinonez_molina:0 "Alfonso Quiñónez Molina"
 
-#Focus
+###Focus###
 
+#army
  ELS_establish_a_general_staff:0 "The [ROOT.GetAdjective] General Staff"
  ELS_establish_a_general_staff_desc:0 "Our army lacks proper tactics and organization. Establishing a proper general staff will consolidate the weakened military establishment."
  ELS_army_reform:0 "Army Reform"
@@ -48,6 +49,7 @@
  ELS_modern_logistics:0 "Modern Logistics"
  ELS_modern_logistics_desc:0 "Military loyalty is based on the ability to fight for our cause. If we cannot supply the army with equipment they need, we might experience mutinies and extensive desertering."
 
+#airforce
  ELS_Aviation_Effort:0 "Expand the Airforce"
  ELS_Aviation_Effort_desc:0 "The first step in stimulating our aeronautics industry is the expansion of our country's airports."
  ELS_Foreign_Design:0 "Focus on Foreign Designs"
@@ -88,6 +90,7 @@
  ELS_aircraft_design_cooperation:0 "Aircraft Design Cooperation"
  ELS_aircraft_design_cooperation_desc:0 "We have much to learn from our allies, while they have also much to learn from us. Mutual benefits will bring our air research even closer together."
 
+#navy
  ELS_Naval_Effort:0 "Naval Dockyard Effort"
  ELS_Naval_Effort_desc:0 "Having access to the sea opens new trade opportunities and increases our presence around the world."
  ELS_Small_Navy:0 "Focus on Raiding Fleet"
@@ -120,3 +123,17 @@
  ELS_Cruisers_desc:0 "While not as powerful as a battleship or carrier, the heavy cruiser is a fine addition to our naval firepower and requires additional funding."
  ELS_Naval_Doctrine:0 "Improve Naval Doctrine"
  ELS_Naval_Doctrine_desc:0 "New ships will be useless without proper tactics, we should improve our doctrine immediately!"
+
+#political - historical
+ ELS_state_of_the_nation:0 "State Of The Nation"
+ ELS_state_of_the_nation_desc:0 ""
+ ELS_continue_consilidation:0 "Continue Consolidating Power"
+ ELS_continue_consilidation_desc:0 ""
+ 
+#political - democratic
+ ELS_bring_araujo_home:0 "Bring Araujo Home"
+ ELS_bring_araujo_home_desc:0 ""
+
+#political - communist
+ ELS_vengeance_for_la_matanza:0 "Vengeance For La Matanza"
+ ELS_vengeance_for_la_matanza_desc:0 ""

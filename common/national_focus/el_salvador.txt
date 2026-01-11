@@ -2995,4 +2995,132 @@ focus_tree = {
 	####### POLITICAL SECTION #######
 	#################################
 
+	focus = {
+		id = ELS_state_of_the_nation
+		icon = GFX_goal_generic_national_unity
+		x = 16
+		y = 0
+		relative_position_id = ELS_Naval_Effort
+
+		cost = 5
+
+		available_if_capitulated = yes
+
+
+		ai_will_do = {
+			factor = 1
+			
+		}
+
+		completion_reward = {
+			add_political_power = 100
+		}
+	}
+
+	### Maximiliano section ###
+
+	focus = {
+		id = ELS_continue_consilidation
+		icon = GFX_focus_ARG_strengthening_the_concordancia
+		prerequisite = { focus = ELS_state_of_the_nation }
+		mutually_exclusive = { focus = ELS_bring_araujo_home focus = ELS_vengeance_for_la_matanza }
+		x = -6
+		y = 1
+		relative_position_id = ELS_state_of_the_nation
+
+		cost = 5
+
+		available_if_capitulated = yes
+
+
+		ai_will_do = {
+			factor = 1
+			
+		}
+
+		completion_reward = {
+			add_stability = 0.1
+			add_political_power = 50
+			add_popularity = {
+			    		ideology = neutrality
+			    		popularity = 0.1
+					}
+			add_popularity = {
+			    		ideology = fascism
+			    		popularity = 0.05
+					}
+		}
+	}
+
+
+	### Democratic ###
+
+	focus = {
+		id = ELS_bring_araujo_home
+		icon = GFX_focus_ARG_defense_and_democracy
+		prerequisite = { focus = ELS_state_of_the_nation }
+		mutually_exclusive = { focus = ELS_continue_consilidation focus = ELS_vengeance_for_la_matanza }
+		x = 0
+		y = 1
+		relative_position_id = ELS_state_of_the_nation
+
+		cost = 5
+
+		available_if_capitulated = yes
+
+
+		ai_will_do = {
+			base = 1
+			modifier = {
+				is_historical_focus_on = yes
+				factor = 0
+			}
+		}
+
+		completion_reward = {
+			add_popularity = {
+			    		ideology = democratic
+			    		popularity = 0.1
+					}
+			#custom_effect_tooltip = available_political_advisor		
+			activate_advisor = ELS_arturo_araujo
+		}
+	}
+
+
+	### Comminist ###
+
+	focus = {
+		id = ELS_vengeance_for_la_matanza
+		icon = GFX_focus_generic_workers_and_farmers_rise
+		prerequisite = { focus = ELS_state_of_the_nation }
+		mutually_exclusive = { focus = ELS_continue_consilidation focus = ELS_continue_consilidation }
+		x = 6
+		y = 1
+		relative_position_id = ELS_state_of_the_nation
+
+		cost = 5
+
+		available_if_capitulated = yes
+
+
+		ai_will_do = {
+			base = 1
+			modifier = {
+				is_historical_focus_on = yes
+				factor = 0
+			}
+		}
+
+		completion_reward = {
+			add_stability = -0.1
+			add_popularity = {
+			    		ideology = communism
+			    		popularity = 0.15
+					}
+		}
+	}
+
+
+
 }
