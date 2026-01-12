@@ -129,7 +129,15 @@
  ELS_state_of_the_nation_desc:0 ""
  ELS_continue_consilidation:0 "Continue Consolidating Power"
  ELS_continue_consilidation_desc:0 ""
- 
+ ELS_ban_communism:0 "Ban Communism"
+ ELS_ban_communism_desc:0 ""
+ ELS_expand_national_guard:0 "Expand The National Guard"
+ ELS_expand_national_guard_desc:0 ""
+ ELS_press_censorship:0 "Increase Press Censorship"
+ ELS_press_censorship_desc:0 ""
+ ELS_support_the_franquistats:0 "Support The Franquistats"
+ ELS_support_the_franquistats_desc:0 ""
+
 #political - democratic
  ELS_bring_araujo_home:0 "Bring Araujo Home"
  ELS_bring_araujo_home_desc:0 ""
@@ -137,3 +145,7 @@
 #political - communist
  ELS_vengeance_for_la_matanza:0 "Vengeance For La Matanza"
  ELS_vengeance_for_la_matanza_desc:0 ""
+
+
+###Tooltips###
+ ELS_guard_spawn_tt:0 "§YNational Guard§! unit will be created in §YEl Salvador§!"

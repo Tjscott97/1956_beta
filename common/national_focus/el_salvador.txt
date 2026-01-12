@@ -3021,7 +3021,7 @@ focus_tree = {
 
 	focus = {
 		id = ELS_continue_consilidation
-		icon = GFX_focus_ARG_strengthening_the_concordancia
+		icon = GFX_focus_generic_military_dictatorship
 		prerequisite = { focus = ELS_state_of_the_nation }
 		mutually_exclusive = { focus = ELS_bring_araujo_home focus = ELS_vengeance_for_la_matanza }
 		x = -6
@@ -3039,8 +3039,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			add_stability = 0.1
-			add_political_power = 50
+			add_political_power = 75
 			add_popularity = {
 			    		ideology = neutrality
 			    		popularity = 0.1
@@ -3049,6 +3048,133 @@ focus_tree = {
 			    		ideology = fascism
 			    		popularity = 0.05
 					}
+		}
+	}
+
+	focus = {
+		id = ELS_ban_communism
+		icon = GFX_focus_GER_end_european_communism
+		prerequisite = { focus = ELS_continue_consilidation }
+		x = -1
+		y = 1
+		relative_position_id = ELS_continue_consilidation
+
+		cost = 5
+
+		available_if_capitulated = yes
+
+
+		ai_will_do = {
+			factor = 1
+			
+		}
+
+		completion_reward = {
+			add_stability = 0.1
+			add_popularity = {
+			    		ideology = communism
+			    		popularity = -0.05
+					}
+		}
+	}
+
+	focus = {
+		id = ELS_expand_national_guard
+		icon = GFX_focus_AFG_royal_guard
+		prerequisite = { focus = ELS_continue_consilidation }
+		x = 1
+		y = 1
+		relative_position_id = ELS_continue_consilidation
+
+		cost = 5
+
+		available_if_capitulated = yes
+
+
+		ai_will_do = {
+			factor = 1
+			
+		}
+
+		completion_reward = {
+			add_war_support = 0.1
+			custom_effect_tooltip = generic_skip_one_line_tt
+			custom_effect_tooltip = ELS_guard_spawn_tt
+			hidden_effect = {
+				capital_scope = {
+					create_unit = {
+						division = "division_template = \"Guardia Nacional\" start_experience_factor = 1 start_equipment_factor = 1.0"
+						owner = ROOT
+						count = 1
+					}
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = ELS_press_censorship
+		icon = GFX_focus_BRA_repeale_national_security_law
+		prerequisite = { focus = ELS_ban_communism }
+		x = -1
+		y = 1
+		relative_position_id = ELS_ban_communism
+
+		cost = 5
+
+		available_if_capitulated = yes
+
+
+		ai_will_do = {
+			factor = 1
+			
+		}
+
+		completion_reward = {
+			add_popularity = {
+			    		ideology = democratic
+			    		popularity = -0.1
+					}
+		}
+	}
+
+	focus = {
+		id = ELS_support_the_franquistats
+		icon = GFX_goal_generic_spanish_civil_war_soldier
+		prerequisite = { focus = ELS_expand_national_guard }
+		x = 1
+		y = 1
+		relative_position_id = ELS_expand_national_guard
+		cost = 5
+		
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+			SPR_scw_in_progress = yes
+			country_exists = SPA
+			NOT = { has_war_with = SPA }
+			SPA = {
+				has_country_leader = {
+					character = SPA_francisco_franco
+					ruling_only = yes
+				}
+			}
+		}
+		completion_reward = {
+			add_ideas = PHI_volunteers_in_the_war_nationalist
+			add_relation_rule_override = {
+				target = SPA
+				can_send_volunteers = yes 
+			}
+			SPA = {
+				add_equipment_to_stockpile = {
+					type = infantry_equipment
+					amount = 250
+					producer = ELS
+				}
+			}
 		}
 	}
 
@@ -3079,9 +3205,10 @@ focus_tree = {
 
 		completion_reward = {
 			add_popularity = {
-			    		ideology = democratic
-			    		popularity = 0.1
-					}
+				ideology = democratic
+				popularity = 0.1
+			}
+			custom_effect_tooltip = generic_skip_one_line_tt
 			#custom_effect_tooltip = available_political_advisor		
 			activate_advisor = ELS_arturo_araujo
 		}
