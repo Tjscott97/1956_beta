@@ -3048,6 +3048,8 @@ focus_tree = {
 			    		ideology = fascism
 			    		popularity = 0.05
 					}
+			custom_effect_tooltip = generic_skip_one_line_tt
+			add_ideas = r56_ELS_maximiliano_regime
 		}
 	}
 
@@ -3131,10 +3133,13 @@ focus_tree = {
 		}
 
 		completion_reward = {
+			add_political_power = 50
 			add_popularity = {
 			    		ideology = democratic
 			    		popularity = -0.1
 					}
+			custom_effect_tooltip = generic_skip_one_line_tt
+			add_ideas = r56i_laws_security_order
 		}
 	}
 
@@ -3175,6 +3180,35 @@ focus_tree = {
 					producer = ELS
 				}
 			}
+		}
+	}
+
+	focus = {
+		id = ELS_the_theosophist_president
+		icon = GFX_goal_generic_catholic_education
+		prerequisite = { focus = ELS_ban_communism focus = ELS_expand_national_guard }
+		x = 1
+		y = 1
+		relative_position_id = ELS_ban_communism
+		cost = 5
+		
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+			SPR_scw_in_progress = yes
+			country_exists = SPA
+			NOT = { has_war_with = SPA }
+			SPA = {
+				has_country_leader = {
+					character = SPA_francisco_franco
+					ruling_only = yes
+				}
+			}
+		}
+		completion_reward = {
+			
 		}
 	}
 

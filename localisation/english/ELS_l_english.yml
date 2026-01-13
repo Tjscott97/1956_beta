@@ -11,6 +11,10 @@
  ELS_jose_dutriz:0 "José Dutriz"
  ELS_alfonso_quinonez_molina:0 "Alfonso Quiñónez Molina"
 
+###Ideas###
+
+ r56_ELS_maximiliano_regime:0 "The Maximiliano Regime"
+
 ###Focus###
 
 #army
@@ -137,6 +141,8 @@
  ELS_press_censorship_desc:0 ""
  ELS_support_the_franquistats:0 "Support The Franquistats"
  ELS_support_the_franquistats_desc:0 ""
+ ELS_the_theosophist_president:0 "The Theosophist President"
+ ELS_the_theosophist_president_desc:0 ""
 
 #political - democratic
  ELS_bring_araujo_home:0 "Bring Araujo Home"
