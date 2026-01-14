@@ -3202,8 +3202,6 @@ focus_tree = {
 				remove_idea = r56_ELS_maximiliano_regime
 				add_idea = r56_ELS_maximiliano_regime_2
 			}
-			custom_effect_tooltip = ELS_modify_coffee_tt
-			add_to_variable = { ELS_coffee_production_speed_buildings_factor = 0.05 tooltip = production_speed_buildings_factor_tt }
 			
 		}
 	}
@@ -3272,6 +3270,26 @@ focus_tree = {
 				}
 			}
 		}
+	}
+
+	focus = {
+		id = ELS_stabilise_coffee_economy
+		icon = GFX_focus_generic_coffee
+		prerequisite = { focus = ELS_the_theosophist_president }
+		x = 0
+		y = 2
+		relative_position_id = ELS_the_theosophist_president
+		cost = 5
+		
+		ai_will_do = {
+			factor = 1
+		}
+
+		
+		completion_reward = {
+			custom_effect_tooltip = ELS_modify_coffee_tt
+			add_to_variable = { ELS_coffee_stability_factor = 0.15 tooltip = stability_factor_tt }
+		}	
 	}
 
 
