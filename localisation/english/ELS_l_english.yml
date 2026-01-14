@@ -143,6 +143,8 @@
  ELS_expand_national_guard_desc:0 ""
  ELS_press_censorship:0 "Increase Press Censorship"
  ELS_press_censorship_desc:0 ""
+ ELS_ban_elections:0 "Ban Elections"
+ ELS_ban_elections_desc:0 ""
  ELS_support_the_franquistats:0 "Support The Franquistats"
  ELS_support_the_franquistats_desc:0 ""
  ELS_the_theosophist_president:0 "The Theosophist President"

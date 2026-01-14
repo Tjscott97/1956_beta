@@ -3144,6 +3144,33 @@ focus_tree = {
 	}
 
 	focus = {
+		id = ELS_ban_elections
+		icon = GFX_focus_usa_voter_registration_act
+		prerequisite = { focus = ELS_press_censorship }
+		x = -1
+		y = 1
+		relative_position_id = ELS_press_censorship
+
+		cost = 5
+
+		available_if_capitulated = yes
+
+
+		ai_will_do = {
+			factor = 1
+			
+		}
+
+		completion_reward = {
+			add_political_power = 50
+			set_politics = {
+					ruling_party = neutrality
+					elections_allowed = no
+			}
+		}
+	}
+
+	focus = {
 		id = ELS_support_the_franquistats
 		icon = GFX_goal_generic_spanish_civil_war_soldier
 		prerequisite = { focus = ELS_expand_national_guard }
@@ -3223,7 +3250,7 @@ focus_tree = {
 		completion_reward = {
 			IF =  {
 				limit = {
-					has_idea = { r56_ELS_maximiliano_regime_3 }
+					has_idea = r56_ELS_maximiliano_regime_3
 				}
 				swap_ideas = {
 					remove_idea = r56_ELS_maximiliano_regime_3
@@ -3256,7 +3283,7 @@ focus_tree = {
 		completion_reward = {
 			IF =  {
 				limit = {
-					has_idea = { r56_ELS_maximiliano_regime_4 }
+					has_idea = r56_ELS_maximiliano_regime_4
 				}
 				swap_ideas = {
 					remove_idea = r56_ELS_maximiliano_regime_4
