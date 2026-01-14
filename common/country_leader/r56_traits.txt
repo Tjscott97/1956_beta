@@ -7041,7 +7041,7 @@ autocratic_journalist = {
 ###------> ELS <><> <><> <><> <><> <><>
 	former_president = {
 		political_power_gain = 0.1
-		stability_weekly = 0.1
+		stability_weekly = 0.001
 		democratic_drift = 0.15
 	}
 }
