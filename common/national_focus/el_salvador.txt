@@ -3198,9 +3198,79 @@ focus_tree = {
 
 		
 		completion_reward = {
+			swap_ideas = {
+				remove_idea = r56_ELS_maximiliano_regime
+				add_idea = r56_ELS_maximiliano_regime_2
+			}
 			custom_effect_tooltip = ELS_modify_coffee_tt
-				add_to_variable = { ELS_coffee_production_speed_buildings_factor = 0.05 tooltip = production_speed_buildings_factor_tt }
+			add_to_variable = { ELS_coffee_production_speed_buildings_factor = 0.05 tooltip = production_speed_buildings_factor_tt }
 			
+		}
+	}
+
+	focus = {
+		id = ELS_mysticism_and_militarism
+		icon = GFX_focus_RAJ_military_into_the_workforce
+		prerequisite = { focus = ELS_the_theosophist_president }
+		x = 1
+		y = 1
+		relative_position_id = ELS_the_theosophist_president
+		cost = 5
+		
+		ai_will_do = {
+			factor = 1
+		}
+
+		
+		completion_reward = {
+			IF =  {
+				limit = {
+					has_idea = { r56_ELS_maximiliano_regime_3 }
+				}
+				swap_ideas = {
+					remove_idea = r56_ELS_maximiliano_regime_3
+					add_idea = r56_ELS_maximiliano_regime_5
+				} 
+			}
+			else = {
+				swap_ideas = {
+					remove_idea = r56_ELS_maximiliano_regime_2
+					add_idea = r56_ELS_maximiliano_regime_4
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = ELS_cult_of_personality
+		icon = GFX_focus_CHI_military_mission
+		prerequisite = { focus = ELS_the_theosophist_president }
+		x = -1
+		y = 1
+		relative_position_id = ELS_the_theosophist_president
+		cost = 5
+		
+		ai_will_do = {
+			factor = 1
+		}
+
+		
+		completion_reward = {
+			IF =  {
+				limit = {
+					has_idea = { r56_ELS_maximiliano_regime_4 }
+				}
+				swap_ideas = {
+					remove_idea = r56_ELS_maximiliano_regime_4
+					add_idea = r56_ELS_maximiliano_regime_5
+				} 
+			}
+			else = {
+				swap_ideas = {
+					remove_idea = r56_ELS_maximiliano_regime_2
+					add_idea = r56_ELS_maximiliano_regime_3
+				}
+			}
 		}
 	}
 

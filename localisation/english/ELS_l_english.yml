@@ -14,6 +14,10 @@
 ###Ideas###
 
  r56_ELS_maximiliano_regime:0 "The Maximiliano Regime"
+ r56_ELS_maximiliano_regime_2:0 "The Maximiliano Regime"
+ r56_ELS_maximiliano_regime_3:0 "The Maximiliano Regime"
+ r56_ELS_maximiliano_regime_4:0 "The Maximiliano Regime"
+ r56_ELS_maximiliano_regime_5:0 "The Maximiliano Regime"
 
 ###Focus###
 
@@ -143,6 +147,10 @@
  ELS_support_the_franquistats_desc:0 ""
  ELS_the_theosophist_president:0 "The Theosophist President"
  ELS_the_theosophist_president_desc:0 ""
+ ELS_mysticism_and_militarism:0 "Mysticism And Militarism"
+ ELS_mysticism_and_militarism_desc:0 ""
+ ELS_cult_of_personality:0 "Cult Of Personality"
+ ELS_cult_of_personality_desc:0 ""
 
 #political - democratic
  ELS_bring_araujo_home:0 "Bring Araujo Home"
