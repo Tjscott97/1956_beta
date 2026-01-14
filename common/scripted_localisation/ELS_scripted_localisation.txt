@@ -1,0 +1,9 @@
+defined_text = {
+    name = GetELSCurrentCoffeeName
+
+    text = {
+        trigger = { has_dynamic_modifier = ELS_coffee_republic_dm }
+        localization_key = EST_coffee_republic_name
+    }
+
+}
