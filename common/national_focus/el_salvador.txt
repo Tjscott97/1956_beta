@@ -3211,6 +3211,42 @@ focus_tree = {
 	}
 
 	focus = {
+		id = ELS_study_civil_war
+		icon = GFX_goal_italy_study_the_spanish_civil_war
+		prerequisite = { focus = ELS_support_the_franquistats }
+		x = 1
+		y = 1
+		relative_position_id = ELS_support_the_franquistats
+		cost = 5
+		
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+			SPR_scw_in_progress = yes
+			country_exists = SPA
+		}
+		completion_reward = {
+			army_experience = 25
+			add_doctrine_cost_reduction = {
+				name = land_doc_bonus
+				cost_reduction = 0.75
+				uses = 1
+				category = land_doctrine
+			}
+			ELS = {
+    			add_daily_mastery = {
+					amount = 0.25
+					days = 180
+					name = [ELS_study_civil_war]
+					folder = land
+   			 	}
+			}
+		}
+	}
+
+	focus = {
 		id = ELS_the_theosophist_president
 		icon = GFX_goal_generic_catholic_education
 		prerequisite = { focus = ELS_ban_communism focus = ELS_expand_national_guard }
