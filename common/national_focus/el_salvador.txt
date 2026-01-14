@@ -3292,6 +3292,27 @@ focus_tree = {
 		}	
 	}
 
+	focus = {
+		id = ELS_protect_coffee_oligarchy
+		icon = GFX_focus_RAJ_just_good_business
+		prerequisite = { focus = ELS_stabilise_coffee_economy }
+		x = 1
+		y = 1
+		relative_position_id = ELS_stabilise_coffee_economy
+		cost = 5
+		
+		ai_will_do = {
+			factor = 1
+		}
+
+		
+		completion_reward = {
+			custom_effect_tooltip = ELS_modify_coffee_tt
+			add_to_variable = { ELS_coffee_political_power_factor = 0.15 tooltip = political_power_factor_tt }
+			add_to_variable = { ELS_coffee_neutrality_drift = 0.01 tooltip = neutrality_drift_tt }
+		}	
+	}
+
 
 	### Democratic ###
 
