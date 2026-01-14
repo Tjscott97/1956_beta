@@ -18,6 +18,7 @@
  r56_ELS_maximiliano_regime_3:0 "The Maximiliano Regime"
  r56_ELS_maximiliano_regime_4:0 "The Maximiliano Regime"
  r56_ELS_maximiliano_regime_5:0 "The Maximiliano Regime"
+ r56_ELS_neutrality_idea:0 "Neutrality Above All"
 
 ###Focus###
 
@@ -163,6 +164,10 @@
  ELS_ban_unions_desc:0 ""
  ELS_trade_deals:0 "Trade Deals"
  ELS_trade_deals_desc:0 ""
+ ELS_neutrality_above_all:0 "Neutrality Above All"
+ ELS_neutrality_above_all_desc:0 ""
+ ELS_join_axis:0 "Join The Axis"
+ ELS_join_axis_desc:0 ""
 
 #political - democratic
  ELS_bring_araujo_home:0 "Bring Araujo Home"

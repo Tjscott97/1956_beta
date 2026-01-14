@@ -3420,6 +3420,56 @@ focus_tree = {
 		}	
 	}
 
+	focus = {
+		id = ELS_neutrality_above_all
+		icon = GFX_goal_generic_neutrality_focus
+		prerequisite = { focus = ELS_trade_deals }
+		mutually_exclusive = { focus = ELS_join_axis }
+		x = 0
+		y = 1
+		relative_position_id = ELS_trade_deals
+		cost = 5
+		
+		ai_will_do = {
+			factor = 1
+		}
+
+		
+		completion_reward = {
+			add_ideas = r56_ELS_neutrality_idea
+			custom_effect_tooltip = generic_skip_one_line_tt
+
+			custom_effect_tooltip = ELS_modify_coffee_tt
+			add_to_variable = { ELS_coffee_stability_factor = 0.15 tooltip = stability_factor_tt }
+			add_to_variable = { ELS_coffee_production_speed_industrial_complex_factor = 0.1 tooltip = production_speed_industrial_complex_factor_tt }
+			ENG = {
+				country_event = generic.2
+			}
+		}
+	}
+
+	focus = {
+		id = ELS_join_axis
+		icon = GFX_focus_chi_mission_to_germany
+		prerequisite = { focus = ELS_trade_deals }
+		mutually_exclusive = { focus = ELS_neutrality_above_all }
+		x = 2
+		y = 1
+		relative_position_id = ELS_trade_deals
+		cost = 5
+		
+		ai_will_do = {
+			factor = 1
+		}
+
+		
+		completion_reward = {
+			GER = {
+				country_event = generic.2
+			}
+		}
+	}
+
 
 	### Democratic ###
 
