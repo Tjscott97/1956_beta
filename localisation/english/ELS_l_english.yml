@@ -155,6 +155,8 @@
  ELS_stabilise_coffee_economy_desc:0 ""
  ELS_protect_coffee_oligarchy:0 "Protect The Coffee Oligarchy"
  ELS_protect_coffee_oligarchy_desc:0 ""
+ ELS_ban_unions:0 "Ban Unions"
+ ELS_ban_unions_desc:0 ""
 
 #political - democratic
  ELS_bring_araujo_home:0 "Bring Araujo Home"
