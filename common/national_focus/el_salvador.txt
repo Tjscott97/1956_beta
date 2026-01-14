@@ -3334,6 +3334,29 @@ focus_tree = {
 		}	
 	}
 
+	focus = {
+		id = ELS_trade_deals
+		icon = GFX_goal_generic_positive_trade_relations
+		prerequisite = { focus = ELS_ban_unions }
+		prerequisite = { focus = ELS_protect_coffee_oligarchy }
+		x = 1
+		y = 1
+		relative_position_id = ELS_ban_unions
+		cost = 5
+		
+		ai_will_do = {
+			factor = 1
+		}
+
+		
+		completion_reward = {
+			custom_effect_tooltip = ELS_modify_coffee_tt
+			add_to_variable = { ELS_coffee_trade_opinion_factor = 1 tooltip = trade_opinion_factor_tt }
+			add_to_variable = { ELS_coffee_trade_laws_cost_factor = -1 tooltip = trade_laws_cost_factor_tt }
+			add_to_variable = { ELS_coffee_local_resources_factor = 0.15 tooltip = local_resources_factor_tt }
+		}	
+	}
+
 
 	### Democratic ###
 
