@@ -3024,7 +3024,7 @@ focus_tree = {
 		icon = GFX_focus_generic_military_dictatorship
 		prerequisite = { focus = ELS_state_of_the_nation }
 		mutually_exclusive = { focus = ELS_bring_araujo_home focus = ELS_vengeance_for_la_matanza }
-		x = -6
+		x = -7
 		y = 1
 		relative_position_id = ELS_state_of_the_nation
 
@@ -3464,7 +3464,7 @@ focus_tree = {
 		icon = GFX_focus_generic_workers_and_farmers_rise
 		prerequisite = { focus = ELS_state_of_the_nation }
 		mutually_exclusive = { focus = ELS_continue_consilidation focus = ELS_bring_araujo_home }
-		x = 6
+		x = 7
 		y = 1
 		relative_position_id = ELS_state_of_the_nation
 
