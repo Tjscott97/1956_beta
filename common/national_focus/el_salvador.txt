@@ -3058,7 +3058,7 @@ focus_tree = {
 		icon = GFX_focus_GER_end_european_communism
 		prerequisite = { focus = ELS_continue_consilidation }
 		x = -1
-		y = 1
+		y = 1 
 		relative_position_id = ELS_continue_consilidation
 
 		cost = 5
@@ -3424,7 +3424,7 @@ focus_tree = {
 		id = ELS_neutrality_above_all
 		icon = GFX_goal_generic_neutrality_focus
 		prerequisite = { focus = ELS_trade_deals }
-		mutually_exclusive = { focus = ELS_join_axis }
+		mutually_exclusive = { focus = ELS_join_axis focus = ELS_join_allies }
 		x = 0
 		y = 1
 		relative_position_id = ELS_trade_deals
@@ -3450,9 +3450,9 @@ focus_tree = {
 
 	focus = {
 		id = ELS_join_axis
-		icon = GFX_focus_chi_mission_to_germany
+		icon = GFX_goal_generic_the_axis
 		prerequisite = { focus = ELS_trade_deals }
-		mutually_exclusive = { focus = ELS_neutrality_above_all }
+		mutually_exclusive = { focus = ELS_neutrality_above_all focus = ELS_join_allies }
 		x = 2
 		y = 1
 		relative_position_id = ELS_trade_deals
@@ -3465,6 +3465,28 @@ focus_tree = {
 		
 		completion_reward = {
 			GER = {
+				country_event = generic.2
+			}
+		}
+	}
+
+	focus = {
+		id = ELS_join_allies
+		icon = GFX_allies
+		prerequisite = { focus = ELS_trade_deals }
+		mutually_exclusive = { focus = ELS_neutrality_above_all focus = ELS_join_axis }
+		x = -2
+		y = 1
+		relative_position_id = ELS_trade_deals
+		cost = 5
+		
+		ai_will_do = {
+			factor = 1
+		}
+
+		
+		completion_reward = {
+			ENG = {
 				country_event = generic.2
 			}
 		}

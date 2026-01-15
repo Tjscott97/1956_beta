@@ -138,7 +138,7 @@
  ELS_state_of_the_nation_desc:0 ""
  ELS_continue_consilidation:0 "Continue Consolidating Power"
  ELS_continue_consilidation_desc:0 ""
- ELS_ban_communism:0 "Ban Communism"
+ ELS_ban_communism:0 "Ban Partido Comunista de El Salvador"
  ELS_ban_communism_desc:0 ""
  ELS_expand_national_guard:0 "Expand The National Guard"
  ELS_expand_national_guard_desc:0 ""
@@ -160,7 +160,7 @@
  ELS_stabilise_coffee_economy_desc:0 ""
  ELS_protect_coffee_oligarchy:0 "Protect The Coffee Oligarchy"
  ELS_protect_coffee_oligarchy_desc:0 ""
- ELS_ban_unions:0 "Ban Unions"
+ ELS_ban_unions:0 "Crack Down On Unions"
  ELS_ban_unions_desc:0 ""
  ELS_trade_deals:0 "Trade Deals"
  ELS_trade_deals_desc:0 ""
@@ -168,6 +168,8 @@
  ELS_neutrality_above_all_desc:0 ""
  ELS_join_axis:0 "Join The Axis"
  ELS_join_axis_desc:0 ""
+ ELS_join_allies:0 "Join The Allies"
+ ELS_join_allies_desc:0 ""
 
 #political - democratic
  ELS_bring_araujo_home:0 "Bring Araujo Home"
