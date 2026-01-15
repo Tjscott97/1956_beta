@@ -2998,7 +2998,7 @@ focus_tree = {
 	focus = {
 		id = ELS_state_of_the_nation
 		icon = GFX_goal_generic_national_unity
-		x = 16
+		x = 17
 		y = 0
 		relative_position_id = ELS_Naval_Effort
 
@@ -3024,7 +3024,7 @@ focus_tree = {
 		icon = GFX_focus_generic_military_dictatorship
 		prerequisite = { focus = ELS_state_of_the_nation }
 		mutually_exclusive = { focus = ELS_bring_araujo_home focus = ELS_vengeance_for_la_matanza }
-		x = -7
+		x = -8
 		y = 1
 		relative_position_id = ELS_state_of_the_nation
 
@@ -3414,7 +3414,7 @@ focus_tree = {
 		
 		completion_reward = {
 			custom_effect_tooltip = ELS_modify_coffee_tt
-			add_to_variable = { ELS_coffee_trade_opinion_factor = 1 tooltip = trade_opinion_factor_tt }
+			add_to_variable = { ELS_coffee_trade_opinion_factor = 0.5 tooltip = trade_opinion_factor_tt }
 			add_to_variable = { ELS_coffee_trade_laws_cost_factor = -1 tooltip = trade_laws_cost_factor_tt }
 			add_to_variable = { ELS_coffee_local_resources_factor = 0.15 tooltip = local_resources_factor_tt }
 		}	
@@ -3525,6 +3525,35 @@ focus_tree = {
 		}
 	}
 
+	focus = {
+		id = ELS_free_elections
+		icon = GFX_goal_generic_election
+		prerequisite = { focus = ELS_bring_araujo_home }
+		x = -1
+		y = 1
+		relative_position_id = ELS_bring_araujo_home
+		cost = 5
+		
+		ai_will_do = {
+			factor = 1
+		}
+
+		
+		completion_reward = {
+			add_political_power = 25
+			add_popularity = {
+				ideology = democratic
+				popularity = 0.05
+			}
+			custom_effect_tooltip = generic_skip_one_line_tt
+
+			custom_effect_tooltip = ELS_modify_coffee_tt
+			add_to_variable = { ELS_coffee_political_power_factor = 0.05 tooltip = political_power_factor_tt }
+			add_to_variable = { ELS_coffee_democratic_drift = 0.01 tooltip = democratic_drift_tt }
+
+		}
+	}
+
 
 	### Comminist ###
 
@@ -3533,7 +3562,7 @@ focus_tree = {
 		icon = GFX_focus_generic_workers_and_farmers_rise
 		prerequisite = { focus = ELS_state_of_the_nation }
 		mutually_exclusive = { focus = ELS_continue_consilidation focus = ELS_bring_araujo_home }
-		x = 7
+		x = 8
 		y = 1
 		relative_position_id = ELS_state_of_the_nation
 
