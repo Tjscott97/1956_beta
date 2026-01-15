@@ -3682,7 +3682,6 @@ focus_tree = {
 		}
 	}
 
-
 	focus = {
 		id = ELS_public_hospitals
 		icon = GFX_goal_medicine
@@ -3708,8 +3707,29 @@ focus_tree = {
 			custom_effect_tooltip = generic_skip_one_line_tt
 
 			custom_effect_tooltip = ELS_modify_coffee_tt
-			add_to_variable = { ELS_coffee_monthly_population = 0.25 tooltip = monthly_population_tt }
 			add_to_variable = { ELS_coffee_political_power_factor = 0.05 tooltip = political_power_factor_tt }
+			add_to_variable = { ELS_coffee_monthly_population = 0.33 tooltip = monthly_population_tt }
+		}
+	}
+
+	focus = {
+		id = ELS_land_reforms
+		icon = GFX_goal_PRU_labbour
+		prerequisite = { focus = ELS_restore_the_constitution }
+		x = 2
+		y = 1
+		relative_position_id = ELS_restore_the_constitution
+		cost = 5
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		completion_reward = {
+			custom_effect_tooltip = ELS_modify_coffee_tt
+			add_to_variable = { ELS_coffee_production_speed_buildings_factor = 0.1 tooltip = production_speed_buildings_factor_tt }
+			add_to_variable = { ELS_coffee_local_resources_factor = 0.15 tooltip = local_resources_factor_tt }
+			add_to_variable = { ELS_coffee_global_building_slots_factor = 0.15 tooltip = global_building_slots_factor_tt }
 		}
 	}
 
