@@ -3350,6 +3350,16 @@ focus_tree = {
 
 		
 		completion_reward = {
+			random_owned_controlled_state = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			custom_effect_tooltip = generic_skip_one_line_tt
+
 			custom_effect_tooltip = ELS_modify_coffee_tt
 			add_to_variable = { ELS_coffee_stability_factor = 0.15 tooltip = stability_factor_tt }
 		}	
@@ -3438,6 +3448,16 @@ focus_tree = {
 		completion_reward = {
 			add_ideas = r56_ELS_neutrality_idea
 			custom_effect_tooltip = generic_skip_one_line_tt
+			
+			random_owned_controlled_state = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			custom_effect_tooltip = generic_skip_one_line_tt
 
 			custom_effect_tooltip = ELS_modify_coffee_tt
 			add_to_variable = { ELS_coffee_stability_factor = 0.15 tooltip = stability_factor_tt }
@@ -3468,6 +3488,16 @@ focus_tree = {
 			GER = {
 				country_event = generic.2
 			}
+			custom_effect_tooltip = generic_skip_one_line_tt
+			
+			random_owned_controlled_state = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
 		}
 	}
 
@@ -3493,6 +3523,16 @@ focus_tree = {
 		completion_reward = {
 			ENG = {
 				country_event = generic.2
+			}
+			custom_effect_tooltip = generic_skip_one_line_tt
+			
+			random_owned_controlled_state = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = dockyard
+					level = 1
+					instant_build = yes
+				}
 			}
 		}
 	}
