@@ -24,6 +24,7 @@ ELS_coffee_republic_dm = {
 	communism_drift = ELS_coffee_communism_drift
 	fascism_drift = ELS_coffee_fascism_drift
 	neutrality_drift = ELS_coffee_neutrality_drift
+	monthly_population = ELS_coffee_monthly_population
 	
 
 	}

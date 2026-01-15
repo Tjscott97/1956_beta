@@ -135,5 +135,6 @@ set_variable = { ELS_coffee_democratic_drift = 0 }
 set_variable = { ELS_coffee_communism_drift = 0 }
 set_variable = { ELS_coffee_fascism_drift = 0 }
 set_variable = { ELS_coffee_neutrality_drift = -0.01 }
+set_variable = { ELS_coffee_monthly_population = 0}
 
 
