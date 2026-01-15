@@ -3456,7 +3456,11 @@ focus_tree = {
 		cost = 5
 		
 		ai_will_do = {
-			factor = 1
+			base = 1
+			modifier = {
+				is_historical_focus_on = yes
+				factor = 0
+			}
 		}
 
 		
@@ -3478,7 +3482,11 @@ focus_tree = {
 		cost = 5
 		
 		ai_will_do = {
-			factor = 1
+			base = 1
+			modifier = {
+				is_historical_focus_on = yes
+				factor = 0
+			}
 		}
 
 		
@@ -3550,7 +3558,66 @@ focus_tree = {
 			custom_effect_tooltip = ELS_modify_coffee_tt
 			add_to_variable = { ELS_coffee_political_power_factor = 0.05 tooltip = political_power_factor_tt }
 			add_to_variable = { ELS_coffee_democratic_drift = 0.01 tooltip = democratic_drift_tt }
+		}
+	}
 
+	focus = {
+		id = ELS_restore_civil_liberties
+		icon = GFX_goal_democracy_people
+		prerequisite = { focus = ELS_bring_araujo_home }
+		x = 1
+		y = 1
+		relative_position_id = ELS_bring_araujo_home
+		cost = 5
+		
+		ai_will_do = {
+			factor = 1
+		}
+
+		
+		completion_reward = {
+			add_political_power = 25
+			add_popularity = {
+				ideology = democratic
+				popularity = 0.05
+			}
+			custom_effect_tooltip = generic_skip_one_line_tt
+
+			custom_effect_tooltip = ELS_modify_coffee_tt
+			add_to_variable = { ELS_coffee_political_power_factor = 0.05 tooltip = political_power_factor_tt }
+			add_to_variable = { ELS_coffee_stability_factor = 0.05 tooltip = stability_factor_tt }
+		}
+	}
+
+	focus = {
+		id = ELS_restore_the_constitution
+		icon = GFX_goal_ROM_constitutional_reform
+		prerequisite = { focus = ELS_restore_civil_liberties }
+		prerequisite = { focus = ELS_free_elections }
+		x = -1
+		y = 1
+		relative_position_id = ELS_restore_civil_liberties
+		cost = 5
+		
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = { democratic > 0.45 }
+		
+		completion_reward = {
+			add_political_power = 75
+
+			set_politics = {
+					ruling_party = democratic
+					elections_allowed = yes
+			}
+			custom_effect_tooltip = generic_skip_one_line_tt
+
+			custom_effect_tooltip = ELS_modify_coffee_tt
+			add_to_variable = { ELS_coffee_political_power_factor = 0.05 tooltip = political_power_factor_tt }
+			add_to_variable = { ELS_coffee_stability_factor = 0.05 tooltip = stability_factor_tt }
+			add_to_variable = { ELS_coffee_democratic_drift = 0.01 tooltip = democratic_drift_tt }
 		}
 	}
 
