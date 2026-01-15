@@ -3661,6 +3661,27 @@ focus_tree = {
 		}
 	}
 
+	focus = {
+		id = ELS_labor_protections
+		icon = GFX_focus_generic_worker_administration
+		prerequisite = { focus = ELS_restore_the_constitution }
+		x = -2
+		y = 1
+		relative_position_id = ELS_restore_the_constitution
+		cost = 5
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		completion_reward = {
+			custom_effect_tooltip = ELS_modify_coffee_tt
+			add_to_variable = { ELS_coffee_industrial_capacity_factory = 0.1 tooltip = industrial_capacity_factory_tt }
+			add_to_variable = { ELS_coffee_production_factory_max_efficiency_factor = 0.05 tooltip = production_factory_max_efficiency_factor_tt }
+			add_to_variable = { ELS_coffee_production_factory_efficiency_gain_factor = 0.05 tooltip = production_factory_efficiency_gain_factor_tt }
+		}
+	}
+
 
 	### Comminist ###
 
