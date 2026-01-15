@@ -3441,10 +3441,7 @@ focus_tree = {
 
 			custom_effect_tooltip = ELS_modify_coffee_tt
 			add_to_variable = { ELS_coffee_stability_factor = 0.15 tooltip = stability_factor_tt }
-			add_to_variable = { ELS_coffee_production_speed_industrial_complex_factor = 0.1 tooltip = production_speed_industrial_complex_factor_tt }
-			ENG = {
-				country_event = generic.2
-			}
+			add_to_variable = { ELS_coffee_production_speed_industrial_complex_factor = 0.15 tooltip = production_speed_industrial_complex_factor_tt }
 		}
 	}
 
