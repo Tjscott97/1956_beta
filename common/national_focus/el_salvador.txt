@@ -3665,7 +3665,7 @@ focus_tree = {
 		id = ELS_labor_protections
 		icon = GFX_focus_generic_worker_administration
 		prerequisite = { focus = ELS_restore_the_constitution }
-		x = -2
+		x = -3
 		y = 1
 		relative_position_id = ELS_restore_the_constitution
 		cost = 5
@@ -3686,7 +3686,7 @@ focus_tree = {
 		id = ELS_public_hospitals
 		icon = GFX_goal_medicine
 		prerequisite = { focus = ELS_restore_the_constitution }
-		x = 0
+		x = -1
 		y = 1
 		relative_position_id = ELS_restore_the_constitution
 		cost = 5
@@ -3713,10 +3713,32 @@ focus_tree = {
 	}
 
 	focus = {
+		id = ELS_public_schools
+		icon = GFX_goal_generic_education
+		prerequisite = { focus = ELS_restore_the_constitution }
+		x = 1
+		y = 1
+		relative_position_id = ELS_restore_the_constitution
+		cost = 5
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		completion_reward = {
+			add_research_slot = 1
+			custom_effect_tooltip = generic_skip_one_line_tt
+
+			custom_effect_tooltip = ELS_modify_coffee_tt
+			add_to_variable = { ELS_coffee_research_speed_factor = 0.05 tooltip = research_speed_factor_tt }
+		}
+	}
+
+	focus = {
 		id = ELS_land_reforms
 		icon = GFX_goal_PRU_labbour
 		prerequisite = { focus = ELS_restore_the_constitution }
-		x = 2
+		x = 3
 		y = 1
 		relative_position_id = ELS_restore_the_constitution
 		cost = 5
