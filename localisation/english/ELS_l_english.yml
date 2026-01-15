@@ -19,6 +19,7 @@
  r56_ELS_maximiliano_regime_4:0 "The Maximiliano Regime"
  r56_ELS_maximiliano_regime_5:0 "The Maximiliano Regime"
  r56_ELS_neutrality_idea:0 "Neutrality Above All"
+ r56_ELS_strengthen_the_republic:0 "Strengthen The Republic"
 
 ###Focus###
 
@@ -188,6 +189,8 @@
  ELS_public_schools_desc:0 ""
  ELS_land_reforms:0 "Land Reforms"
  ELS_land_reforms_desc:0 ""
+ ELS_strengthen_the_republic:0 "Strengthen The Republic"
+ ELS_strengthen_the_republic_desc:0 ""
 
 #political - communist
  ELS_vengeance_for_la_matanza:0 "Vengeance For La Matanza"

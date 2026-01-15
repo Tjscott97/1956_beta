@@ -182,5 +182,22 @@ ideas = {
 				ai_get_ally_desire_factor = -100
 			}
 		}
+
+		r56_ELS_strengthen_the_republic = {
+
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = generic_democratic_drift_bonus
+
+			modifier = {
+				political_power_gain = 0.25
+				political_advisor_cost_factor = -0.25
+				max_command_power = 25
+			}
+		}
 	}
 }

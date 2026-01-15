@@ -3755,6 +3755,27 @@ focus_tree = {
 		}
 	}
 
+	focus = {
+		id = ELS_strengthen_the_republic
+		icon = GFX_focus_ARG_defense_and_democracy
+		prerequisite = { focus = ELS_labor_protections }
+		prerequisite = { focus = ELS_public_hospitals }
+		prerequisite = { focus = ELS_public_schools }
+		prerequisite = { focus = ELS_land_reforms }
+		x = -1
+		y = 1
+		relative_position_id = ELS_public_hospitals
+		cost = 5
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		completion_reward = {
+			add_ideas = r56_ELS_strengthen_the_republic
+		}
+	}
+
 
 	### Comminist ###
 
