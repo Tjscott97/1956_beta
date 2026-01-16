@@ -3792,12 +3792,17 @@ focus_tree = {
 			factor = 1
 		}
 
-		available = {
-			SPR_scw_in_progress = yes
-			country_exists = SPR
-			NOT = { has_war_with = SPR }
-		}
 		completion_reward = {
+			random_owned_controlled_state = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			custom_effect_tooltip = generic_skip_one_line_tt
+			
 			custom_effect_tooltip = ELS_modify_coffee_tt
 			add_to_variable = { ELS_coffee_production_speed_buildings_factor = 0.1 tooltip = production_speed_buildings_factor_tt }
 			add_to_variable = { ELS_coffee_consumer_goods_factor = -0.1 tooltip = consumer_goods_factor_tt }
@@ -3817,11 +3822,6 @@ focus_tree = {
 			factor = 1
 		}
 
-		available = {
-			SPR_scw_in_progress = yes
-			country_exists = SPR
-			NOT = { has_war_with = SPR }
-		}
 		completion_reward = {
 			add_ideas = r56i_laws_security_rights
 			custom_effect_tooltip = generic_skip_one_line_tt
@@ -3829,6 +3829,27 @@ focus_tree = {
 			custom_effect_tooltip = ELS_modify_coffee_tt
 			add_to_variable = { ELS_coffee_political_power_factor = 0.1 tooltip = political_power_factor_tt }
 			add_to_variable = { ELS_coffee_stability_factor = 0.1 tooltip = stability_factor_tt }
+		}
+	}
+
+	focus = {
+		id = ELS_anti_corruption_legislation
+		icon = GFX_focus_ARG_anti_corruption_policies
+		prerequisite = { focus = ELS_civil_service_reform }
+		x = 1
+		y = 1
+		relative_position_id = ELS_civil_service_reform
+		cost = 5
+		
+		ai_will_do = {
+			factor = 1
+		}
+
+		completion_reward = {
+			custom_effect_tooltip = ELS_modify_coffee_tt
+			add_to_variable = { ELS_coffee_industrial_capacity_factory = 0.05 tooltip = industrial_capacity_factory_tt }
+			add_to_variable = { ELS_coffee_industrial_capacity_dockyard = 0.05 tooltip = industrial_capacity_dockyard_tt }
+			add_to_variable = { ELS_coffee_line_change_production_efficiency_factor = 0.1 tooltip = line_change_production_efficiency_factor_tt }
 		}
 	}
 
