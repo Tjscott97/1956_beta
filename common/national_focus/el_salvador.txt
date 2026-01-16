@@ -3823,7 +3823,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			add_ideas = r56i_laws_security_rights
+			add_ideas = r56i_laws_leadership_secular
 			custom_effect_tooltip = generic_skip_one_line_tt
 
 			custom_effect_tooltip = ELS_modify_coffee_tt
@@ -3871,6 +3871,28 @@ focus_tree = {
 			add_to_variable = { ELS_coffee_local_resources_factor = 0.25 tooltip = local_resources_factor_tt }
 			add_to_variable = { ELS_coffee_trade_opinion_factor = 0.5 tooltip = trade_opinion_factor_tt }
 			add_to_variable = { ELS_coffee_trade_laws_cost_factor = -1 tooltip = trade_laws_cost_factor_tt }
+		}
+	}
+
+	focus = {
+		id = ELS_university_of_el_salvador
+		icon = GFX_focus_generic_university_1
+		prerequisite = { focus = ELS_anti_corruption_legislation }
+		x = 0
+		y = 1
+		relative_position_id = ELS_anti_corruption_legislation
+		cost = 5
+		
+		ai_will_do = {
+			factor = 1
+		}
+
+		completion_reward = {
+			add_research_slot = 1
+			custom_effect_tooltip = generic_skip_one_line_tt
+
+			custom_effect_tooltip = ELS_modify_coffee_tt
+			add_to_variable = { ELS_coffee_research_speed_factor = 0.1 tooltip = research_speed_factor_tt }
 		}
 	}
 
