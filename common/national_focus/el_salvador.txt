@@ -3755,6 +3755,8 @@ focus_tree = {
 		}
 	}
 
+	### El Salvador - Democratic ###
+
 	focus = {
 		id = ELS_strengthen_the_republic
 		icon = GFX_focus_ARG_defense_and_democracy
@@ -3776,6 +3778,8 @@ focus_tree = {
 			add_ideas = r56_ELS_strengthen_the_republic
 		}
 	}
+
+	### Central America - Democratic ###
 
 	focus = {
 		id = ELS_central_american_cooperation
@@ -3840,10 +3844,47 @@ focus_tree = {
         		idea = r56_ELS_diplomacy_focus
         		years = 1
     		}
-			add_opinion_modifier 
 		}
 	}
+	
 
+
+	### Shared - Democratic ###
+
+	focus = {
+		id = ELS_support_the_republicans
+		icon = GFX_goal_FRA_help_the_spanish_republicans
+		prerequisite = { focus = ELS_strengthen_the_republic focus = ELS_central_american_cooperation }
+		x = 2
+		y = 1
+		relative_position_id = ELS_strengthen_the_republic
+		cost = 5
+		
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+			SPR_scw_in_progress = yes
+			country_exists = SPR
+			NOT = { has_war_with = SPR }
+		}
+		completion_reward = {
+			add_ideas = PHI_volunteers_in_the_war_republican
+			add_relation_rule_override = {
+				target = SPR
+				can_send_volunteers = yes 
+			}
+			SPR = {
+				add_equipment_to_stockpile = {
+					type = infantry_equipment
+					amount = 250
+					producer = ELS
+				}
+			}
+		}
+	}
+	
 
 	### Comminist ###
 

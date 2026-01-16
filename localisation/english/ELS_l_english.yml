@@ -190,14 +190,18 @@
  ELS_public_schools_desc:0 ""
  ELS_land_reforms:0 "Land Reforms"
  ELS_land_reforms_desc:0 ""
-  
- #political - democratic el salvador
+
+#political - democratic el salvador
  ELS_strengthen_the_republic:0 "Strengthen The Republic"
  ELS_strengthen_the_republic_desc:0 ""
 
- #political - democratic central america
+#political - democratic central america
  ELS_central_american_cooperation:0 "Central American Cooperation"
  ELS_central_american_cooperation_desc:0 ""
+
+#political - democractic shared
+ ELS_support_the_republicans:0 "Support The Republicans"
+ ELS_support_the_republicans_desc:0 ""
 
 #political - communist
  ELS_vengeance_for_la_matanza:0 "Vengeance For La Matanza"
