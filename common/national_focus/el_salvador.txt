@@ -4114,6 +4114,23 @@ focus_tree = {
 		}
 	}
 	
+	focus = {
+		id = ELS_central_american_customs_union
+		icon = GFX_goal_free_trade
+		prerequisite = { focus = ELS_regional_development }
+		x = 1
+		y = 1
+		relative_position_id = ELS_regional_development
+		cost = 5
+		
+		ai_will_do = {
+			factor = 1
+		}
+
+		completion_reward = {
+			
+		}
+	}
 
 
 	### Shared - Democratic ###
