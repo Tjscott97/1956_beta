@@ -199,5 +199,21 @@ ideas = {
 				max_command_power = 25
 			}
 		}
+
+		r56_ELS_diplomacy_focus = {
+
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = generic_limited_exports
+
+			modifier = {
+				political_power_gain = 0.1
+				improve_relations_maintain_cost_factor = -0.75
+			}
+		}
 	}
 }

@@ -3762,6 +3762,7 @@ focus_tree = {
 		prerequisite = { focus = ELS_public_hospitals }
 		prerequisite = { focus = ELS_public_schools }
 		prerequisite = { focus = ELS_land_reforms }
+		mutually_exclusive = { focus = ELS_central_american_cooperation }
 		x = -1
 		y = 1
 		relative_position_id = ELS_public_hospitals
@@ -3773,6 +3774,73 @@ focus_tree = {
 		
 		completion_reward = {
 			add_ideas = r56_ELS_strengthen_the_republic
+		}
+	}
+
+	focus = {
+		id = ELS_central_american_cooperation
+		icon = GFX_goal_european_african_diplomacy
+		prerequisite = { focus = ELS_labor_protections }
+		prerequisite = { focus = ELS_public_hospitals }
+		prerequisite = { focus = ELS_public_schools }
+		prerequisite = { focus = ELS_land_reforms }
+		mutually_exclusive = { focus = ELS_strengthen_the_republic }
+		x = 1
+		y = 1
+		relative_position_id = ELS_public_schools
+		cost = 5
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		completion_reward = {
+			GUA = {
+				add_opinion_modifier = {
+					target = ROOT
+					modifier = medium_increase
+				}
+			}
+			add_opinion_modifier = {
+				target = GUA
+				modifier = medium_increase
+			}
+			HON = {
+				add_opinion_modifier = {
+					target = ROOT
+					modifier = medium_increase
+				}
+			}
+			add_opinion_modifier = {
+				target = HOM
+				modifier = medium_increase
+			}
+			NIC = {
+				add_opinion_modifier = {
+					target = ROOT
+					modifier = medium_increase
+				}
+			}
+			add_opinion_modifier = {
+				target = NIC
+				modifier = medium_increase
+			}
+			COS = {
+				add_opinion_modifier = {
+					target = ROOT
+					modifier = medium_increase
+				}
+			}
+			add_opinion_modifier = {
+				target = COS
+				modifier = medium_increase
+			}
+			custom_effect_tooltip = generic_skip_one_line_tt
+			add_timed_idea = {
+        		idea = r56_ELS_diplomacy_focus
+        		years = 1
+    		}
+			add_opinion_modifier 
 		}
 	}
 
