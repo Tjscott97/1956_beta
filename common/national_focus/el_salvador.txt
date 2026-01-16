@@ -3779,6 +3779,31 @@ focus_tree = {
 		}
 	}
 
+	focus = {
+		id = ELS_civil_service_reform
+		icon = GFX_focus_AFG_parliamentary_democracy
+		prerequisite = { focus = ELS_strengthen_the_republic }
+		x = -1
+		y = 1
+		relative_position_id = ELS_strengthen_the_republic
+		cost = 5
+		
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+			SPR_scw_in_progress = yes
+			country_exists = SPR
+			NOT = { has_war_with = SPR }
+		}
+		completion_reward = {
+			custom_effect_tooltip = ELS_modify_coffee_tt
+			add_to_variable = { ELS_coffee_production_speed_buildings_factor = 0.1 tooltip = production_speed_buildings_factor_tt }
+			add_to_variable = { ELS_coffee_consumer_goods_factor = -0.1 tooltip = consumer_goods_factor_tt }
+		}
+	}
+
 	### Central America - Democratic ###
 
 	focus = {

@@ -194,6 +194,10 @@
 #political - democratic el salvador
  ELS_strengthen_the_republic:0 "Strengthen The Republic"
  ELS_strengthen_the_republic_desc:0 ""
+ ELS_independent_judiciary:0 "Independent Judiciary"
+ ELS_independent_judiciary_desc:0 ""
+ ELS_civil_service_reform:0 "Civil Service Reform"
+ ELS_civil_service_reform_desc:0 ""
 
 #political - democratic central america
  ELS_central_american_cooperation:0 "Central American Cooperation"
