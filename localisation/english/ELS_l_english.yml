@@ -20,7 +20,11 @@
  r56_ELS_maximiliano_regime_5:0 "The Maximiliano Regime"
  r56_ELS_neutrality_idea:0 "Neutrality Above All"
  r56_ELS_strengthen_the_republic:0 "Strengthen The Republic"
+ r56_ELS_strengthen_the_republic_2:0 "Strengthen The Republic"
  r56_ELS_diplomacy_focus:0 "Diplomacy Focus"
+
+###Opinion Modifiers###
+ central_american_cooperation:0 "Central American Cooperation"
 
 ###Focus###
 
@@ -206,11 +210,15 @@
  ELS_university_of_el_salvador_desc:0 ""
  ELS_welfare_expansion:0 "Welfare Expansion"
  ELS_welfare_expansion_desc:0 ""
+ ELS_civilian_controlled_military:0 "Civilian Control Of The Military"
+ ELS_civilian_controlled_military_desc:0 ""
  
 
 #political - democratic central america
  ELS_central_american_cooperation:0 "Central American Cooperation"
  ELS_central_american_cooperation_desc:0 ""
+ ELS_regional_development:0 "Regional Development"
+ ELS_regional_development_desc:0 ""
 
 #political - democractic shared
  ELS_support_the_republicans:0 "Support The Republicans"
@@ -226,6 +234,7 @@
 ###Tooltips###
  ELS_guard_spawn_tt:0 "§YNational Guard§! unit will be created in §YEl Salvador§!"
  ELS_central_american_cooperation_tt:0 "§YGuatemala§!, §YHonduras§!, §YNicaragua§!, §YCosta Rica§! Gains §Yincrease in opinion§! of §YEl Salvador§! §G+15§!"
+ ELS_regional_development_tt:0 "§YGuatemala§!, §YHonduras§!, §YNicaragua§!, §YCosta Rica§! Gains §Yincrease in opinion§! of §YEl Salvador§! §G+5§!"
 
 
 ###Coffee Republic Modifiers###

@@ -399,7 +399,17 @@ opinion_modifiers = {
 	recruited_german_officers = { # Intended for Israel
 		value = -20
 	}
+
+###------> ELS <><> <><> <><> <><> <><>
 	
+	central_american_cooperation = {
+		value = 15
+	}
+
+	regional_development = {
+		value = 5
+	}
+
 ###------> EST <><> <><> <><> <><> <><>
 	
 ###------> ETH <><> <><> <><> <><> <><>

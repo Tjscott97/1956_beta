@@ -3911,13 +3911,40 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			add_research_slot = 1
-			custom_effect_tooltip = generic_skip_one_line_tt
-
 			custom_effect_tooltip = ELS_modify_coffee_tt
 			add_to_variable = { ELS_coffee_production_factory_start_efficiency_factor = 0.1 tooltip = production_factory_start_efficiency_factor_tt }
 			add_to_variable = { ELS_coffee_production_factory_max_efficiency_factor = 0.1 tooltip = production_factory_max_efficiency_factor_tt }
 			add_to_variable = { ELS_coffee_global_building_slots_factor = 0.25 tooltip = global_building_slots_factor_tt }
+		}
+	}
+
+	focus = {
+		id = ELS_civilian_controlled_military
+		icon = GFX_focus_BRA_reach_out_to_military_dem
+		prerequisite = { focus = ELS_trade_and_investment_commission }
+		x = 0
+		y = 1
+		relative_position_id = ELS_trade_and_investment_commission
+		cost = 5
+		
+		ai_will_do = {
+			factor = 1
+		}
+
+		completion_reward = {
+			random_owned_controlled_state = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+			custom_effect_tooltip = generic_skip_one_line_tt
+			swap_ideas = {
+				add_idea = r56_ELS_strengthen_the_republic_2
+				remove_idea = r56_ELS_strengthen_the_republic
+			}
 		}
 	}
 
@@ -3945,42 +3972,42 @@ focus_tree = {
 				GUA = {
 					add_opinion_modifier = {
 						target = ROOT
-						modifier = medium_increase
+						modifier = central_american_cooperation
 					}
 				}
 				add_opinion_modifier = {
 					target = GUA
-					modifier = medium_increase
+					modifier = central_american_cooperation
 				}
 				HON = {
 					add_opinion_modifier = {
 						target = ROOT
-						modifier = medium_increase
+						modifier = central_american_cooperation
 					}
 				}
 				add_opinion_modifier = {
-					target = HOM
-					modifier = medium_increase
+					target = HON
+					modifier = central_american_cooperation
 				}
 				NIC = {
 					add_opinion_modifier = {
 						target = ROOT
-						modifier = medium_increase
+						modifier = central_american_cooperation
 					}
 				}
 				add_opinion_modifier = {
 					target = NIC
-					modifier = medium_increase
+					modifier = central_american_cooperation
 				}
 				COS = {
 					add_opinion_modifier = {
 						target = ROOT
-						modifier = medium_increase
+						modifier = central_american_cooperation
 					}
 				}
 				add_opinion_modifier = {
 					target = COS
-					modifier = medium_increase
+					modifier = central_american_cooperation
 				}
 			}
 			custom_effect_tooltip = ELS_central_american_cooperation_tt
@@ -3991,6 +4018,8 @@ focus_tree = {
     		}
 		}
 	}
+
+
 	
 
 
