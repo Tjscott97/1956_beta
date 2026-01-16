@@ -3869,6 +3869,7 @@ focus_tree = {
 		completion_reward = {
 			custom_effect_tooltip = ELS_modify_coffee_tt
 			add_to_variable = { ELS_coffee_local_resources_factor = 0.25 tooltip = local_resources_factor_tt }
+			add_to_variable = { ELS_coffee_production_lack_of_resource_penalty_factor = -0.25 tooltip = production_lack_of_resource_penalty_factor_tt }
 			add_to_variable = { ELS_coffee_trade_opinion_factor = 0.5 tooltip = trade_opinion_factor_tt }
 			add_to_variable = { ELS_coffee_trade_laws_cost_factor = -1 tooltip = trade_laws_cost_factor_tt }
 		}
@@ -3893,6 +3894,30 @@ focus_tree = {
 
 			custom_effect_tooltip = ELS_modify_coffee_tt
 			add_to_variable = { ELS_coffee_research_speed_factor = 0.1 tooltip = research_speed_factor_tt }
+		}
+	}
+
+	focus = {
+		id = ELS_welfare_expansion
+		icon = GFX_focus_generic_welfare
+		prerequisite = { focus = ELS_university_of_el_salvador }
+		x = 0
+		y = 1
+		relative_position_id = ELS_university_of_el_salvador
+		cost = 5
+		
+		ai_will_do = {
+			factor = 1
+		}
+
+		completion_reward = {
+			add_research_slot = 1
+			custom_effect_tooltip = generic_skip_one_line_tt
+
+			custom_effect_tooltip = ELS_modify_coffee_tt
+			add_to_variable = { ELS_coffee_production_factory_start_efficiency_factor = 0.1 tooltip = production_factory_start_efficiency_factor_tt }
+			add_to_variable = { ELS_coffee_production_factory_max_efficiency_factor = 0.1 tooltip = production_factory_max_efficiency_factor_tt }
+			add_to_variable = { ELS_coffee_global_building_slots_factor = 0.25 tooltip = global_building_slots_factor_tt }
 		}
 	}
 
