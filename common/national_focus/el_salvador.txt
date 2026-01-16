@@ -4019,7 +4019,100 @@ focus_tree = {
 		}
 	}
 
+	focus = {
+		id = ELS_regional_development
+		icon = GFX_goal_COG_Jungle_Railroad
+		prerequisite = { focus = ELS_central_american_cooperation }
+		x = 1
+		y = 1
+		relative_position_id = ELS_central_american_cooperation
+		cost = 5
+		
+		ai_will_do = {
+			factor = 1
+		}
 
+		completion_reward = {
+			314 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			313 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			312 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			317 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			316 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			hidden_effect = {
+				GUA = {
+					add_opinion_modifier = {
+						target = ROOT
+						modifier = central_american_cooperation
+					}
+				}
+				add_opinion_modifier = {
+					target = GUA
+					modifier = central_american_cooperation
+				}
+				HON = {
+					add_opinion_modifier = {
+						target = ROOT
+						modifier = central_american_cooperation
+					}
+				}
+				add_opinion_modifier = {
+					target = HON
+					modifier = central_american_cooperation
+				}
+				NIC = {
+					add_opinion_modifier = {
+						target = ROOT
+						modifier = central_american_cooperation
+					}
+				}
+				add_opinion_modifier = {
+					target = NIC
+					modifier = central_american_cooperation
+				}
+				COS = {
+					add_opinion_modifier = {
+						target = ROOT
+						modifier = central_american_cooperation
+					}
+				}
+				add_opinion_modifier = {
+					target = COS
+					modifier = central_american_cooperation
+				}
+			}
+			custom_effect_tooltip = ELS_regional_development_tt
+		}
+	}
 	
 
 
