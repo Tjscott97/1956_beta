@@ -3708,7 +3708,7 @@ focus_tree = {
 
 			custom_effect_tooltip = ELS_modify_coffee_tt
 			add_to_variable = { ELS_coffee_political_power_factor = 0.05 tooltip = political_power_factor_tt }
-			add_to_variable = { ELS_coffee_monthly_population = 0.33 tooltip = monthly_population_tt }
+			add_to_variable = { ELS_coffee_monthly_population = 0.3 tooltip = monthly_population_tt }
 		}
 	}
 
@@ -3878,10 +3878,40 @@ focus_tree = {
 			SPR = {
 				add_equipment_to_stockpile = {
 					type = infantry_equipment
-					amount = 250
+					amount = 300
 					producer = ELS
 				}
 			}
+		}
+	}
+
+	focus = {
+		id = ELS_spanish_refugees
+		icon = GFX_focus_generic_invite_republican_spanish_exiles
+		prerequisite = { focus = ELS_support_the_republicans }
+		x = 0
+		y = 1
+		relative_position_id = ELS_support_the_republicans
+		cost = 5
+		
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+			SPR_scw_in_progress = yes
+			country_exists = SPR
+			NOT = { has_war_with = SPR }
+		}
+		completion_reward = {
+			314 = {
+				add_manpower = 65000		
+			}
+			custom_effect_tooltip = generic_skip_one_line_tt
+
+			custom_effect_tooltip = ELS_modify_coffee_tt
+			add_to_variable = { ELS_coffee_stability_factor = -0.05 tooltip = stability_factor_tt }
+			add_to_variable = { ELS_coffee_monthly_population = 0.15 tooltip = monthly_population_tt }
 		}
 	}
 	
