@@ -3799,46 +3799,49 @@ focus_tree = {
 		}
 		
 		completion_reward = {
-			GUA = {
+			hidden_effect = {
+				GUA = {
+					add_opinion_modifier = {
+						target = ROOT
+						modifier = medium_increase
+					}
+				}
 				add_opinion_modifier = {
-					target = ROOT
+					target = GUA
+					modifier = medium_increase
+				}
+				HON = {
+					add_opinion_modifier = {
+						target = ROOT
+						modifier = medium_increase
+					}
+				}
+				add_opinion_modifier = {
+					target = HOM
+					modifier = medium_increase
+				}
+				NIC = {
+					add_opinion_modifier = {
+						target = ROOT
+						modifier = medium_increase
+					}
+				}
+				add_opinion_modifier = {
+					target = NIC
+					modifier = medium_increase
+				}
+				COS = {
+					add_opinion_modifier = {
+						target = ROOT
+						modifier = medium_increase
+					}
+				}
+				add_opinion_modifier = {
+					target = COS
 					modifier = medium_increase
 				}
 			}
-			add_opinion_modifier = {
-				target = GUA
-				modifier = medium_increase
-			}
-			HON = {
-				add_opinion_modifier = {
-					target = ROOT
-					modifier = medium_increase
-				}
-			}
-			add_opinion_modifier = {
-				target = HOM
-				modifier = medium_increase
-			}
-			NIC = {
-				add_opinion_modifier = {
-					target = ROOT
-					modifier = medium_increase
-				}
-			}
-			add_opinion_modifier = {
-				target = NIC
-				modifier = medium_increase
-			}
-			COS = {
-				add_opinion_modifier = {
-					target = ROOT
-					modifier = medium_increase
-				}
-			}
-			add_opinion_modifier = {
-				target = COS
-				modifier = medium_increase
-			}
+			custom_effect_tooltip = ELS_central_american_cooperation_tt
 			custom_effect_tooltip = generic_skip_one_line_tt
 			add_timed_idea = {
         		idea = r56_ELS_diplomacy_focus
