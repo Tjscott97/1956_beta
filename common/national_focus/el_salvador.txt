@@ -3804,6 +3804,34 @@ focus_tree = {
 		}
 	}
 
+	focus = {
+		id = ELS_independent_judiciary
+		icon = GFX_focus_AUS_lawmaking_leniency
+		prerequisite = { focus = ELS_civil_service_reform }
+		x = -1
+		y = 1
+		relative_position_id = ELS_civil_service_reform
+		cost = 5
+		
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+			SPR_scw_in_progress = yes
+			country_exists = SPR
+			NOT = { has_war_with = SPR }
+		}
+		completion_reward = {
+			add_ideas = r56i_laws_security_rights
+			custom_effect_tooltip = generic_skip_one_line_tt
+
+			custom_effect_tooltip = ELS_modify_coffee_tt
+			add_to_variable = { ELS_coffee_political_power_factor = 0.1 tooltip = political_power_factor_tt }
+			add_to_variable = { ELS_coffee_stability_factor = 0.1 tooltip = stability_factor_tt }
+		}
+	}
+
 	### Central America - Democratic ###
 
 	focus = {
