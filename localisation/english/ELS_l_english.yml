@@ -160,6 +160,8 @@
  ELS_the_theosophist_president_desc:0 ""
  ELS_mysticism_and_militarism:0 "Mysticism And Militarism"
  ELS_mysticism_and_militarism_desc:0 ""
+ ELS_state_serves_military:0 "State Serves The Military"
+ ELS_state_serves_military_desc:0 ""
  ELS_cult_of_personality:0 "Cult Of Personality"
  ELS_cult_of_personality_desc:0 ""
  ELS_stabilise_coffee_economy:0 "Stabilize The Coffee Economy"
@@ -221,6 +223,12 @@
  ELS_regional_development_desc:0 ""
  ELS_central_american_customs_union:0 "Central American Customs Union"
  ELS_central_american_customs_union_desc:0 ""
+ ELS_joint_military_exercises:0 "Joint Military Exercises"
+ ELS_joint_military_exercises_desc:0 ""
+ ELS_shared_foreign_policy:0 "Shared Foreign Policy"
+ ELS_shared_foreign_policy_desc:0 ""
+ ELS_draft_federal_constitution:0 "Draft A Federal Constitution"
+ ELS_draft_federal_constitution_desc:0 ""
 
 #political - democractic shared
  ELS_support_the_republicans:0 "Support The Republicans"
@@ -232,14 +240,14 @@
  ELS_vengeance_for_la_matanza:0 "Vengeance For La Matanza"
  ELS_vengeance_for_la_matanza_desc:0 ""
 
-
 ###Tooltips###
  ELS_guard_spawn_tt:0 "§YNational Guard§! unit will be created in §YEl Salvador§!"
+ 
+###Opinion Modifiers###
  ELS_central_american_cooperation_tt:0 "§YGuatemala§!, §YHonduras§!, §YNicaragua§!, §YCosta Rica§! Gains §Yincrease in opinion§! of §YEl Salvador§! §G+15§!"
  ELS_regional_development_tt:0 "§YGuatemala§!, §YHonduras§!, §YNicaragua§!, §YCosta Rica§! Gains §Yincrease in opinion§! of §YEl Salvador§! §G+5§!"
 
-
-###Coffee Republic Modifiers###
+###Coffee Republic Modifier###
  ELS_coffee_republic_dm:0 "Coffee Republic"
  ELS_coffee_republic_dm_desc:0 "Coffee was first cultivated in El Salvador for domestic use in the early 19th century. By mid-century its commercial promise was evident, and the seeds for today's 'Coffee Republic' that El Salvador was to become were first sown. Coffee trade was monopolized in the late 19th century, leading to increasing inequalities between the working class and the elites, the so-called 'Fourteen Families', which at one point held almost 90% of all land within El Salvador, thus putting a lot of pressure on both the internal and external politics of the country. Just four years ago, it seemed as if things had reached a breaking point, the peasants were unsatisfied with their low pay, and decreasing quality of life, for which they blamed the land-owning elites. Thus, in January of 1932, the peasants launched a revolt that will come to be known as 'La Matanza'. Although this revolt was brutally crushed by the military regime, the spirit of rebellion against the elites lives on in the hearts and minds of many Salvadorans..."
 

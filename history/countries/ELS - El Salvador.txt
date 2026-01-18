@@ -121,6 +121,7 @@ set_variable = { ELS_coffee_stability_factor = -0.1 }
 set_variable = { ELS_coffee_production_speed_buildings_factor = 0.05}
 set_variable = { ELS_coffee_production_speed_infrastructure_factor = 0 }
 set_variable = { ELS_coffee_production_speed_industrial_complex_factor = 0 }
+set_variable = { ELS_coffee_production_speed_arms_factory_factor = 0 }
 set_variable = { ELS_coffee_industrial_capacity_dockyard = 0 }
 set_variable = { ELS_coffee_industrial_capacity_factory = 0 }
 set_variable = { ELS_coffee_local_resources_factor = 0 }

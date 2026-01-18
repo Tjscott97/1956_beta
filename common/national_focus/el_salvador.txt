@@ -2997,7 +2997,7 @@ focus_tree = {
 
 	focus = {
 		id = ELS_state_of_the_nation
-		icon = GFX_goal_generic_national_unity
+		icon = GFX_goal_ELS_el_salvador
 		x = 17
 		y = 0
 		relative_position_id = ELS_Naval_Effort
@@ -3021,7 +3021,7 @@ focus_tree = {
 
 	focus = {
 		id = ELS_continue_consilidation
-		icon = GFX_focus_generic_military_dictatorship
+		icon = GFX_goal_ELS_maximiliano
 		prerequisite = { focus = ELS_state_of_the_nation }
 		mutually_exclusive = { focus = ELS_bring_araujo_home focus = ELS_vengeance_for_la_matanza }
 		x = -8
@@ -3303,6 +3303,40 @@ focus_tree = {
 	}
 
 	focus = {
+		id = ELS_state_serves_military
+		icon = GFX_focus_generic_advanced_military_studies
+		prerequisite = { focus = ELS_mysticism_and_militarism }
+		x = 1
+		y = 1
+		relative_position_id = ELS_mysticism_and_militarism
+		cost = 5
+		
+		ai_will_do = {
+			factor = 1
+		}
+
+		
+		completion_reward = {
+			random_owned_controlled_state = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+			custom_effect_tooltip = generic_skip_one_line_tt
+
+			add_ideas = war_economy	
+			custom_effect_tooltip = generic_skip_one_line_tt
+
+			custom_effect_tooltip = ELS_modify_coffee_tt
+			add_to_variable = { ELS_coffee_fascism_drift = 0.01 tooltip = fascism_drift_tt }
+			add_to_variable = { ELS_coffee_production_speed_arms_factory_factor = 0.1 tooltip = production_speed_arms_factory_factor_tt }	
+		}
+	}
+
+	focus = {
 		id = ELS_cult_of_personality
 		icon = GFX_focus_CHI_military_mission
 		prerequisite = { focus = ELS_the_theosophist_president }
@@ -3542,7 +3576,7 @@ focus_tree = {
 
 	focus = {
 		id = ELS_bring_araujo_home
-		icon = GFX_focus_ARG_defense_and_democracy
+		icon = GFX_goal_ELS_araujo
 		prerequisite = { focus = ELS_state_of_the_nation }
 		mutually_exclusive = { focus = ELS_continue_consilidation focus = ELS_vengeance_for_la_matanza }
 		x = 0
@@ -3759,7 +3793,7 @@ focus_tree = {
 
 	focus = {
 		id = ELS_strengthen_the_republic
-		icon = GFX_focus_ARG_defense_and_democracy
+		icon = GFX_goal_ELS_el_salvador
 		prerequisite = { focus = ELS_labor_protections }
 		prerequisite = { focus = ELS_public_hospitals }
 		prerequisite = { focus = ELS_public_schools }
@@ -3945,6 +3979,9 @@ focus_tree = {
 				add_idea = r56_ELS_strengthen_the_republic_2
 				remove_idea = r56_ELS_strengthen_the_republic
 			}
+			custom_effect_tooltip = generic_skip_one_line_tt
+			custom_effect_tooltip = ELS_modify_coffee_tt
+			add_to_variable = { ELS_coffee_production_speed_arms_factory_factor = 0.2 tooltip = production_speed_arms_factory_factor_tt }
 		}
 	}
 
@@ -3952,7 +3989,7 @@ focus_tree = {
 
 	focus = {
 		id = ELS_central_american_cooperation
-		icon = GFX_goal_european_african_diplomacy
+		icon = GFX_goal_ELS_central_america
 		prerequisite = { focus = ELS_labor_protections }
 		prerequisite = { focus = ELS_public_hospitals }
 		prerequisite = { focus = ELS_public_schools }
@@ -4113,25 +4150,8 @@ focus_tree = {
 			custom_effect_tooltip = ELS_regional_development_tt
 		}
 	}
+
 	
-	focus = {
-		id = ELS_central_american_customs_union
-		icon = GFX_goal_free_trade
-		prerequisite = { focus = ELS_regional_development }
-		x = 1
-		y = 1
-		relative_position_id = ELS_regional_development
-		cost = 5
-		
-		ai_will_do = {
-			factor = 1
-		}
-
-		completion_reward = {
-			
-		}
-	}
-
 
 	### Shared - Democratic ###
 
