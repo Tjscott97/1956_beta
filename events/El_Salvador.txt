@@ -7,19 +7,21 @@ country_event = {  #Joint Army Exercises
     id = el_salvador.1
     title = el_salvador.1.t
     desc = el_salvador.1.d
-    picture = GFX_news_event_generic # Army exercise icon, or GFX_news_event_generic
-    is_triggered_only = yes # Only fires from your focus
+    picture = GFX_news_event_generic 
+    is_triggered_only = yes 
 
     option = {
         name = el_salvador.1.a # "Accept"
 
         ai_chance = {
-            factor = 1
-            modifier = {
-                opinion_of = FROM
-                opinion > 4
-                factor = 1000
-            }
+			base = 1
+			modifier = {
+				factor = 1000
+				has_opinion = {
+					target = FROM
+					value > 10
+				} 
+			}
         }
 
         # Target gets army XP
@@ -39,7 +41,43 @@ country_event = {  #Joint Army Exercises
         name = el_salvador.1.b # "Decline"
 
         ai_chance = {
-            factor = 1
+            base = 1
+        }
+    }
+}
+
+country_event = {  #Customs Union
+    id = el_salvador.2
+    title = el_salvador.2.t
+    desc = el_salvador.2.d
+    picture = GFX_news_event_generic
+    is_triggered_only = yes 
+
+    option = {
+        name = el_salvador.2.a # "Accept"
+
+        ai_chance = {
+			base = 1
+			modifier = {
+				factor = 1000
+				has_opinion = {
+					target = FROM
+					value > 10
+				} 
+			}
+        }
+
+        # Target gets national spirit customs union
+        ROOT = {
+            add_ideas = r56_ELS_customs_union_idea
+        }
+    }
+
+    option = {
+        name = el_salvador.1.b # "Decline"
+
+        ai_chance = {
+            base = 1
         }
     }
 }

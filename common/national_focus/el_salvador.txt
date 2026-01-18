@@ -4055,6 +4055,15 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
+
+		available = {
+			NOT = { 
+				has_war_with = GUA
+				has_war_with = HON
+				has_war_with = NIC
+				has_war_with = COS
+			}
+		}
 		
 		completion_reward = {
 			hidden_effect = {
@@ -4119,6 +4128,15 @@ focus_tree = {
 		
 		ai_will_do = {
 			factor = 1
+		}
+
+		available = {
+			NOT = { 
+				has_war_with = GUA
+				has_war_with = HON
+				has_war_with = NIC
+				has_war_with = COS
+			}
 		}
 
 		completion_reward = {
@@ -4216,6 +4234,15 @@ focus_tree = {
 			factor = 1
 		}
 
+		available = {
+			NOT = { 
+				has_war_with = GUA
+				has_war_with = HON
+				has_war_with = NIC
+				has_war_with = COS
+			}
+		}
+
 		completion_reward = {
 			army_experience = 20
 			custom_effect_tooltip = generic_skip_one_line_tt
@@ -4227,7 +4254,40 @@ focus_tree = {
 		}
 	}
 	
-	
+	focus = {
+		id = ELS_central_american_customs_union
+		icon = GFX_goal_free_trade
+		prerequisite = { focus = ELS_regional_development }
+		x = 1
+		y = 1
+		relative_position_id = ELS_regional_development
+		cost = 5
+		
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+			NOT = { 
+				has_war_with = GUA
+				has_war_with = HON
+				has_war_with = NIC
+				has_war_with = COS
+			}
+		}
+
+		completion_reward = {
+			add_ideas = r56_ELS_customs_union_idea
+			custom_effect_tooltip = generic_skip_one_line_tt 
+
+			GUA = { country_event = { id = el_salvador.2 } }
+			HON = { country_event = { id = el_salvador.2 } }
+			NIC = { country_event = { id = el_salvador.2 } }
+			COS = { country_event = { id = el_salvador.2 } }
+		}
+	}
+
+
 
 	### Shared - Democratic ###
 

@@ -23,10 +23,17 @@
  r56_ELS_strengthen_the_republic:0 "Strengthen The Republic"
  r56_ELS_strengthen_the_republic_2:0 "Strengthen The Republic"
  r56_ELS_diplomacy_focus:0 "Diplomacy Focus"
+ r56_ELS_customs_union_idea:0 "Central American Customs Union"
 
 ###Opinion Modifiers###
  central_american_cooperation:0 "Central American Cooperation"
-
+ joint_army_exercises_opinion:0 "Joint Army Exercises"
+ 
+ ###Tooltips###
+ ELS_guard_spawn_tt:0 "§YNational Guard§! unit will be created in §YEl Salvador§!"
+ ELS_central_american_cooperation_tt:0 "([GUA.GetFlag]§YGuatemala§!, [HON.GetFlag]§YHonduras§!, [NIC.GetFlag]§YNicaragua§!, [COS.GetFlag]§YCosta Rica§!) Gains §Yincrease in opinion§! of §YEl Salvador§! §G+15§!"
+ ELS_regional_development_tt:0 "([GUA.GetFlag]§YGuatemala§!, [HON.GetFlag]§YHonduras§!, [NIC.GetFlag]§YNicaragua§!, [COS.GetFlag]§YCosta Rica§!) Gains §Yincrease in opinion§! of §YEl Salvador§! §G+ 5§!"
+ 
 ###Focus###
 
 #army
@@ -243,18 +250,16 @@
  ELS_vengeance_for_la_matanza:0 "Vengeance For La Matanza"
  ELS_vengeance_for_la_matanza_desc:0 ""
 
-###Tooltips###
- ELS_guard_spawn_tt:0 "§YNational Guard§! unit will be created in §YEl Salvador§!"
- 
 ###Events###
  el_salvador.1.t:0 "Joint Army Exercises"
  el_salvador.1.d:0 "El Salvador invites us to participate in regional join army exercises, this would be a valuable opportunity to provide experience to our armed forces."
  el_salvador.1.a:0 "Participate in the exercises"
  el_salvador.1.b:0 "Politely decline"
+ el_salvador.2.t:0 "Central American Customs Union"
+ el_salvador.2.d:0 "El Salvador has invited us to join the Central American customs union."
+ el_salvador.2.a:0 "Join the customs union"
+ el_salvador.2.b:0 "Politely decline"
 
-###Opinion Modifiers###
- ELS_central_american_cooperation_tt:0 "([GUA.GetFlag]§YGuatemala§!, [HON.GetFlag]§YHonduras§!, [NIC.GetFlag]§YNicaragua§!, [COS.GetFlag]§YCosta Rica§!) Gains §Yincrease in opinion§! of §YEl Salvador§! §G+15§!"
- ELS_regional_development_tt:0 "([GUA.GetFlag]§YGuatemala§!, [HON.GetFlag]§YHonduras§!, [NIC.GetFlag]§YNicaragua§!, [COS.GetFlag]§YCosta Rica§!) Gains §Yincrease in opinion§! of §YEl Salvador§! §G+ 5§!"
 
 ###Coffee Republic Modifier###
  ELS_coffee_republic_dm:0 "Coffee Republic"

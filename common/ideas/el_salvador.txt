@@ -265,11 +265,27 @@ ideas = {
 
 			removal_cost = -1
 
-			picture = generic_limited_exports
+			picture = limited_exports
 
 			modifier = {
 				political_power_gain = 0.1
 				improve_relations_maintain_cost_factor = -0.75
+			}
+		}
+
+		r56_ELS_customs_union_idea = {
+
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = SOV_siberian_lessons_ccp_sov_compatibility
+
+			modifier = {
+				consumer_goods_factor = -0.1
+				production_speed_industrial_complex_factor = 0.1
 			}
 		}
 	}

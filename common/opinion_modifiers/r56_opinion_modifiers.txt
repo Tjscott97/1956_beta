@@ -410,6 +410,10 @@ opinion_modifiers = {
 		value = 5
 	}
 
+	joint_army_exercises_opinion = {
+		value = 5
+	}
+
 ###------> EST <><> <><> <><> <><> <><>
 	
 ###------> ETH <><> <><> <><> <><> <><>
