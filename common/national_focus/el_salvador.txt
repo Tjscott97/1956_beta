@@ -4204,6 +4204,7 @@ focus_tree = {
 	}
 
 	
+
 	### Shared - Democratic ###
 
 	focus = {

@@ -7042,7 +7042,8 @@ autocratic_journalist = {
 	former_president = {
 		political_power_gain = 0.1
 		stability_weekly = 0.001
-		democratic_drift = 0.15
+		democratic_drift = 0.05
+		sprite = 13
 	}
 }
 #####-----------------------------------------------------------> Mod by Sig "Greatexperiment" Altre

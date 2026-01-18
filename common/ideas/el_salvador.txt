@@ -28,7 +28,7 @@ ideas = {
 
 		r56_ELS_maximiliano_regime = {
 			
-			picture = RAJ_private_military_complex
+			picture = ELS_maximiliano
 
 			allowed = {
 				original_tag = ELS
@@ -52,7 +52,7 @@ ideas = {
 
 		r56_ELS_maximiliano_regime_2 = {
 			
-			picture = RAJ_private_military_complex
+			picture = ELS_maximiliano
 
 			allowed = {
 				original_tag = ELS
@@ -78,7 +78,7 @@ ideas = {
 
 		r56_ELS_maximiliano_regime_3 = {
 			
-			picture = RAJ_private_military_complex
+			picture = ELS_maximiliano
 
 			allowed = {
 				original_tag = ELS
@@ -105,7 +105,7 @@ ideas = {
 
 		r56_ELS_maximiliano_regime_4 = {
 			
-			picture = RAJ_private_military_complex
+			picture = ELS_maximiliano
 
 			allowed = {
 				original_tag = ELS
@@ -133,7 +133,7 @@ ideas = {
 
 		r56_ELS_maximiliano_regime_5 = {
 			
-			picture = RAJ_private_military_complex
+			picture = ELS_maximiliano
 
 			allowed = {
 				original_tag = ELS
