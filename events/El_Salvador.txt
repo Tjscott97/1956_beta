@@ -1,0 +1,45 @@
+### El Salvador Events ###
+### By Tjscott ###
+
+add_namespace = el_salvador
+
+country_event = {  #Joint Army Exercises
+    id = el_salvador.1
+    title = el_salvador.1.t
+    desc = el_salvador.1.d
+    picture = GFX_news_event_generic # Army exercise icon, or GFX_news_event_generic
+    is_triggered_only = yes # Only fires from your focus
+
+    option = {
+        name = el_salvador.1.a # "Accept"
+
+        ai_chance = {
+            factor = 1
+            modifier = {
+                opinion_of = FROM
+                opinion > 4
+                factor = 1000
+            }
+        }
+
+        # Target gets army XP
+        army_experience = 20.0
+
+        # Target improves opinion of El Salvador
+        ROOT = {
+            add_opinion_modifier = {
+                target = FROM
+                modifier = joint_army_exercises_opinion
+                days = 360
+            }
+        }
+    }
+
+    option = {
+        name = el_salvador.1.b # "Decline"
+
+        ai_chance = {
+            factor = 1
+        }
+    }
+}

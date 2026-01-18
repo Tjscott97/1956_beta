@@ -3309,7 +3309,7 @@ focus_tree = {
 		x = 1
 		y = 1
 		relative_position_id = ELS_mysticism_and_militarism
-		cost = 5
+		cost = 10
 		
 		ai_will_do = {
 			factor = 1
@@ -4203,6 +4203,30 @@ focus_tree = {
 		}
 	}
 
+	focus = {
+		id = ELS_joint_military_exercises
+		icon = GFX_focus_generic_jungle_training
+		prerequisite = { focus = ELS_regional_development }
+		x = -1
+		y = 1
+		relative_position_id = ELS_regional_development
+		cost = 5
+		
+		ai_will_do = {
+			factor = 1
+		}
+
+		completion_reward = {
+			army_experience = 20
+			custom_effect_tooltip = generic_skip_one_line_tt
+
+			GUA = { country_event = { id = el_salvador.1 } }
+			HON = { country_event = { id = el_salvador.1 } }
+			NIC = { country_event = { id = el_salvador.1 } }
+			COS = { country_event = { id = el_salvador.1 } }
+		}
+	}
+	
 	
 
 	### Shared - Democratic ###

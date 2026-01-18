@@ -246,9 +246,15 @@
 ###Tooltips###
  ELS_guard_spawn_tt:0 "§YNational Guard§! unit will be created in §YEl Salvador§!"
  
+###Events###
+ el_salvador.1.t:0 "Joint Army Exercises"
+ el_salvador.1.d:0 "El Salvador invites us to participate in regional join army exercises, this would be a valuable opportunity to provide experience to our armed forces."
+ el_salvador.1.a:0 "Participate in the exercises"
+ el_salvador.1.b:0 "Politely decline"
+
 ###Opinion Modifiers###
- ELS_central_american_cooperation_tt:0 "§YGuatemala§!, §YHonduras§!, §YNicaragua§!, §YCosta Rica§! Gains §Yincrease in opinion§! of §YEl Salvador§! §G+15§!"
- ELS_regional_development_tt:0 "§YGuatemala§!, §YHonduras§!, §YNicaragua§!, §YCosta Rica§! Gains §Yincrease in opinion§! of §YEl Salvador§! §G+5§!"
+ ELS_central_american_cooperation_tt:0 "([GUA.GetFlag]§YGuatemala§!, [HON.GetFlag]§YHonduras§!, [NIC.GetFlag]§YNicaragua§!, [COS.GetFlag]§YCosta Rica§!) Gains §Yincrease in opinion§! of §YEl Salvador§! §G+15§!"
+ ELS_regional_development_tt:0 "([GUA.GetFlag]§YGuatemala§!, [HON.GetFlag]§YHonduras§!, [NIC.GetFlag]§YNicaragua§!, [COS.GetFlag]§YCosta Rica§!) Gains §Yincrease in opinion§! of §YEl Salvador§! §G+ 5§!"
 
 ###Coffee Republic Modifier###
  ELS_coffee_republic_dm:0 "Coffee Republic"

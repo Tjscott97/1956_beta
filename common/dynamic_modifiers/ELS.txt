@@ -1,3 +1,6 @@
+# El Salvador Coffee Republic Dynamic Modifier #
+# By Tjscott #
+
 ELS_coffee_republic_dm = {
 	icon = GFX_idea_ETH_coffee_exports
 	enable = { always = yes }
