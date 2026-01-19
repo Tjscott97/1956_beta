@@ -406,11 +406,15 @@ opinion_modifiers = {
 		value = 15
 	}
 
-	regional_development = {
+	regional_development_opinion = {
 		value = 5
 	}
 
 	joint_army_exercises_opinion = {
+		value = 5
+	}
+
+	customs_union_opinion = {
 		value = 5
 	}
 

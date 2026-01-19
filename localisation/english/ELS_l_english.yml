@@ -28,12 +28,19 @@
 ###Opinion Modifiers###
  central_american_cooperation:0 "Central American Cooperation"
  joint_army_exercises_opinion:0 "Joint Army Exercises"
+ customs_union_opinion:0 "Invited Us To Customs Union"
+ regional_development_opinion:0 "Regional Development"
  
- ###Tooltips###
+###Tooltips###
  ELS_guard_spawn_tt:0 "§YNational Guard§! unit will be created in §YEl Salvador§!"
  ELS_central_american_cooperation_tt:0 "([GUA.GetFlag]§YGuatemala§!, [HON.GetFlag]§YHonduras§!, [NIC.GetFlag]§YNicaragua§!, [COS.GetFlag]§YCosta Rica§!) Gains §Yincrease in opinion§! of §YEl Salvador§! §G+15§!"
  ELS_regional_development_tt:0 "([GUA.GetFlag]§YGuatemala§!, [HON.GetFlag]§YHonduras§!, [NIC.GetFlag]§YNicaragua§!, [COS.GetFlag]§YCosta Rica§!) Gains §Yincrease in opinion§! of §YEl Salvador§! §G+ 5§!"
- 
+
+
+###Faction###
+ ELS_central_america_faction:0 "Central American Defense Pact"
+
+
 ###Focus###
 
 #army
@@ -228,7 +235,7 @@
 
 #political - democratic central america
  ELS_central_american_cooperation:0 "Central American Cooperation"
- ELS_central_american_cooperation_desc:0 ""
+ ELS_central_american_cooperation_desc:0 "" 
  ELS_regional_development:0 "Regional Development"
  ELS_regional_development_desc:0 ""
  ELS_central_american_customs_union:0 "Central American Customs Union"
@@ -239,6 +246,8 @@
  ELS_shared_foreign_policy_desc:0 ""
  ELS_draft_federal_constitution:0 "Draft A Federal Constitution"
  ELS_draft_federal_constitution_desc:0 ""
+ ELS_central_american_defense_pact:0 "Central American Defense Pact"
+ ELS_central_american_defense_pact_desc:0 ""
 
 #political - democractic shared
  ELS_support_the_republicans:0 "Support The Republicans"
@@ -259,7 +268,10 @@
  el_salvador.2.d:0 "El Salvador has invited us to join the Central American customs union."
  el_salvador.2.a:0 "Join the customs union"
  el_salvador.2.b:0 "Politely decline"
-
+ el_salvador.3.t:0 "Central American Defense Pact"
+ el_salvador.3.d:0 "El Salvador invites us to join the Central American Defense Pact"
+ el_salvador.3.a:0 "Join the Pact"
+ el_salvador.3.b:0 "This is not in our best interests"
 
 ###Coffee Republic Modifier###
  ELS_coffee_republic_dm:0 "Coffee Republic"

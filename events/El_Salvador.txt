@@ -71,10 +71,51 @@ country_event = {  #Customs Union
         ROOT = {
             add_ideas = r56_ELS_customs_union_idea
         }
+
+        ROOT = {
+            add_opinion_modifier = {
+                target = FROM
+                modifier = customs_union_opinion
+            }
+        }
     }
 
     option = {
-        name = el_salvador.1.b # "Decline"
+        name = el_salvador.2.b # "Decline"
+
+        ai_chance = {
+            base = 1
+        }
+    }
+}
+
+country_event = {  #Central America defense pact
+    id = el_salvador.3
+    title = el_salvador.3.t
+    desc = el_salvador.3.d
+    picture = GFX_news_event_generic
+    is_triggered_only = yes 
+
+    option = {
+        name = el_salvador.3.a # "Accept"
+
+        ai_chance = {
+			base = 1
+			modifier = {
+				factor = 1000
+				has_opinion = {
+					target = FROM
+					value > 19
+				} 
+			}
+        }
+
+        # Join faction
+        ELS = { add_to_faction = ROOT }
+    }
+
+    option = {
+        name = el_salvador.3.b # "Decline"
 
         ai_chance = {
             base = 1

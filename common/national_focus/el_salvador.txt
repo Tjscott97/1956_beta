@@ -4179,42 +4179,42 @@ focus_tree = {
 				GUA = {
 					add_opinion_modifier = {
 						target = ROOT
-						modifier = central_american_cooperation
+						modifier = regional_development_opinion
 					}
 				}
 				add_opinion_modifier = {
 					target = GUA
-					modifier = central_american_cooperation
+					modifier = regional_development_opinion
 				}
 				HON = {
 					add_opinion_modifier = {
 						target = ROOT
-						modifier = central_american_cooperation
+						modifier = regional_development_opinion
 					}
 				}
 				add_opinion_modifier = {
 					target = HON
-					modifier = central_american_cooperation
+					modifier = regional_development_opinion
 				}
 				NIC = {
 					add_opinion_modifier = {
 						target = ROOT
-						modifier = central_american_cooperation
+						modifier = regional_development_opinion
 					}
 				}
 				add_opinion_modifier = {
 					target = NIC
-					modifier = central_american_cooperation
+					modifier = regional_development_opinion
 				}
 				COS = {
 					add_opinion_modifier = {
 						target = ROOT
-						modifier = central_american_cooperation
+						modifier = regional_development_opinion
 					}
 				}
 				add_opinion_modifier = {
 					target = COS
-					modifier = central_american_cooperation
+					modifier = regional_development_opinion
 				}
 			}
 			custom_effect_tooltip = ELS_regional_development_tt
@@ -4284,6 +4284,46 @@ focus_tree = {
 			HON = { country_event = { id = el_salvador.2 } }
 			NIC = { country_event = { id = el_salvador.2 } }
 			COS = { country_event = { id = el_salvador.2 } }
+		}
+	}
+
+	focus = {
+		id = ELS_central_american_defense_pact
+		icon = GFX_goal_generic_defence
+		prerequisite = { focus = ELS_joint_military_exercises }
+		prerequisite = { focus = ELS_central_american_customs_union }
+		x = 1
+		y = 1
+		relative_position_id = ELS_joint_military_exercises
+		cost = 5
+		
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+			NOT = { 
+				has_war_with = GUA
+				has_war_with = HON
+				has_war_with = NIC
+				has_war_with = COS
+			}
+		}
+
+		completion_reward = {
+			set_rule = { 
+				can_create_factions = yes 
+			}
+			ELS = {
+    			create_faction = ELS_central_america_faction
+			}
+
+			custom_effect_tooltip = generic_skip_one_line_tt 
+
+			GUA = { country_event = { id = el_salvador.3 } }
+			HON = { country_event = { id = el_salvador.3 } }
+			NIC = { country_event = { id = el_salvador.3 } }
+			COS = { country_event = { id = el_salvador.3 } }
 		}
 	}
 
