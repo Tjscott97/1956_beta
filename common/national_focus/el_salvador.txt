@@ -4327,7 +4327,41 @@ focus_tree = {
 		}
 	}
 
+	focus = {
+		id = ELS_shared_foreign_policy
+		icon = GFX_goal_ELS_control_central_america
+		prerequisite = { focus = ELS_central_american_defense_pact }
+		x = 0
+		y = 1
+		relative_position_id = ELS_central_american_defense_pact
+		cost = 5
+		
+		ai_will_do = {
+			factor = 1
+		}
 
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = ELS_draft_federal_constitution
+		icon = GFX_goal_ELS_central_america_flag
+		prerequisite = { focus = ELS_shared_foreign_policy }
+		x = 0
+		y = 1
+		relative_position_id = ELS_shared_foreign_policy
+		cost = 10
+		
+		ai_will_do = {
+			factor = 1
+		}
+
+		completion_reward = {
+			
+		}
+	}
 
 	### Shared - Democratic ###
 

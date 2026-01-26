@@ -50,7 +50,7 @@ country_event = {  #Customs Union
     id = el_salvador.2
     title = el_salvador.2.t
     desc = el_salvador.2.d
-    picture = GFX_news_event_generic
+    picture = GFX_report_event_vienna_award_hungary
     is_triggered_only = yes 
 
     option = {
@@ -93,7 +93,7 @@ country_event = {  #Central America defense pact
     id = el_salvador.3
     title = el_salvador.3.t
     desc = el_salvador.3.d
-    picture = GFX_news_event_generic
+    picture = GFX_report_event_generic_military_parade
     is_triggered_only = yes 
 
     option = {
