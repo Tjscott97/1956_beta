@@ -4468,6 +4468,10 @@ spriteTypes = {
 		name = "GFX_goal_ELS_coa_army"
 		texturefile = "gfx/interface/goals/els/r56_goal_ELS_coa_army.dds"
 	}
+	SpriteType = {
+		name = "GFX_goal_ELS_coa_navy"
+		texturefile = "gfx/interface/goals/els/r56_goal_ELS_coa_navy.dds"
+	}
 
 
 ###------> ENG <><> <><> <><> <><> <><>
