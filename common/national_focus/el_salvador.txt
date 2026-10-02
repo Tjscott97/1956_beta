@@ -50,21 +50,21 @@ focus_tree = {
 			if = { # Tooltip Only
 				limit = {
 					NOT = {
-						has_country_flag = ELS_establish_a_general_staff_a
-						has_country_flag = ELS_establish_a_general_staff_b
+						has_country_flag = ABC_establish_a_general_staff_a
+						has_country_flag = ABC_establish_a_general_staff_b
 					}
 				}
 				add_ideas = ABC_establish_a_general_staff_idea
 			} 
 			if = {
 				limit = {
-					has_country_flag = ELS_establish_a_general_staff_a
+					has_country_flag = ABC_establish_a_general_staff_a
 				}
 				add_ideas = ABC_establish_a_general_staff_idea_1
 			}
 			if = {
 				limit = {
-					has_country_flag = ELS_establish_a_general_staff_b
+					has_country_flag = ABC_establish_a_general_staff_b
 				}
 				add_ideas = ABC_establish_a_general_staff_idea_2
 			}
