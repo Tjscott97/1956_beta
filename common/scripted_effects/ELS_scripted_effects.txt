@@ -1,0 +1,17 @@
+### El Salvador Scripted Effects ###
+### By Tjscott ###
+
+### Central American Offers ###
+# Used by the 5 Central American offer events (el_salvador.1 - el_salvador.5) to send El Salvador a report
+# for each country that answers. In the report events FROM is the country that answered.
+# Which offer the report is about comes from the ELS_current_offer variable, set in each focus.
+
+# Scope: invited country, inside the accept option of an offer event
+ELS_offer_accepted_response = {
+	ELS = { country_event = { id = el_salvador.10 } }
+}
+
+# Scope: invited country, inside the decline option of an offer event
+ELS_offer_declined_response = {
+	ELS = { country_event = { id = el_salvador.11 } }
+}

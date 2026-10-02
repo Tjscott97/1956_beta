@@ -4246,11 +4246,25 @@ focus_tree = {
 		completion_reward = {
 			army_experience = 20
 			custom_effect_tooltip = generic_skip_one_line_tt
+			custom_effect_tooltip = ELS_joint_military_exercises_tt
 
-			GUA = { country_event = { id = el_salvador.1 } }
-			HON = { country_event = { id = el_salvador.1 } }
-			NIC = { country_event = { id = el_salvador.1 } }
-			COS = { country_event = { id = el_salvador.1 } }
+			# Invite the Central American countries, the AI accepts based on its opinion of us
+			hidden_effect = {
+				set_variable = { ELS_current_offer = 1 }
+				every_country = {
+					limit = {
+						OR = {
+							tag = GUA
+							tag = HON
+							tag = NIC
+							tag = COS
+						}
+						exists = yes
+						NOT = { has_war_with = ROOT }
+					}
+					country_event = { id = el_salvador.1 days = 1 }
+				}
+			}
 		}
 	}
 	
@@ -4278,12 +4292,26 @@ focus_tree = {
 
 		completion_reward = {
 			add_ideas = r56_ELS_customs_union_idea
-			custom_effect_tooltip = generic_skip_one_line_tt 
+			custom_effect_tooltip = generic_skip_one_line_tt
+			custom_effect_tooltip = ELS_central_american_customs_union_tt
 
-			GUA = { country_event = { id = el_salvador.2 } }
-			HON = { country_event = { id = el_salvador.2 } }
-			NIC = { country_event = { id = el_salvador.2 } }
-			COS = { country_event = { id = el_salvador.2 } }
+			# Invite the Central American countries, the AI accepts based on its opinion of us
+			hidden_effect = {
+				set_variable = { ELS_current_offer = 2 }
+				every_country = {
+					limit = {
+						OR = {
+							tag = GUA
+							tag = HON
+							tag = NIC
+							tag = COS
+						}
+						exists = yes
+						NOT = { has_war_with = ROOT }
+					}
+					country_event = { id = el_salvador.2 days = 1 }
+				}
+			}
 		}
 	}
 
@@ -4318,12 +4346,26 @@ focus_tree = {
     			create_faction = ELS_central_america_faction
 			}
 
-			custom_effect_tooltip = generic_skip_one_line_tt 
+			custom_effect_tooltip = generic_skip_one_line_tt
+			custom_effect_tooltip = ELS_central_american_defense_pact_tt
 
-			GUA = { country_event = { id = el_salvador.3 } }
-			HON = { country_event = { id = el_salvador.3 } }
-			NIC = { country_event = { id = el_salvador.3 } }
-			COS = { country_event = { id = el_salvador.3 } }
+			# Invite the Central American countries, the AI accepts based on its opinion of us
+			hidden_effect = {
+				set_variable = { ELS_current_offer = 3 }
+				every_country = {
+					limit = {
+						OR = {
+							tag = GUA
+							tag = HON
+							tag = NIC
+							tag = COS
+						}
+						exists = yes
+						NOT = { has_war_with = ROOT }
+					}
+					country_event = { id = el_salvador.3 days = 1 }
+				}
+			}
 		}
 	}
 
@@ -4340,8 +4382,36 @@ focus_tree = {
 			factor = 1
 		}
 
+		available = {
+			NOT = {
+				has_war_with = GUA
+				has_war_with = HON
+				has_war_with = NIC
+				has_war_with = COS
+			}
+		}
+
 		completion_reward = {
-			
+			custom_effect_tooltip = ELS_shared_foreign_policy_tt
+
+			# Invite every independent Central American country, the AI accepts based on its opinion of us
+			hidden_effect = {
+				set_variable = { ELS_current_offer = 4 }
+				every_country = {
+					limit = {
+						OR = {
+							tag = GUA
+							tag = HON
+							tag = NIC
+							tag = COS
+						}
+						exists = yes
+						is_subject = no
+						NOT = { has_war_with = ROOT }
+					}
+					country_event = { id = el_salvador.4 days = 1 }
+				}
+			}
 		}
 	}
 
@@ -4353,13 +4423,80 @@ focus_tree = {
 		y = 1
 		relative_position_id = ELS_shared_foreign_policy
 		cost = 10
-		
+
 		ai_will_do = {
 			factor = 1
 		}
 
+		available = {
+			NOT = {
+				has_war_with = GUA
+				has_war_with = HON
+				has_war_with = NIC
+				has_war_with = COS
+			}
+		}
+
 		completion_reward = {
-			
+			set_cosmetic_tag = ELS_USCA
+			set_country_flag = USC_UNIFIED_FLAG
+
+			# Countries already under our protection join the federation automatically
+			if = {
+				limit = { GUA = { is_subject_of = ROOT } }
+				annex_country = { target = GUA transfer_troops = yes }
+			}
+			if = {
+				limit = { HON = { is_subject_of = ROOT } }
+				annex_country = { target = HON transfer_troops = yes }
+			}
+			if = {
+				limit = { NIC = { is_subject_of = ROOT } }
+				annex_country = { target = NIC transfer_troops = yes }
+			}
+			if = {
+				limit = { COS = { is_subject_of = ROOT } }
+				annex_country = { target = COS transfer_troops = yes }
+			}
+
+			custom_effect_tooltip = generic_skip_one_line_tt
+			custom_effect_tooltip = ELS_draft_federal_constitution_tt
+
+			hidden_effect = {
+				# Core the states of the countries that just joined
+				every_owned_state = {
+					limit = {
+						NOT = { is_core_of = ROOT }
+						OR = {
+							is_core_of = GUA
+							is_core_of = HON
+							is_core_of = NIC
+							is_core_of = COS
+						}
+					}
+					add_core_of = ROOT
+				}
+
+				# Invite the remaining independent countries, the AI accepts based on its opinion of us
+				set_variable = { ELS_current_offer = 5 }
+				every_country = {
+					limit = {
+						OR = {
+							tag = GUA
+							tag = HON
+							tag = NIC
+							tag = COS
+						}
+						exists = yes
+						is_subject = no
+						NOT = { has_war_with = ROOT }
+					}
+					country_event = { id = el_salvador.5 days = 1 }
+				}
+
+				# Stops the generic United Central America formable from firing again
+				set_global_flag = form_united_central_america_flag
+			}
 		}
 	}
 

@@ -13,15 +13,34 @@ country_event = {  #Joint Army Exercises
     option = {
         name = el_salvador.1.a # "Accept"
 
+        # decline weight is 15:
+        # opinion 0 or less ~12%, above 0 40%, above 15 ~63%, above 30 ~77%, above 50 ~87%, above 75 ~93%
         ai_chance = {
-			base = 1
-			modifier = {
-				factor = 1000
-				has_opinion = {
-					target = FROM
-					value > 10
-				} 
-			}
+            base = 2
+            modifier = {
+                add = 8
+                has_opinion = { target = FROM value > 0 }
+            }
+            modifier = {
+                add = 15
+                has_opinion = { target = FROM value > 15 }
+            }
+            modifier = {
+                add = 25
+                has_opinion = { target = FROM value > 30 }
+            }
+            modifier = {
+                add = 50
+                has_opinion = { target = FROM value > 50 }
+            }
+            modifier = {
+                add = 100
+                has_opinion = { target = FROM value > 75 }
+            }
+            modifier = {
+                factor = 1.5
+                is_in_faction_with = FROM
+            }
         }
 
         # Target gets army XP
@@ -35,14 +54,18 @@ country_event = {  #Joint Army Exercises
                 days = 360
             }
         }
+
+        hidden_effect = { ELS_offer_accepted_response = yes }
     }
 
     option = {
         name = el_salvador.1.b # "Decline"
 
         ai_chance = {
-            base = 1
+            base = 15
         }
+
+        hidden_effect = { ELS_offer_declined_response = yes }
     }
 }
 
@@ -56,15 +79,34 @@ country_event = {  #Customs Union
     option = {
         name = el_salvador.2.a # "Accept"
 
+        # decline weight is 15:
+        # opinion 0 or less ~12%, above 0 40%, above 15 ~63%, above 30 ~77%, above 50 ~87%, above 75 ~93%
         ai_chance = {
-			base = 1
-			modifier = {
-				factor = 1000
-				has_opinion = {
-					target = FROM
-					value > 10
-				} 
-			}
+            base = 2
+            modifier = {
+                add = 8
+                has_opinion = { target = FROM value > 0 }
+            }
+            modifier = {
+                add = 15
+                has_opinion = { target = FROM value > 15 }
+            }
+            modifier = {
+                add = 25
+                has_opinion = { target = FROM value > 30 }
+            }
+            modifier = {
+                add = 50
+                has_opinion = { target = FROM value > 50 }
+            }
+            modifier = {
+                add = 100
+                has_opinion = { target = FROM value > 75 }
+            }
+            modifier = {
+                factor = 1.5
+                is_in_faction_with = FROM
+            }
         }
 
         # Target gets national spirit customs union
@@ -78,14 +120,18 @@ country_event = {  #Customs Union
                 modifier = customs_union_opinion
             }
         }
+
+        hidden_effect = { ELS_offer_accepted_response = yes }
     }
 
     option = {
         name = el_salvador.2.b # "Decline"
 
         ai_chance = {
-            base = 1
+            base = 15
         }
+
+        hidden_effect = { ELS_offer_declined_response = yes }
     }
 }
 
@@ -99,26 +145,255 @@ country_event = {  #Central America defense pact
     option = {
         name = el_salvador.3.a # "Accept"
 
+        # decline weight is 25:
+        # opinion 0 or less ~7%, above 0 ~29%, above 15 50%, above 30 ~67%, above 50 80%, above 75 ~89%
         ai_chance = {
-			base = 1
-			modifier = {
-				factor = 1000
-				has_opinion = {
-					target = FROM
-					value > 19
-				} 
-			}
+            base = 2
+            modifier = {
+                add = 8
+                has_opinion = { target = FROM value > 0 }
+            }
+            modifier = {
+                add = 15
+                has_opinion = { target = FROM value > 15 }
+            }
+            modifier = {
+                add = 25
+                has_opinion = { target = FROM value > 30 }
+            }
+            modifier = {
+                add = 50
+                has_opinion = { target = FROM value > 50 }
+            }
+            modifier = {
+                add = 100
+                has_opinion = { target = FROM value > 75 }
+            }
+            modifier = {
+                factor = 1.5
+                is_in_faction_with = FROM
+            }
         }
 
         # Join faction
         ELS = { add_to_faction = ROOT }
+
+        hidden_effect = { ELS_offer_accepted_response = yes }
     }
 
     option = {
         name = el_salvador.3.b # "Decline"
 
         ai_chance = {
-            base = 1
+            base = 25
         }
+
+        hidden_effect = { ELS_offer_declined_response = yes }
+    }
+}
+
+country_event = {  #Shared Foreign Policy
+    id = el_salvador.4
+    title = el_salvador.4.t
+    desc = el_salvador.4.d
+    picture = GFX_report_event_generic_sign_treaty1
+    is_triggered_only = yes
+
+    option = {
+        name = el_salvador.4.a # "Accept"
+
+        # decline weight is 50:
+        # opinion 0 or less ~4%, above 0 ~17%, above 15 ~33%, above 30 50%, above 50 ~67%, above 75 80%
+        ai_chance = {
+            base = 2
+            modifier = {
+                add = 8
+                has_opinion = { target = FROM value > 0 }
+            }
+            modifier = {
+                add = 15
+                has_opinion = { target = FROM value > 15 }
+            }
+            modifier = {
+                add = 25
+                has_opinion = { target = FROM value > 30 }
+            }
+            modifier = {
+                add = 50
+                has_opinion = { target = FROM value > 50 }
+            }
+            modifier = {
+                add = 100
+                has_opinion = { target = FROM value > 75 }
+            }
+            modifier = {
+                factor = 1.5
+                is_in_faction_with = FROM
+            }
+        }
+
+        # Target becomes a subject of El Salvador at the loosest autonomy level (Satellite is the fascist-only equivalent of Protectorate)
+        FROM = {
+            puppet = ROOT
+            if = {
+                limit = { ROOT = { has_government = fascism } }
+                set_autonomy = {
+                    target = ROOT
+                    autonomy_state = autonomy_satellite
+                }
+            }
+            else = {
+                set_autonomy = {
+                    target = ROOT
+                    autonomy_state = autonomy_protectorate
+                }
+            }
+        }
+
+        hidden_effect = { ELS_offer_accepted_response = yes }
+    }
+
+    option = {
+        name = el_salvador.4.b # "Decline"
+
+        ai_chance = {
+            base = 50
+        }
+
+        hidden_effect = { ELS_offer_declined_response = yes }
+    }
+}
+
+country_event = {  #Federal Constitution
+    id = el_salvador.5
+    title = el_salvador.5.t
+    desc = el_salvador.5.d
+    picture = GFX_report_event_generic_sign_treaty2
+    is_triggered_only = yes
+
+    option = {
+        name = el_salvador.5.a # "Accept"
+
+        # decline weight is 100:
+        # opinion above 15 20%, above 30 ~33%, above 50 50%, above 75 ~67%
+        ai_chance = {
+            base = 2
+            modifier = {
+                add = 8
+                has_opinion = { target = FROM value > 0 }
+            }
+            modifier = {
+                add = 15
+                has_opinion = { target = FROM value > 15 }
+            }
+            modifier = {
+                add = 25
+                has_opinion = { target = FROM value > 30 }
+            }
+            modifier = {
+                add = 50
+                has_opinion = { target = FROM value > 50 }
+            }
+            modifier = {
+                add = 100
+                has_opinion = { target = FROM value > 75 }
+            }
+            modifier = {
+                factor = 1.5
+                is_in_faction_with = FROM
+            }
+        }
+
+        # Report is sent before the annexation, while this country still exists
+        hidden_effect = { ELS_offer_accepted_response = yes }
+
+        # Target joins the United States of Central America
+        FROM = {
+            annex_country = { target = ROOT transfer_troops = yes }
+            hidden_effect = {
+                every_owned_state = {
+                    limit = {
+                        is_core_of = ROOT
+                        NOT = { is_core_of = PREV }
+                    }
+                    add_core_of = PREV
+                }
+            }
+        }
+    }
+
+    option = {
+        name = el_salvador.5.b # "Decline"
+
+        ai_chance = {
+            base = 100
+        }
+
+        hidden_effect = { ELS_offer_declined_response = yes }
+    }
+}
+
+### Reports for El Salvador, sent from ELS_offer_accepted_response / ELS_offer_declined_response ###
+### FROM is the country that answered, ELS_current_offer is the offer it answered ###
+
+country_event = {  #Offer accepted
+    id = el_salvador.10
+    title = el_salvador.10.t
+    desc = {
+        trigger = { check_variable = { ELS_current_offer = 1 } }
+        text = el_salvador.10.d1
+    }
+    desc = {
+        trigger = { check_variable = { ELS_current_offer = 2 } }
+        text = el_salvador.10.d2
+    }
+    desc = {
+        trigger = { check_variable = { ELS_current_offer = 3 } }
+        text = el_salvador.10.d3
+    }
+    desc = {
+        trigger = { check_variable = { ELS_current_offer = 4 } }
+        text = el_salvador.10.d4
+    }
+    desc = {
+        trigger = { check_variable = { ELS_current_offer = 5 } }
+        text = el_salvador.10.d5
+    }
+    picture = GFX_report_event_generic_sign_treaty3
+    is_triggered_only = yes
+
+    option = {
+        name = el_salvador.10.a
+    }
+}
+
+country_event = {  #Offer declined
+    id = el_salvador.11
+    title = el_salvador.11.t
+    desc = {
+        trigger = { check_variable = { ELS_current_offer = 1 } }
+        text = el_salvador.11.d1
+    }
+    desc = {
+        trigger = { check_variable = { ELS_current_offer = 2 } }
+        text = el_salvador.11.d2
+    }
+    desc = {
+        trigger = { check_variable = { ELS_current_offer = 3 } }
+        text = el_salvador.11.d3
+    }
+    desc = {
+        trigger = { check_variable = { ELS_current_offer = 4 } }
+        text = el_salvador.11.d4
+    }
+    desc = {
+        trigger = { check_variable = { ELS_current_offer = 5 } }
+        text = el_salvador.11.d5
+    }
+    picture = GFX_report_event_generic_sign_treaty3
+    is_triggered_only = yes
+
+    option = {
+        name = el_salvador.11.a
     }
 }
