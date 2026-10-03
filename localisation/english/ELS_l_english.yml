@@ -286,7 +286,21 @@
  ELS_central_american_customs_union_tt:0 "([GUA.GetFlag]§YGuatemala§!, [HON.GetFlag]§YHonduras§!, [NIC.GetFlag]§YNicaragua§!, [COS.GetFlag]§YCosta Rica§!) Will be invited to join the §YCentral American Customs Union§!. The §Yhigher their opinion§! of us, the more likely they are to accept."
  ELS_central_american_defense_pact_tt:0 "([GUA.GetFlag]§YGuatemala§!, [HON.GetFlag]§YHonduras§!, [NIC.GetFlag]§YNicaragua§!, [COS.GetFlag]§YCosta Rica§!) Will be invited to join the §YCentral American Defense Pact§!. The §Yhigher their opinion§! of us, the more likely they are to accept."
  ELS_shared_foreign_policy_tt:0 "([GUA.GetFlag]§YGuatemala§!, [HON.GetFlag]§YHonduras§!, [NIC.GetFlag]§YNicaragua§!, [COS.GetFlag]§YCosta Rica§!) Will be invited to become our §YProtectorate§!. The §Yhigher their opinion§! of us, the more likely they are to accept."
- ELS_draft_federal_constitution_tt:0 "Any remaining independent nations of ([GUA.GetFlag]§YGuatemala§!, [HON.GetFlag]§YHonduras§!, [NIC.GetFlag]§YNicaragua§!, [COS.GetFlag]§YCosta Rica§!) will be invited to join the §YUnited States of Central America§!. The §Yhigher their opinion§! of us, the more likely they are to accept."
+ ELS_draft_federal_constitution_tt:0 "Any remaining independent nations of ([GUA.GetFlag]§YGuatemala§!, [HON.GetFlag]§YHonduras§!, [NIC.GetFlag]§YNicaragua§!, [COS.GetFlag]§YCosta Rica§!) will be invited to join the §YUnited States of Central America§!. The §Yhigher their opinion§! of us, the more likely they are to accept.\nOnce at least §Yone nation§! joins, we will become the §YUnited States of Central America§!."
+ ELS_integration_decisions_tt:0 "Unlocks §YCentral American Federation§! decisions to integrate nations that refuse to join, once we control their land."
+ ELS_form_central_america_tt:0 "We will become the §YUnited States of Central America§!."
+
+###Decisions - Central American Federation###
+ ELS_central_american_federation:0 "Central American Federation"
+ ELS_central_american_federation_desc:0 "Not every nation of Central America has answered the call of the federal constitution. Where our authority already reaches, we can bring their people into the federation."
+ ELS_integrate_guatemala:0 "Integrate Guatemala"
+ ELS_integrate_guatemala_desc:0 "With Guatemala under our control, its people can finally take their place in the federation."
+ ELS_integrate_honduras:0 "Integrate Honduras"
+ ELS_integrate_honduras_desc:0 "With Honduras under our control, its people can finally take their place in the federation."
+ ELS_integrate_nicaragua:0 "Integrate Nicaragua"
+ ELS_integrate_nicaragua_desc:0 "With Nicaragua under our control, its people can finally take their place in the federation."
+ ELS_integrate_costa_rica:0 "Integrate Costa Rica"
+ ELS_integrate_costa_rica_desc:0 "With Costa Rica under our control, its people can finally take their place in the federation."
 
 ###Central American Offers - Reports###
  el_salvador.10.t:0 "[FROM.GetName] Accepts: [GetELSOfferName]"

@@ -4438,29 +4438,32 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			set_cosmetic_tag = ELS_USCA
-			set_country_flag = USC_UNIFIED_FLAG
-
-			# Countries already under our protection join the federation automatically
+			# Countries already under our protection join the federation automatically, forming the United States of Central America
 			if = {
 				limit = { GUA = { is_subject_of = ROOT } }
 				annex_country = { target = GUA transfer_troops = yes }
+				hidden_effect = { ELS_form_central_america = yes }
 			}
 			if = {
 				limit = { HON = { is_subject_of = ROOT } }
 				annex_country = { target = HON transfer_troops = yes }
+				hidden_effect = { ELS_form_central_america = yes }
 			}
 			if = {
 				limit = { NIC = { is_subject_of = ROOT } }
 				annex_country = { target = NIC transfer_troops = yes }
+				hidden_effect = { ELS_form_central_america = yes }
 			}
 			if = {
 				limit = { COS = { is_subject_of = ROOT } }
 				annex_country = { target = COS transfer_troops = yes }
+				hidden_effect = { ELS_form_central_america = yes }
 			}
 
 			custom_effect_tooltip = generic_skip_one_line_tt
 			custom_effect_tooltip = ELS_draft_federal_constitution_tt
+			custom_effect_tooltip = generic_skip_one_line_tt
+			custom_effect_tooltip = ELS_integration_decisions_tt
 
 			hidden_effect = {
 				# Core the states of the countries that just joined
@@ -4493,9 +4496,6 @@ focus_tree = {
 					}
 					country_event = { id = el_salvador.5 days = 1 }
 				}
-
-				# Stops the generic United Central America formable from firing again
-				set_global_flag = form_united_central_america_flag
 			}
 		}
 	}

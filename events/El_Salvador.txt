@@ -311,6 +311,7 @@ country_event = {  #Federal Constitution
         FROM = {
             annex_country = { target = ROOT transfer_troops = yes }
             hidden_effect = {
+                ELS_form_central_america = yes
                 every_owned_state = {
                     limit = {
                         is_core_of = ROOT

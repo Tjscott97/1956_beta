@@ -15,3 +15,26 @@ ELS_offer_accepted_response = {
 ELS_offer_declined_response = {
 	ELS = { country_event = { id = el_salvador.11 } }
 }
+
+### United States of Central America ###
+# Scope: El Salvador. Called when the first country joins the federation (Draft A Federal Constitution, el_salvador.5
+# or one of the integration decisions). Only does anything the first time it is called.
+ELS_form_central_america = {
+	if = {
+		limit = { NOT = { has_country_flag = ELS_central_america_formed } }
+		set_country_flag = ELS_central_america_formed
+		set_cosmetic_tag = ELS_USCA
+		set_country_flag = USC_UNIFIED_FLAG
+		# Stops the generic United Central America formable from firing again
+		set_global_flag = form_united_central_america_flag
+	}
+}
+
+# Scope: El Salvador. Same as ELS_form_central_america but shows a tooltip, for use in decisions
+ELS_form_central_america_tooltip = {
+	if = {
+		limit = { NOT = { has_country_flag = ELS_central_america_formed } }
+		custom_effect_tooltip = ELS_form_central_america_tt
+		hidden_effect = { ELS_form_central_america = yes }
+	}
+}

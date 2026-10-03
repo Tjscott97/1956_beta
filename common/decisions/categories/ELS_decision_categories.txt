@@ -1,0 +1,18 @@
+################
+##### ELS ######
+################
+
+ELS_central_american_federation = {
+
+	priority = 50
+
+	icon = generic_political_actions
+
+	allowed = {
+		original_tag = ELS
+	}
+
+	visible = {
+		has_completed_focus = ELS_draft_federal_constitution
+	}
+}
