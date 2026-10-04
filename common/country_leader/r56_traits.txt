@@ -7045,6 +7045,12 @@ autocratic_journalist = {
 		democratic_drift = 0.05
 		sprite = 13
 	}
+	ELS_firing_squad_survivor = { # Miguel Marmol, added by ELS_return_of_miguel_marmol
+		political_power_gain = 0.1
+		war_support_factor = 0.05
+		communism_drift = 0.05
+		sprite = 13
+	}
 }
 #####-----------------------------------------------------------> Mod by Sig "Greatexperiment" Altre
 

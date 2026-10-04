@@ -16,3 +16,19 @@ ELS_central_american_federation = {
 		has_completed_focus = ELS_draft_federal_constitution
 	}
 }
+
+ELS_clandestine_network = {
+
+	priority = 50
+
+	icon = generic_communism
+
+	allowed = {
+		original_tag = ELS
+	}
+
+	visible = {
+		has_completed_focus = ELS_rebuild_the_party_cells
+		NOT = { has_government = communism }
+	}
+}

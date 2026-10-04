@@ -398,3 +398,17 @@ country_event = {  #Offer declined
         name = el_salvador.11.a
     }
 }
+
+### Communist Branch ###
+
+country_event = {  #The Return of Miguel Marmol (story event, the rewards are on the focus)
+    id = el_salvador.20
+    title = el_salvador.20.t
+    desc = el_salvador.20.d
+    picture = GFX_report_event_communist_leader
+    is_triggered_only = yes
+
+    option = {
+        name = el_salvador.20.a
+    }
+}

@@ -4578,7 +4578,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = ELS_state_of_the_nation
 
-		cost = 10
+		cost = 5
 
 		available_if_capitulated = yes
 
@@ -4595,8 +4595,97 @@ focus_tree = {
 			add_stability = -0.1
 			add_popularity = {
 			    		ideology = communism
-			    		popularity = 0.15
+			    		popularity = 0.1
 					}
+		}
+	}
+
+	focus = {
+		id = ELS_return_of_miguel_marmol
+		icon = GFX_goal_generic_communism
+		prerequisite = { focus = ELS_vengeance_for_la_matanza }
+		x = -2
+		y = 1
+		relative_position_id = ELS_vengeance_for_la_matanza
+
+		cost = 5
+
+		available_if_capitulated = yes
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		completion_reward = {
+			country_event = { id = el_salvador.20 }
+			custom_effect_tooltip = generic_skip_one_line_tt
+
+			# Marmol is already the communist party leader, this makes him a stronger one
+			if = {
+				limit = { has_character = ELS_miguel_marmol }
+				# Country leader roles are targeted by ideology, slot only works for advisor roles
+				add_trait = {
+					character = ELS_miguel_marmol
+					ideology = marxism
+					trait = ELS_firing_squad_survivor
+				}
+				activate_advisor = ELS_miguel_marmol
+			}
+		}
+	}
+
+	focus = {
+		id = ELS_rebuild_the_party_cells
+		icon = GFX_goal_support_communism
+		prerequisite = { focus = ELS_vengeance_for_la_matanza }
+		x = 0
+		y = 1
+		relative_position_id = ELS_vengeance_for_la_matanza
+
+		cost = 5
+
+		available_if_capitulated = yes
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		completion_reward = {
+			add_popularity = {
+				ideology = communism
+				popularity = 0.05
+			}
+			custom_effect_tooltip = generic_skip_one_line_tt
+			unlock_decision_category_tooltip = ELS_clandestine_network
+		}
+	}
+
+	focus = {
+		id = ELS_organize_the_coffee_pickers
+		icon = GFX_goal_generic_industrial_unionism
+		prerequisite = { focus = ELS_vengeance_for_la_matanza }
+		x = 2
+		y = 1
+		relative_position_id = ELS_vengeance_for_la_matanza
+
+		cost = 5
+
+		available_if_capitulated = yes
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		completion_reward = {
+			add_popularity = {
+				ideology = communism
+				popularity = 0.05
+			}
+			custom_effect_tooltip = generic_skip_one_line_tt
+
+			custom_effect_tooltip = ELS_modify_coffee_tt
+			add_to_variable = { ELS_coffee_communism_drift = 0.01 tooltip = communism_drift_tt }
+			add_to_variable = { ELS_coffee_stability_factor = -0.05 tooltip = stability_factor_tt }
 		}
 	}
 

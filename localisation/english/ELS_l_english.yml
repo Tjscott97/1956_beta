@@ -258,6 +258,12 @@
 #political - communist
  ELS_vengeance_for_la_matanza:0 "Vengeance For La Matanza"
  ELS_vengeance_for_la_matanza_desc:0 ""
+ ELS_return_of_miguel_marmol:0 "The Return of Miguel Mármol"
+ ELS_return_of_miguel_marmol_desc:0 "In 1932 the regime stood Miguel Mármol before a firing squad and left him for dead. He survived, and the party's most stubborn organizer has come out of hiding to lead it again."
+ ELS_rebuild_the_party_cells:0 "Rebuild the Party Cells"
+ ELS_rebuild_the_party_cells_desc:0 "La Matanza destroyed the Partido Comunista Salvadoreño in a matter of weeks. Small, secret cells of trusted comrades can rebuild it where the Guardia Nacional cannot see."
+ ELS_organize_the_coffee_pickers:0 "Organize the Coffee Pickers"
+ ELS_organize_the_coffee_pickers_desc:0 "The coffee estates run on the backs of underpaid pickers. Unions on the fincas will give them a voice, and give the party thousands of new recruits."
 
 ###Events###
  el_salvador.1.t:0 "Joint Army Exercises"
@@ -317,6 +323,21 @@
  el_salvador.11.d4:0 "[FROM.GetNameDefCap] has rejected our proposal for a shared foreign policy and will not give up control of its foreign affairs."
  el_salvador.11.d5:0 "[FROM.GetNameDefCap] has rejected the federal constitution and will remain a separate nation, outside the United States of Central America."
  el_salvador.11.a:0 "Unfortunate"
+
+###Events - Communist###
+ el_salvador.20.t:0 "The Man Who Survived the Firing Squad"
+ el_salvador.20.d:0 "In January 1932, as the army crushed the uprising, Miguel Mármol was captured and lined up before a firing squad with his comrades. The soldiers fired, and he fell among the dead. Hours later, wounded but alive, he crawled away from the execution ground and disappeared.\n\nFor years the shoemaker from Ilopango has lived in hiding, moving from house to house and keeping what remained of the party alive. Now he has returned to lead it openly, and to the workers and peasants of El Salvador his survival is proof that the regime can be defied."
+ el_salvador.20.a:0 "They could not kill him then, they will not stop him now"
+
+###Decisions - Clandestine Network###
+ ELS_clandestine_network:0 "Clandestine Network"
+ ELS_clandestine_network_desc:0 "The party survives in secret cells, hidden from the Guardia Nacional. Each cell can spread our message a little further, but every meeting carries a risk."
+ ELS_print_clandestine_newspapers:0 "Print Clandestine Newspapers"
+ ELS_print_clandestine_newspapers_desc:0 "Hand-printed newspapers passed between workers keep the party's message alive."
+ ELS_organize_workers_study_circles:0 "Organize Workers' Study Circles"
+ ELS_organize_workers_study_circles_desc:0 "Secret study circles in the workshops and fincas turn sympathisers into committed comrades, though the meetings draw the attention of the authorities."
+ ELS_contact_socorro_rojo:0 "Contact the Socorro Rojo"
+ ELS_contact_socorro_rojo_desc:0 "International Red Aid supports communists imprisoned and exiled across the Americas. Its help will strengthen our cells and connect us to the wider movement."
 
 ###Cosmetic Tag - United States of Central America###
  ELS_USCA:0 "United States of Central America"

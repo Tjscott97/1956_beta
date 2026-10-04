@@ -115,13 +115,27 @@ characters={
 		name="Miguel Mármol"
 		portraits={
 			civilian={
-				large="gfx/leaders/ELS/r56_portrait_ELS_Miguel_Mármol.dds"
+				large="gfx/leaders/ELS/r56_Portrait_ELS_Miguel_Marmol.dds" #previous portrait: gfx/leaders/ELS/r56_portrait_ELS_Miguel_Mármol.dds
+				small="gfx/interface/ideas/els/advisors/r56_idea_ELS_advisor_miguel_marmol.dds"
 			}
 		}
 		country_leader={
 			ideology=marxism
 			expire="1965.1.1"
 			id=-1
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = ELS_miguel_marmol
+			allowed  = {
+				original_tag  = ELS
+			}
+			available = {
+				has_completed_focus = ELS_return_of_miguel_marmol
+			}
+			traits = {
+				communist_revolutionary
+			}
 		}
 	}
 
