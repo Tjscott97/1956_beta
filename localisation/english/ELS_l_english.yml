@@ -30,6 +30,8 @@
  r56_ELS_old_order_officers_remain_desc:0 "The oligarchs have lost their land, but the officers of the old army are still in command and cannot be trusted."
  r56_ELS_old_order_oligarchs_remain:0 "The Oligarchs Remain"
  r56_ELS_old_order_oligarchs_remain_desc:0 "The old officer corps has been purged, but the Fourteen Families still hold the land and use their wealth to undermine the revolution."
+ r56_ELS_aid_to_the_republic:0 "Aid to the Spanish Republic"
+ r56_ELS_aid_to_the_republic_desc:0 "Our factories are working to replace the arms we sent to Spain, leaving less for the shops at home."
  r56_ELS_peoples_militias:0 "People's Militias"
  r56_ELS_peoples_militias_desc:0 "Workers and peasants have taken up arms to defend the revolution in every town and finca."
 
@@ -42,6 +44,7 @@
  
 ###Tooltips###
  ELS_guard_spawn_tt:0 "§YNational Guard§! unit will be created in §YEl Salvador§!"
+ ELS_scw_over_a_year_tt:0 "The §YSpanish Civil War§! has been going on for over a year"
  ELS_militia_spawn_tt:0 "§Y2§! §YMilicias Populares§! units will be created in §YEl Salvador§!"
  ELS_repudiate_the_1922_loan_tt:0 "We will no longer repay the §Y1922 loan§! to American bankers. [USA.GetFlag]§YThe United States§! will not forget this (opinion §R-30§!)."
  ELS_central_american_cooperation_tt:0 "([GUA.GetFlag]§YGuatemala§!, [HON.GetFlag]§YHonduras§!, [NIC.GetFlag]§YNicaragua§!, [COS.GetFlag]§YCosta Rica§!) Gains §Yincrease in opinion§! of §YEl Salvador§! §G+15§!"
@@ -277,6 +280,10 @@
  ELS_organize_the_coffee_pickers_desc:0 "The coffee estates run on the backs of underpaid pickers. Unions on the fincas will give them a voice, and give the party thousands of new recruits."
  ELS_huelga_de_brazos_caidos:0 "Huelga de Brazos Caídos"
  ELS_huelga_de_brazos_caidos_desc:0 "We do not need rifles to bring down the regime. If every worker, picker and clerk folds their arms at once, the country will stop, and the government will fall with it."
+ ELS_international_brigades:0 "Join the International Brigades"
+ ELS_international_brigades_desc:0 "Workers from across the world are travelling to Spain to defend the Republic against fascism. Salvadoran comrades will stand with them, and our factories will send what arms we can spare."
+ ELS_aid_for_the_republic:0 "Aid for the Republic"
+ ELS_aid_for_the_republic_desc:0 "The war in Spain has dragged on for over a year, and the Republic is running short of everything. We will send rifles and equipment from our own stockpiles, even if our workers must tighten their belts to pay for it."
  ELS_dissolve_the_guardia_nacional:0 "Dissolve the Guardia Nacional"
  ELS_dissolve_the_guardia_nacional_desc:0 "The Guardia Nacional carried out La Matanza and has terrorised the countryside ever since. It will be disbanded, and the officers who served the old regime will answer for their crimes."
  ELS_peoples_militias:0 "People's Militias"

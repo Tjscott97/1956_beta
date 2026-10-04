@@ -4724,6 +4724,93 @@ focus_tree = {
 	}
 
 	focus = {
+		id = ELS_international_brigades
+		icon = GFX_goal_communist_brigades
+		prerequisite = { focus = ELS_huelga_de_brazos_caidos }
+		x = 2
+		y = 1
+		relative_position_id = ELS_huelga_de_brazos_caidos
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+			SPR_scw_in_progress = yes
+			country_exists = SPR
+			NOT = { has_war_with = SPR }
+		}
+		completion_reward = {
+			add_ideas = PHI_volunteers_in_the_war_republican
+			add_relation_rule_override = {
+				target = SPR
+				can_send_volunteers = yes
+			}
+			SPR = {
+				add_equipment_to_stockpile = {
+					type = infantry_equipment
+					amount = 300
+					producer = ELS
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = ELS_aid_for_the_republic
+		icon = GFX_focus_intervention_spain_republic
+		prerequisite = { focus = ELS_international_brigades }
+		x = 1
+		y = 1
+		relative_position_id = ELS_international_brigades
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+			SPR_scw_in_progress = yes
+			country_exists = SPR
+			NOT = { has_war_with = SPR }
+			# spanish_civil_war is set by the Spain events the day the war starts
+			custom_trigger_tooltip = {
+				tooltip = ELS_scw_over_a_year_tt
+				has_global_flag = {
+					flag = spanish_civil_war
+					days > 365
+				}
+			}
+		}
+		completion_reward = {
+			SPR = {
+				add_equipment_to_stockpile = {
+					type = infantry_equipment
+					amount = 600
+					producer = ELS
+				}
+				add_equipment_to_stockpile = {
+					type = support_equipment
+					amount = 200
+					producer = ELS
+				}
+				add_equipment_to_stockpile = {
+					type = artillery_equipment
+					amount = 100
+					producer = ELS
+				}
+			}
+			custom_effect_tooltip = generic_skip_one_line_tt
+
+			add_timed_idea = {
+				idea = r56_ELS_aid_to_the_republic
+				days = 90
+			}
+		}
+	}
+
+	focus = {
 		id = ELS_dissolve_the_guardia_nacional
 		icon = GFX_goal_generic_army_purges
 		prerequisite = { focus = ELS_huelga_de_brazos_caidos }
@@ -4743,7 +4830,6 @@ focus_tree = {
 			}
 			custom_effect_tooltip = generic_skip_one_line_tt
 
-			# Purging the officer corps removes the officers half of The Old Order Remains
 			if = {
 				limit = { has_idea = r56_ELS_old_order_remains }
 				swap_ideas = {
@@ -4823,7 +4909,6 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			# Seizing the oligarchy's land removes the oligarchs half of The Old Order Remains
 			if = {
 				limit = { has_idea = r56_ELS_old_order_remains }
 				swap_ideas = {
@@ -4858,7 +4943,6 @@ focus_tree = {
 			factor = 1
 		}
 
-		# Soviet model, bigger gains than the cooperatives but hurts stability and population growth
 		completion_reward = {
 			custom_effect_tooltip = ELS_modify_coffee_tt
 			add_to_variable = { ELS_coffee_industrial_capacity_factory = 0.1 tooltip = industrial_capacity_factory_tt }
@@ -4884,7 +4968,6 @@ focus_tree = {
 			factor = 1
 		}
 
-		# Milder than collectivisation, but no stability or population penalties
 		completion_reward = {
 			custom_effect_tooltip = ELS_modify_coffee_tt
 			add_to_variable = { ELS_coffee_industrial_capacity_factory = 0.05 tooltip = industrial_capacity_factory_tt }

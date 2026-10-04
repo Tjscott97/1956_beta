@@ -347,6 +347,22 @@ ideas = {
 			}
 		}
 
+		# Timed (90 days), added by Arms for the Republic
+		r56_ELS_aid_to_the_republic = {
+
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = generic_economic_crisis
+
+			modifier = {
+				consumer_goods_factor = 0.1
+			}
+		}
+
 		r56_ELS_peoples_militias = {
 
 			allowed = {
