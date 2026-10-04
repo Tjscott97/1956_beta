@@ -26,6 +26,8 @@ ideas = {
 			}
 		}
 
+		### Authoritarian ###
+
 		r56_ELS_maximiliano_regime = {
 			
 			picture = ELS_maximiliano
@@ -208,6 +210,8 @@ ideas = {
 			}
 		}
 
+		### Democratic ###
+
 		r56_ELS_strengthen_the_republic = {
 
 			allowed = {
@@ -286,6 +290,77 @@ ideas = {
 			modifier = {
 				consumer_goods_factor = -0.1
 				production_speed_industrial_complex_factor = 0.1
+			}
+		}
+
+		### Communist ###
+
+		r56_ELS_old_order_remains = {
+
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = generic_disjointed_gov
+
+			modifier = {
+				army_org_factor = -0.1
+				army_morale_factor = -0.1
+				political_power_factor = -0.1
+				consumer_goods_factor = 0.05
+				production_speed_buildings_factor = -0.1
+			}
+		}
+
+		r56_ELS_old_order_officers_remain = {
+
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = chi_incompetent_officers
+
+			modifier = {
+				army_org_factor = -0.1
+				army_morale_factor = -0.1
+			}
+		}
+
+		r56_ELS_old_order_oligarchs_remain = {
+
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = MEX_conservative_politics_idea
+
+			modifier = {
+				political_power_factor = -0.1
+				consumer_goods_factor = 0.05
+				production_speed_buildings_factor = -0.1
+			}
+		}
+
+		r56_ELS_peoples_militias = {
+
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = citizen_militia_2
+
+			modifier = {
+				conscription = 0.01
+				training_time_army_factor = -0.1
+				army_defence_factor = 0.05
 			}
 		}
 	}

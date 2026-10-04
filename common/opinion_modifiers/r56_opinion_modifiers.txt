@@ -418,6 +418,10 @@ opinion_modifiers = {
 		value = 5
 	}
 
+	ELS_repudiated_loan = {
+		value = -30
+	}
+
 ###------> EST <><> <><> <><> <><> <><>
 	
 ###------> ETH <><> <><> <><> <><> <><>

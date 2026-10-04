@@ -24,15 +24,26 @@
  r56_ELS_strengthen_the_republic_2:0 "Strengthen The Republic"
  r56_ELS_diplomacy_focus:0 "Diplomacy Focus"
  r56_ELS_customs_union_idea:0 "Central American Customs Union"
+ r56_ELS_old_order_remains:0 "The Old Order Remains"
+ r56_ELS_old_order_remains_desc:0 "The strike brought us to power, but the officers of the old army and the Fourteen Families who own the land are still in place, and they obstruct the revolution at every turn."
+ r56_ELS_old_order_officers_remain:0 "The Old Officers Remain"
+ r56_ELS_old_order_officers_remain_desc:0 "The oligarchs have lost their land, but the officers of the old army are still in command and cannot be trusted."
+ r56_ELS_old_order_oligarchs_remain:0 "The Oligarchs Remain"
+ r56_ELS_old_order_oligarchs_remain_desc:0 "The old officer corps has been purged, but the Fourteen Families still hold the land and use their wealth to undermine the revolution."
+ r56_ELS_peoples_militias:0 "People's Militias"
+ r56_ELS_peoples_militias_desc:0 "Workers and peasants have taken up arms to defend the revolution in every town and finca."
 
 ###Opinion Modifiers###
  central_american_cooperation:0 "Central American Cooperation"
  joint_army_exercises_opinion:0 "Joint Army Exercises"
  customs_union_opinion:0 "Invited Us To Customs Union"
  regional_development_opinion:0 "Regional Development"
+ ELS_repudiated_loan:0 "Repudiated the 1922 Loan"
  
 ###Tooltips###
  ELS_guard_spawn_tt:0 "§YNational Guard§! unit will be created in §YEl Salvador§!"
+ ELS_militia_spawn_tt:0 "§Y2§! §YMilicias Populares§! units will be created in §YEl Salvador§!"
+ ELS_repudiate_the_1922_loan_tt:0 "We will no longer repay the §Y1922 loan§! to American bankers. [USA.GetFlag]§YThe United States§! will not forget this (opinion §R-30§!)."
  ELS_central_american_cooperation_tt:0 "([GUA.GetFlag]§YGuatemala§!, [HON.GetFlag]§YHonduras§!, [NIC.GetFlag]§YNicaragua§!, [COS.GetFlag]§YCosta Rica§!) Gains §Yincrease in opinion§! of §YEl Salvador§! §G+15§!"
  ELS_regional_development_tt:0 "([GUA.GetFlag]§YGuatemala§!, [HON.GetFlag]§YHonduras§!, [NIC.GetFlag]§YNicaragua§!, [COS.GetFlag]§YCosta Rica§!) Gains §Yincrease in opinion§! of §YEl Salvador§! §G+ 5§!"
 
@@ -264,6 +275,22 @@
  ELS_rebuild_the_party_cells_desc:0 "La Matanza destroyed the Partido Comunista Salvadoreño in a matter of weeks. Small, secret cells of trusted comrades can rebuild it where the Guardia Nacional cannot see."
  ELS_organize_the_coffee_pickers:0 "Organize the Coffee Pickers"
  ELS_organize_the_coffee_pickers_desc:0 "The coffee estates run on the backs of underpaid pickers. Unions on the fincas will give them a voice, and give the party thousands of new recruits."
+ ELS_huelga_de_brazos_caidos:0 "Huelga de Brazos Caídos"
+ ELS_huelga_de_brazos_caidos_desc:0 "We do not need rifles to bring down the regime. If every worker, picker and clerk folds their arms at once, the country will stop, and the government will fall with it."
+ ELS_dissolve_the_guardia_nacional:0 "Dissolve the Guardia Nacional"
+ ELS_dissolve_the_guardia_nacional_desc:0 "The Guardia Nacional carried out La Matanza and has terrorised the countryside ever since. It will be disbanded, and the officers who served the old regime will answer for their crimes."
+ ELS_peoples_militias:0 "People's Militias"
+ ELS_peoples_militias_desc:0 "The revolution will be defended by the people themselves. Militias raised in the towns and fincas will replace the Guardia Nacional."
+ ELS_expropriate_the_fourteen_families:0 "Expropriate the Fourteen Families"
+ ELS_expropriate_the_fourteen_families_desc:0 "For generations the Fourteen Families have owned the land, the banks and the coffee. Their estates and fortunes now belong to the people."
+ ELS_collectivize_the_fincas:0 "Collectivize the Fincas"
+ ELS_collectivize_the_fincas_desc:0 "Following the Soviet model, the great coffee estates will become state farms. Production will rise, but the peasants who wanted land of their own will not forgive us easily."
+ ELS_coffee_cooperatives:0 "Coffee Cooperatives"
+ ELS_coffee_cooperatives_desc:0 "The fincas will be handed to cooperatives run by the pickers who work them. Growth will be slower, but the countryside will stand behind the revolution."
+ ELS_repudiate_the_1922_loan:0 "Repudiate the 1922 Loan"
+ ELS_repudiate_the_1922_loan_desc:0 "The 1922 loan from American bankers has drained our customs revenue for over a decade. We will not pay another centavo, and the money will build our own industry instead."
+ ELS_restore_the_tierras_comunales:0 "Restore the Tierras Comunales"
+ ELS_restore_the_tierras_comunales_desc:0 "The communal lands of the indigenous villages were abolished to make way for the coffee estates. Returning them to the communities of the west will heal old wounds."
 
 ###Events###
  el_salvador.1.t:0 "Joint Army Exercises"
@@ -328,6 +355,13 @@
  el_salvador.20.t:0 "The Man Who Survived the Firing Squad"
  el_salvador.20.d:0 "In January 1932, as the army crushed the uprising, Miguel Mármol was captured and lined up before a firing squad with his comrades. The soldiers fired, and he fell among the dead. Hours later, wounded but alive, he crawled away from the execution ground and disappeared.\n\nFor years the shoemaker from Ilopango has lived in hiding, moving from house to house and keeping what remained of the party alive. Now he has returned to lead it openly, and to the workers and peasants of El Salvador his survival is proof that the regime can be defied."
  el_salvador.20.a:0 "They could not kill him then, they will not stop him now"
+ el_salvador.21.t:0 "Huelga de Brazos Caídos"
+ el_salvador.21.d:0 "This morning the country stopped. The coffee pickers stayed away from the fincas, the railwaymen left the trains in their yards, and the shops of San Salvador kept their shutters down. Students and clerks joined them, and by afternoon not even the Guardia Nacional could find anyone to arrest.\n\nWithout a shot fired, the regime has collapsed and the party has taken power. But the officers of the old army and the Fourteen Families are still in place, waiting for the revolution to falter."
+ el_salvador.21.a:0 "The workers have spoken"
+ el_salvador.22.t:0 "Revolutionary Tribunals"
+ el_salvador.22.d:0 "With the Guardia Nacional disbanded, its officers and the men responsible for La Matanza are in our custody. The party must decide how they will be judged. Swift tribunals would show the people that the revolution is serious, while open trials would show that we are not the butchers our enemies claim."
+ el_salvador.22.a:0 "Swift revolutionary justice"
+ el_salvador.22.b:0 "Fair and public trials"
 
 ###Decisions - Clandestine Network###
  ELS_clandestine_network:0 "Clandestine Network"

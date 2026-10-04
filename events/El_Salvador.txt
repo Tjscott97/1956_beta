@@ -412,3 +412,42 @@ country_event = {  #The Return of Miguel Marmol (story event, the rewards are on
         name = el_salvador.20.a
     }
 }
+
+country_event = {  #Huelga de Brazos Caidos, the general strike brings the communists to power (sent from the focus)
+    id = el_salvador.21
+    title = el_salvador.21.t
+    desc = el_salvador.21.d
+    picture = GFX_report_event_worker_protests
+    is_triggered_only = yes
+
+    option = {
+        name = el_salvador.21.a
+        set_politics = {
+            ruling_party = communism
+            elections_allowed = no
+        }
+        add_ideas = r56_ELS_old_order_remains
+    }
+}
+
+country_event = {  #Revolutionary Tribunals (sent from Dissolve the Guardia Nacional)
+    id = el_salvador.22
+    title = el_salvador.22.t
+    desc = el_salvador.22.d
+    picture = GFX_report_event_soviet_purge_trial
+    is_triggered_only = yes
+
+    option = {
+        name = el_salvador.22.a # Swift revolutionary justice: political power for stability
+        ai_chance = { base = 1 }
+        add_political_power = 100
+        add_stability = -0.05
+    }
+
+    option = {
+        name = el_salvador.22.b # Fair public trials: stability for political power
+        ai_chance = { base = 1 }
+        add_stability = 0.05
+        add_political_power = -25
+    }
+}

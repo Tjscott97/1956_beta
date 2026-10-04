@@ -4689,6 +4689,272 @@ focus_tree = {
 		}
 	}
 
+	focus = {
+		id = ELS_huelga_de_brazos_caidos
+		icon = GFX_focus_generic_great_peasant_strike_shine
+		prerequisite = { focus = ELS_return_of_miguel_marmol }
+		prerequisite = { focus = ELS_rebuild_the_party_cells }
+		prerequisite = { focus = ELS_organize_the_coffee_pickers }
+		x = 0
+		y = 1
+		relative_position_id = ELS_rebuild_the_party_cells
+		cost = 10
+
+		available_if_capitulated = yes
+
+		available = { communism > 0.45 }
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		# The strike itself happens in el_salvador.21, this shows the player what it will do
+		completion_reward = {
+			effect_tooltip = {
+				set_politics = {
+					ruling_party = communism
+					elections_allowed = no
+				}
+				add_ideas = r56_ELS_old_order_remains
+			}
+			hidden_effect = {
+				country_event = { id = el_salvador.21 }
+			}
+		}
+	}
+
+	focus = {
+		id = ELS_dissolve_the_guardia_nacional
+		icon = GFX_goal_generic_army_purges
+		prerequisite = { focus = ELS_huelga_de_brazos_caidos }
+		x = -2
+		y = 1
+		relative_position_id = ELS_huelga_de_brazos_caidos
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		completion_reward = {
+			delete_unit_template_and_units = {
+				division_template = "Guardia Nacional"
+				disband = yes #if yes, will refund equipment/manpower.
+			}
+			custom_effect_tooltip = generic_skip_one_line_tt
+
+			# Purging the officer corps removes the officers half of The Old Order Remains
+			if = {
+				limit = { has_idea = r56_ELS_old_order_remains }
+				swap_ideas = {
+					remove_idea = r56_ELS_old_order_remains
+					add_idea = r56_ELS_old_order_oligarchs_remain
+				}
+			}
+			else_if = {
+				limit = { has_idea = r56_ELS_old_order_officers_remain }
+				remove_ideas = r56_ELS_old_order_officers_remain
+			}
+			custom_effect_tooltip = generic_skip_one_line_tt
+
+			country_event = { id = el_salvador.22 }
+		}
+	}
+
+	focus = {
+		id = ELS_peoples_militias
+		icon = GFX_goal_generic_left_militia
+		prerequisite = { focus = ELS_dissolve_the_guardia_nacional }
+		x = -1
+		y = 1
+		relative_position_id = ELS_dissolve_the_guardia_nacional
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		completion_reward = {
+			add_ideas = r56_ELS_peoples_militias
+			custom_effect_tooltip = generic_skip_one_line_tt
+
+			division_template = {
+				name = "Milicias Populares"
+				is_locked = no
+				force_allow_recruiting = yes
+				regiments = {
+					militia = { x = 0 y = 0 }
+					militia = { x = 0 y = 1 }
+					militia = { x = 0 y = 2 }
+					militia = { x = 0 y = 3 }
+					militia = { x = 1 y = 0 }
+					militia = { x = 1 y = 1 }
+					militia = { x = 1 y = 2 }
+					militia = { x = 1 y = 3 }
+				}
+				support = {
+					military_police = { x = 0 y = 0 }
+				}
+			}
+			custom_effect_tooltip = ELS_militia_spawn_tt
+			hidden_effect = {
+				capital_scope = {
+					create_unit = {
+						division = "division_template = \"Milicias Populares\" start_experience_factor = 0.1 start_equipment_factor = 1.0"
+						owner = ROOT
+						count = 2
+					}
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = ELS_expropriate_the_fourteen_families
+		icon = GFX_goal_generic_seize_stockpiles
+		prerequisite = { focus = ELS_huelga_de_brazos_caidos }
+		x = 0
+		y = 1
+		relative_position_id = ELS_huelga_de_brazos_caidos
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		completion_reward = {
+			# Seizing the oligarchy's land removes the oligarchs half of The Old Order Remains
+			if = {
+				limit = { has_idea = r56_ELS_old_order_remains }
+				swap_ideas = {
+					remove_idea = r56_ELS_old_order_remains
+					add_idea = r56_ELS_old_order_officers_remain
+				}
+			}
+			else_if = {
+				limit = { has_idea = r56_ELS_old_order_oligarchs_remain }
+				remove_ideas = r56_ELS_old_order_oligarchs_remain
+			}
+			custom_effect_tooltip = generic_skip_one_line_tt
+
+			custom_effect_tooltip = ELS_modify_coffee_tt
+			add_to_variable = { ELS_coffee_consumer_goods_factor = -0.05 tooltip = consumer_goods_factor_tt }
+			add_to_variable = { ELS_coffee_production_speed_buildings_factor = 0.1 tooltip = production_speed_buildings_factor_tt }
+			add_to_variable = { ELS_coffee_industrial_capacity_factory = 0.05 tooltip = industrial_capacity_factory_tt }
+		}
+	}
+
+	focus = {
+		id = ELS_collectivize_the_fincas
+		icon = GFX_goal_generic_farm_tractor
+		prerequisite = { focus = ELS_expropriate_the_fourteen_families }
+		mutually_exclusive = { focus = ELS_coffee_cooperatives }
+		x = -1
+		y = 1
+		relative_position_id = ELS_expropriate_the_fourteen_families
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		# Soviet model, bigger gains than the cooperatives but hurts stability and population growth
+		completion_reward = {
+			custom_effect_tooltip = ELS_modify_coffee_tt
+			add_to_variable = { ELS_coffee_industrial_capacity_factory = 0.1 tooltip = industrial_capacity_factory_tt }
+			add_to_variable = { ELS_coffee_production_speed_buildings_factor = 0.1 tooltip = production_speed_buildings_factor_tt }
+			add_to_variable = { ELS_coffee_local_resources_factor = 0.1 tooltip = local_resources_factor_tt }
+			add_to_variable = { ELS_coffee_communism_drift = 0.01 tooltip = communism_drift_tt }
+			add_to_variable = { ELS_coffee_stability_factor = -0.1 tooltip = stability_factor_tt }
+			add_to_variable = { ELS_coffee_monthly_population = -0.1 tooltip = monthly_population_tt }
+		}
+	}
+
+	focus = {
+		id = ELS_coffee_cooperatives
+		icon = GFX_goal_generic_coffee_plantations_shine
+		prerequisite = { focus = ELS_expropriate_the_fourteen_families }
+		mutually_exclusive = { focus = ELS_collectivize_the_fincas }
+		x = 1
+		y = 1
+		relative_position_id = ELS_expropriate_the_fourteen_families
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		# Milder than collectivisation, but no stability or population penalties
+		completion_reward = {
+			custom_effect_tooltip = ELS_modify_coffee_tt
+			add_to_variable = { ELS_coffee_industrial_capacity_factory = 0.05 tooltip = industrial_capacity_factory_tt }
+			add_to_variable = { ELS_coffee_local_resources_factor = 0.05 tooltip = local_resources_factor_tt }
+			add_to_variable = { ELS_coffee_consumer_goods_factor = -0.05 tooltip = consumer_goods_factor_tt }
+			add_to_variable = { ELS_coffee_stability_factor = 0.05 tooltip = stability_factor_tt }
+		}
+	}
+
+	focus = {
+		id = ELS_repudiate_the_1922_loan
+		icon = GFX_focus_AST_liberty_loans
+		prerequisite = { focus = ELS_collectivize_the_fincas focus = ELS_coffee_cooperatives }
+		x = 0
+		y = 2
+		relative_position_id = ELS_expropriate_the_fourteen_families
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		completion_reward = {
+			custom_effect_tooltip = ELS_repudiate_the_1922_loan_tt
+			if = {
+				limit = { country_exists = USA }
+				USA = {
+					add_opinion_modifier = {
+						target = ROOT
+						modifier = ELS_repudiated_loan
+					}
+				}
+			}
+			custom_effect_tooltip = generic_skip_one_line_tt
+
+			314 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			custom_effect_tooltip = generic_skip_one_line_tt
+
+			custom_effect_tooltip = ELS_modify_coffee_tt
+			add_to_variable = { ELS_coffee_political_power_factor = 0.1 tooltip = political_power_factor_tt }
+		}
+	}
+
+	focus = {
+		id = ELS_restore_the_tierras_comunales
+		icon = GFX_goal_generic_agriculture
+		prerequisite = { focus = ELS_repudiate_the_1922_loan }
+		x = -2
+		y = 1
+		relative_position_id = ELS_repudiate_the_1922_loan
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		completion_reward = {
+			custom_effect_tooltip = ELS_modify_coffee_tt
+			add_to_variable = { ELS_coffee_stability_factor = 0.05 tooltip = stability_factor_tt }
+			add_to_variable = { ELS_coffee_global_building_slots_factor = 0.1 tooltip = global_building_slots_factor_tt }
+		}
+	}
+
 
 
 }
