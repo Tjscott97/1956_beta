@@ -347,6 +347,23 @@ ideas = {
 			}
 		}
 
+		# Timed (90 days), added to GUA/HON/NIC/COS by the ELS_fund_communist_cells decision
+		r56_ELS_funded_communist_cells = {
+
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = generic_communism_drift_bonus
+
+			modifier = {
+				communism_drift = 0.1
+				stability_weekly = -0.005
+			}
+		}
+
 		# Timed (90 days), added by Arms for the Republic
 		r56_ELS_aid_to_the_republic = {
 

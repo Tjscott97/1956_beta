@@ -422,6 +422,10 @@ opinion_modifiers = {
 		value = -30
 	}
 
+	ELS_ties_with_moscow = {
+		value = 20
+	}
+
 ###------> EST <><> <><> <><> <><> <><>
 	
 ###------> ETH <><> <><> <><> <><> <><>

@@ -30,6 +30,8 @@
  r56_ELS_old_order_officers_remain_desc:0 "The oligarchs have lost their land, but the officers of the old army are still in command and cannot be trusted."
  r56_ELS_old_order_oligarchs_remain:0 "The Oligarchs Remain"
  r56_ELS_old_order_oligarchs_remain_desc:0 "The old officer corps has been purged, but the Fourteen Families still hold the land and use their wealth to undermine the revolution."
+ r56_ELS_funded_communist_cells:0 "Salvadoran-Funded Communist Cells"
+ r56_ELS_funded_communist_cells_desc:0 "Money and rifles smuggled in from El Salvador are arming communist cells across the country, and their strikes and agitation are spreading unrest."
  r56_ELS_aid_to_the_republic:0 "Aid to the Spanish Republic"
  r56_ELS_aid_to_the_republic_desc:0 "Our factories are working to replace the arms we sent to Spain, leaving less for the shops at home."
  r56_ELS_peoples_militias:0 "People's Militias"
@@ -43,10 +45,12 @@
  customs_union_opinion:0 "Invited Us To Customs Union"
  regional_development_opinion:0 "Regional Development"
  ELS_repudiated_loan:0 "Repudiated the 1922 Loan"
+ ELS_ties_with_moscow:0 "Ties with Moscow"
  
 ###Tooltips###
  ELS_guard_spawn_tt:0 "§YNational Guard§! unit will be created in §YEl Salvador§!"
  ELS_scw_over_a_year_tt:0 "The §YSpanish Civil War§! has been going on for over a year"
+ ELS_spread_the_revolution_tt:0 "([GUA.GetFlag]§YGuatemala§!, [HON.GetFlag]§YHonduras§!, [NIC.GetFlag]§YNicaragua§!, [COS.GetFlag]§YCosta Rica§!) Gains §G+10%§! §Ycommunist§! popularity"
  ELS_militia_spawn_tt:0 "§Y2§! §YMilicias Populares§! units will be created in §YEl Salvador§!"
  ELS_militia_expand_spawn_tt:0 "§Y1§! more §YMilicias Populares§! unit will be created in §YEl Salvador§!"
  ELS_repudiate_the_1922_loan_tt:0 "We will no longer repay the §Y1922 loan§! to American bankers. [USA.GetFlag]§YThe United States§! will not forget this (opinion §R-30§!)."
@@ -305,6 +309,12 @@
  ELS_nationalize_healthcare_desc:0 "Doctors and hospitals have served only those who could pay. The state will take over the clinics and hospitals and bring medical care to every town and finca, free of charge."
  ELS_national_literacy_campaign:0 "National Literacy Campaign"
  ELS_national_literacy_campaign_desc:0 "Most of our workers and peasants cannot read. Brigades of students and teachers will go out to the countryside to teach them, and a people that can read will build a better future."
+ ELS_the_moscow_line:0 "The Moscow Line"
+ ELS_the_moscow_line_desc:0 "The revolution cannot survive alone in America's backyard. By following the line set by Moscow and joining the Comintern, we will have the most powerful socialist state in the world standing behind us."
+ ELS_spread_the_revolution:0 "Spread the Revolution"
+ ELS_spread_the_revolution_desc:0 "Our revolution belongs to all of Central America. The workers of Guatemala, Honduras, Nicaragua and Costa Rica suffer under the same dictators and the same fruit companies, and we will help them rise as we did."
+ ELS_fund_the_revolutionary_cells:0 "Fund the Revolutionary Cells"
+ ELS_fund_the_revolutionary_cells_desc:0 "Communist cells are forming across Central America, but they lack money and weapons. We will provide both, and let our neighbours' workers do the rest."
  ELS_restore_the_tierras_comunales:0 "Restore the Tierras Comunales"
  ELS_restore_the_tierras_comunales_desc:0 "The communal lands of the indigenous villages were abolished to make way for the coffee estates. Returning them to the communities of the west will heal old wounds."
 
@@ -387,6 +397,10 @@
  ELS_organize_workers_study_circles:0 "Organize Workers' Study Circles"
  ELS_organize_workers_study_circles_desc:0 "Secret study circles in the workshops and fincas turn sympathisers into committed comrades, though the meetings draw the attention of the authorities."
  ELS_contact_socorro_rojo:0 "Contact the Socorro Rojo"
+ ELS_export_the_revolution:0 "Export the Revolution"
+ ELS_export_the_revolution_desc:0 "Through smuggled money and rifles, we can strengthen the communist cells of our neighbours and bring their governments closer to collapse."
+ ELS_fund_communist_cells:0 "Fund Communist Cells in [FROM.GetNameWithFlag]"
+ ELS_fund_communist_cells_desc:0 "Send money and rifles to the communist cells of [FROM.GetName]. While the operation runs, one of our civilian factories will be busy supplying it."
  ELS_contact_socorro_rojo_desc:0 "International Red Aid supports communists imprisoned and exiled across the Americas. Its help will strengthen our cells and connect us to the wider movement."
 
 ###Cosmetic Tag - United States of Central America###

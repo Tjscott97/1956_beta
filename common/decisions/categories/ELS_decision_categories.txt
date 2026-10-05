@@ -32,3 +32,18 @@ ELS_clandestine_network = {
 		NOT = { has_government = communism }
 	}
 }
+
+ELS_export_the_revolution = {
+
+	priority = 50
+
+	icon = generic_communism
+
+	allowed = {
+		original_tag = ELS
+	}
+
+	visible = {
+		has_completed_focus = ELS_fund_the_revolutionary_cells
+	}
+}
