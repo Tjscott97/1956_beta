@@ -296,6 +296,10 @@
  ELS_coffee_cooperatives_desc:0 "The fincas will be handed to cooperatives run by the pickers who work them. Growth will be slower, but the countryside will stand behind the revolution."
  ELS_repudiate_the_1922_loan:0 "Repudiate the 1922 Loan"
  ELS_repudiate_the_1922_loan_desc:0 "The 1922 loan from American bankers has drained our customs revenue for over a decade. We will not pay another centavo, and the money will build our own industry instead."
+ ELS_nationalize_healthcare:0 "Nationalize Healthcare"
+ ELS_nationalize_healthcare_desc:0 "Doctors and hospitals have served only those who could pay. The state will take over the clinics and hospitals and bring medical care to every town and finca, free of charge."
+ ELS_national_literacy_campaign:0 "National Literacy Campaign"
+ ELS_national_literacy_campaign_desc:0 "Most of our workers and peasants cannot read. Brigades of students and teachers will go out to the countryside to teach them, and a people that can read will build a better future."
  ELS_restore_the_tierras_comunales:0 "Restore the Tierras Comunales"
  ELS_restore_the_tierras_comunales_desc:0 "The communal lands of the indigenous villages were abolished to make way for the coffee estates. Returning them to the communities of the west will heal old wounds."
 
