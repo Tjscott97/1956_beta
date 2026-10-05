@@ -34,6 +34,8 @@
  r56_ELS_aid_to_the_republic_desc:0 "Our factories are working to replace the arms we sent to Spain, leaving less for the shops at home."
  r56_ELS_peoples_militias:0 "People's Militias"
  r56_ELS_peoples_militias_desc:0 "Workers and peasants have taken up arms to defend the revolution in every town and finca."
+ r56_ELS_peoples_militias_2:0 "People's Militias"
+ r56_ELS_peoples_militias_2_desc:0 "The militias have grown into a true people's army, better trained and better armed to defend the revolution."
 
 ###Opinion Modifiers###
  central_american_cooperation:0 "Central American Cooperation"
@@ -46,6 +48,7 @@
  ELS_guard_spawn_tt:0 "§YNational Guard§! unit will be created in §YEl Salvador§!"
  ELS_scw_over_a_year_tt:0 "The §YSpanish Civil War§! has been going on for over a year"
  ELS_militia_spawn_tt:0 "§Y2§! §YMilicias Populares§! units will be created in §YEl Salvador§!"
+ ELS_militia_expand_spawn_tt:0 "§Y1§! more §YMilicias Populares§! unit will be created in §YEl Salvador§!"
  ELS_repudiate_the_1922_loan_tt:0 "We will no longer repay the §Y1922 loan§! to American bankers. [USA.GetFlag]§YThe United States§! will not forget this (opinion §R-30§!)."
  ELS_central_american_cooperation_tt:0 "([GUA.GetFlag]§YGuatemala§!, [HON.GetFlag]§YHonduras§!, [NIC.GetFlag]§YNicaragua§!, [COS.GetFlag]§YCosta Rica§!) Gains §Yincrease in opinion§! of §YEl Salvador§! §G+15§!"
  ELS_regional_development_tt:0 "([GUA.GetFlag]§YGuatemala§!, [HON.GetFlag]§YHonduras§!, [NIC.GetFlag]§YNicaragua§!, [COS.GetFlag]§YCosta Rica§!) Gains §Yincrease in opinion§! of §YEl Salvador§! §G+ 5§!"
@@ -288,6 +291,8 @@
  ELS_dissolve_the_guardia_nacional_desc:0 "The Guardia Nacional carried out La Matanza and has terrorised the countryside ever since. It will be disbanded, and the officers who served the old regime will answer for their crimes."
  ELS_peoples_militias:0 "People's Militias"
  ELS_peoples_militias_desc:0 "The revolution will be defended by the people themselves. Militias raised in the towns and fincas will replace the Guardia Nacional."
+ ELS_expand_the_militias:0 "Expand the Militias"
+ ELS_expand_the_militias_desc:0 "Thousands more volunteers have come forward to defend the revolution. With better training and more weapons, the militias can become a fighting force to be reckoned with."
  ELS_expropriate_the_fourteen_families:0 "Expropriate the Fourteen Families"
  ELS_expropriate_the_fourteen_families_desc:0 "For generations the Fourteen Families have owned the land, the banks and the coffee. Their estates and fortunes now belong to the people."
  ELS_collectivize_the_fincas:0 "Collectivize the Fincas"

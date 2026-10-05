@@ -376,7 +376,28 @@ ideas = {
 			modifier = {
 				conscription = 0.01
 				training_time_army_factor = -0.1
-				army_defence_factor = 0.05
+				modifier_army_sub_unit_militia_max_org_factor = 0.1
+			}
+		}
+
+		# Swapped in by ELS_expand_the_militias
+		r56_ELS_peoples_militias_2 = {
+
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = citizen_militia_2
+
+			modifier = {
+				conscription = 0.01
+				training_time_army_factor = -0.1
+				modifier_army_sub_unit_militia_max_org_factor = 0.1
+				modifier_army_sub_unit_militia_attack_factor = 0.1
+				modifier_army_sub_unit_militia_defence_factor = 0.1
+				army_morale_factor = 0.05 # shown in game as Division Recovery Rate
 			}
 		}
 	}

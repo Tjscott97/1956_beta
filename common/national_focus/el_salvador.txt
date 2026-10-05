@@ -4896,6 +4896,61 @@ focus_tree = {
 	}
 
 	focus = {
+		id = ELS_expand_the_militias
+		icon = GFX_goal_generic_allies_build_infantry
+		prerequisite = { focus = ELS_peoples_militias }
+		x = 1
+		y = 1
+		relative_position_id = ELS_peoples_militias
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = r56_ELS_peoples_militias
+				add_idea = r56_ELS_peoples_militias_2
+			}
+			custom_effect_tooltip = generic_skip_one_line_tt
+
+			custom_effect_tooltip = ELS_militia_expand_spawn_tt
+			hidden_effect = {
+				# Recreate the template if the player deleted or renamed it since People's Militias
+				if = {
+					limit = { NOT = { has_template = "Milicias Populares" } }
+					division_template = {
+						name = "Milicias Populares"
+						is_locked = no
+						force_allow_recruiting = yes
+						regiments = {
+							militia = { x = 0 y = 0 }
+							militia = { x = 0 y = 1 }
+							militia = { x = 0 y = 2 }
+							militia = { x = 0 y = 3 }
+							militia = { x = 1 y = 0 }
+							militia = { x = 1 y = 1 }
+							militia = { x = 1 y = 2 }
+							militia = { x = 1 y = 3 }
+						}
+						support = {
+							military_police = { x = 0 y = 0 }
+						}
+					}
+				}
+				capital_scope = {
+					create_unit = {
+						division = "division_template = \"Milicias Populares\" start_experience_factor = 0.1 start_equipment_factor = 1.0"
+						owner = ROOT
+						count = 1
+					}
+				}
+			}
+		}
+	}
+
+	focus = {
 		id = ELS_expropriate_the_fourteen_families
 		icon = GFX_goal_generic_seize_stockpiles
 		prerequisite = { focus = ELS_huelga_de_brazos_caidos }
@@ -4924,7 +4979,8 @@ focus_tree = {
 
 			custom_effect_tooltip = ELS_modify_coffee_tt
 			add_to_variable = { ELS_coffee_consumer_goods_factor = -0.05 tooltip = consumer_goods_factor_tt }
-			add_to_variable = { ELS_coffee_production_speed_buildings_factor = 0.1 tooltip = production_speed_buildings_factor_tt }
+			add_to_variable = { ELS_coffee_production_speed_buildings_factor = 0.05 tooltip = production_speed_buildings_factor_tt }
+			add_to_variable = { ELS_coffee_production_factory_efficiency_gain_factor = 0.05 tooltip = production_factory_efficiency_gain_factor_tt }
 			add_to_variable = { ELS_coffee_industrial_capacity_factory = 0.05 tooltip = industrial_capacity_factory_tt }
 		}
 	}
@@ -5022,7 +5078,7 @@ focus_tree = {
 
 	focus = {
 		id = ELS_nationalize_healthcare
-		icon = GFX_goal_medicine
+		icon = GFX_focus_generic_field_hostpital
 		prerequisite = { focus = ELS_repudiate_the_1922_loan }
 		x = 0
 		y = 1
