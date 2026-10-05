@@ -145,3 +145,66 @@ ELS_export_the_revolution = {
 		}
 	}
 }
+
+# Unlocked by Central American Revolutionary Front. One decision targeting each Central American neighbour (FROM is the target).
+# All four neighbours are single-state countries, so a civil war isn't possible (sadly)
+
+ELS_revolutionary_front = {
+
+	ELS_stage_communist_coup = {
+
+		icon = generic_ignite_civil_war
+
+		allowed = {
+			original_tag = ELS
+		}
+
+		targets = { GUA HON NIC COS }
+
+		target_trigger = {
+			FROM = { exists = yes }
+			NOT = { has_war_with = FROM }
+		}
+
+		available = {
+			FROM = {
+				NOT = { has_government = communism }
+				is_subject = no # the coup puppets them, so don't take another country's subject
+				custom_trigger_tooltip = {
+					tooltip = ELS_coup_conditions_tt
+					OR = {
+						communism > 0.5
+						AND = {
+							communism > 0.3
+							has_stability < 0.2
+						}
+					}
+				}
+			}
+		}
+
+		cost = 100
+
+		fire_only_once = no
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		complete_effect = {
+			FROM = {
+				set_politics = {
+					ruling_party = communism
+					elections_allowed = no
+				}
+				add_popularity = {
+					ideology = communism
+					popularity = 0.1
+				}
+				country_event = { id = el_salvador.23 }
+			}
+			# The new government becomes our puppet, subjects join their overlord's faction automatically
+			puppet = FROM
+		}
+	}
+}

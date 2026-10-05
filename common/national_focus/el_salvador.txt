@@ -5227,6 +5227,32 @@ focus_tree = {
 	}
 
 	focus = {
+		id = ELS_central_american_revolutionary_front
+		icon = GFX_goal_communist_latin_america
+		prerequisite = { focus = ELS_fund_the_revolutionary_cells }
+		x = 0
+		y = 1
+		relative_position_id = ELS_fund_the_revolutionary_cells
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		completion_reward = {
+			if = {
+				limit = { is_in_faction = no }
+				set_rule = {
+					can_create_factions = yes
+				}
+				create_faction = ELS_revolutionary_front_faction
+				custom_effect_tooltip = generic_skip_one_line_tt
+			}
+			unlock_decision_category_tooltip = ELS_revolutionary_front
+		}
+	}
+
+	focus = {
 		id = ELS_restore_the_tierras_comunales
 		icon = GFX_goal_generic_agriculture
 		prerequisite = { focus = ELS_repudiate_the_1922_loan }

@@ -60,6 +60,7 @@
 
 ###Faction###
  ELS_central_america_faction:0 "Central American Defense Pact"
+ ELS_revolutionary_front_faction:0 "Central American Revolutionary Front"
 
 
 ###Focus###
@@ -315,6 +316,8 @@
  ELS_spread_the_revolution_desc:0 "Our revolution belongs to all of Central America. The workers of Guatemala, Honduras, Nicaragua and Costa Rica suffer under the same dictators and the same fruit companies, and we will help them rise as we did."
  ELS_fund_the_revolutionary_cells:0 "Fund the Revolutionary Cells"
  ELS_fund_the_revolutionary_cells_desc:0 "Communist cells are forming across Central America, but they lack money and weapons. We will provide both, and let our neighbours' workers do the rest."
+ ELS_central_american_revolutionary_front:0 "Central American Revolutionary Front"
+ ELS_central_american_revolutionary_front_desc:0 "The cells we have funded are ready to act. Bound together in a single revolutionary front, the workers of Central America will overthrow their dictators one by one, and stand together against any power that tries to stop them."
  ELS_restore_the_tierras_comunales:0 "Restore the Tierras Comunales"
  ELS_restore_the_tierras_comunales_desc:0 "The communal lands of the indigenous villages were abolished to make way for the coffee estates. Returning them to the communities of the west will heal old wounds."
 
@@ -388,6 +391,9 @@
  el_salvador.22.d:0 "With the Guardia Nacional disbanded, its officers and the men responsible for La Matanza are in our custody. The party must decide how they will be judged. Swift tribunals would show the people that the revolution is serious, while open trials would show that we are not the butchers our enemies claim."
  el_salvador.22.a:0 "Swift revolutionary justice"
  el_salvador.22.b:0 "Fair and public trials"
+ el_salvador.23.t:0 "Revolution in [ROOT.GetName]"
+ el_salvador.23.d:0 "In the early hours of the morning, armed workers and soldiers loyal to the communist party seized the presidential palace, the radio station and the barracks of the capital. By dawn the old government had fled or surrendered.\n\nThe revolutionaries, armed and funded by [FROM.GetName], have proclaimed a new socialist government and placed the country under the protection of [FROM.GetName]."
+ el_salvador.23.a:0 "Long live the revolution!"
 
 ###Decisions - Clandestine Network###
  ELS_clandestine_network:0 "Clandestine Network"
@@ -397,6 +403,11 @@
  ELS_organize_workers_study_circles:0 "Organize Workers' Study Circles"
  ELS_organize_workers_study_circles_desc:0 "Secret study circles in the workshops and fincas turn sympathisers into committed comrades, though the meetings draw the attention of the authorities."
  ELS_contact_socorro_rojo:0 "Contact the Socorro Rojo"
+ ELS_revolutionary_front:0 "Central American Revolutionary Front"
+ ELS_revolutionary_front_desc:0 "Where the communists are strong enough, or the government weak enough, our comrades can seize power. Each new revolutionary government will owe its survival to us, and will follow our lead."
+ ELS_stage_communist_coup:0 "Stage a Communist Coup in [FROM.GetNameWithFlag]"
+ ELS_stage_communist_coup_desc:0 "Our comrades in [FROM.GetName] are ready to take power. With our support, they can overthrow the government in a single night."
+ ELS_coup_conditions_tt:0 "Has over §Y50%§! communist support, or over §Y30%§! communist support with stability below §Y20%§!"
  ELS_export_the_revolution:0 "Export the Revolution"
  ELS_export_the_revolution_desc:0 "Through smuggled money and rifles, we can strengthen the communist cells of our neighbours and bring their governments closer to collapse."
  ELS_fund_communist_cells:0 "Fund Communist Cells in [FROM.GetNameWithFlag]"

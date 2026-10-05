@@ -47,3 +47,18 @@ ELS_export_the_revolution = {
 		has_completed_focus = ELS_fund_the_revolutionary_cells
 	}
 }
+
+ELS_revolutionary_front = {
+
+	priority = 50
+
+	icon = generic_communism
+
+	allowed = {
+		original_tag = ELS
+	}
+
+	visible = {
+		has_completed_focus = ELS_central_american_revolutionary_front
+	}
+}

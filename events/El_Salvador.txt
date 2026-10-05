@@ -451,3 +451,15 @@ country_event = {  #Revolutionary Tribunals (sent from Dissolve the Guardia Naci
         add_political_power = -25
     }
 }
+
+country_event = {  #Communist coup, sent to the target of ELS_stage_communist_coup (FROM is El Salvador). The coup itself happens in the decision
+    id = el_salvador.23
+    title = el_salvador.23.t
+    desc = el_salvador.23.d
+    picture = GFX_report_event_communists_cheer
+    is_triggered_only = yes
+
+    option = {
+        name = el_salvador.23.a
+    }
+}
