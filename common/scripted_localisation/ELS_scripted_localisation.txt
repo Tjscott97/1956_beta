@@ -5,6 +5,10 @@ defined_text = {
         trigger = { has_dynamic_modifier = ELS_coffee_republic_dm }
         localization_key = EST_coffee_republic_name
     }
+    text = {
+        trigger = { has_dynamic_modifier = ELS_central_american_economy_dm }
+        localization_key = ELS_central_american_economy_name
+    }
 
 }
 

@@ -325,6 +325,8 @@
  ELS_fund_the_revolutionary_cells_desc:0 "Communist cells are forming across Central America, but they lack money and weapons. We will provide both, and let our neighbours' workers do the rest."
  ELS_central_american_revolutionary_front:0 "Central American Revolutionary Front"
  ELS_proclaim_the_union:0 "Proclaim the Union of Central America"
+ ELS_one_central_america:0 "One Central America"
+ ELS_one_central_america_desc:0 "For the first time since the Federal Republic collapsed in 1841, Central America is one nation. Five economies, five currencies and five sets of laws must now become one."
  ELS_proclaim_the_union_desc:0 "Morazán's dream of a united Central America died in 1840. Today the workers of the isthmus revive it, not as a union of landowners and generals, but as a socialist republic of the people."
  ELS_central_american_revolutionary_front_desc:0 "The cells we have funded are ready to act. Bound together in a single revolutionary front, the workers of Central America will overthrow their dictators one by one, and stand together against any power that tries to stop them."
  ELS_restore_the_tierras_comunales:0 "Restore the Tierras Comunales"
@@ -447,5 +449,12 @@
  ELS_coffee_republic_dm_desc:0 "Coffee was first cultivated in El Salvador for domestic use in the early 19th century. By mid-century its commercial promise was evident, and the seeds for today's 'Coffee Republic' that El Salvador was to become were first sown. Coffee trade was monopolized in the late 19th century, leading to increasing inequalities between the working class and the elites, the so-called 'Fourteen Families', which at one point held almost 90% of all land within El Salvador, thus putting a lot of pressure on both the internal and external politics of the country. Just four years ago, it seemed as if things had reached a breaking point, the peasants were unsatisfied with their low pay, and decreasing quality of life, for which they blamed the land-owning elites. Thus, in January of 1932, the peasants launched a revolt that will come to be known as 'La Matanza'. Although this revolt was brutally crushed by the military regime, the spirit of rebellion against the elites lives on in the hearts and minds of many Salvadorans..."
 
  EST_coffee_republic_name:0 "Coffee Republic"
+
+###Central American Economy Modifier###
+ ELS_central_american_economy_dm:0 "The Central American Economy"
+ ELS_central_american_economy_dm_desc:0 "The coffee estates of El Salvador are now only one part of a much larger economy. The banana plantations of Honduras, the oil of Guatemala and the farms of Nicaragua and Costa Rica must be bound together into a single Central American economy, strong enough to stand on its own."
+ ELS_central_american_economy_name:0 "The Central American Economy"
+ ELS_central_american_economy_tt:0 "The §YCoffee Republic§! becomes §YThe Central American Economy§!, keeping all of its current effects."
+ ELS_modify_central_american_economy_tt:0 "Modify §YThe Central American Economy§! by:"
 
  ELS_modify_coffee_tt:0 "Modify §Y[GetELSCurrentCoffeeName]§! by:"

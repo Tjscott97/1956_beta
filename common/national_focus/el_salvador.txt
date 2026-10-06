@@ -17,7 +17,7 @@ focus_tree = {
 
 	continuous_focus_position = { x = 50 y = 1000 }
 
-    shared_focus = USC_UNIFIED_central_american_unification
+	# The generic USC_UNIFIED_central_american_unification shared branch is replaced by ELS_one_central_america
 
 	############################
 	####### ARMY SECTION #######
@@ -5492,6 +5492,53 @@ focus_tree = {
 		}
 	}
 
+	#############################################
+	####### CENTRAL AMERICA - UNION SECTION #######
+	#############################################
+	# Always visible, available once Central America is formed by either political route
+	# (ELS_form_central_america sets ELS_central_america_formed). Replaces the generic USC_UNIFIED shared branch.
 
+	focus = {
+		id = ELS_one_central_america
+		icon = GFX_goal_ELS_central_america_flag
+		x = 64
+		y = 0
+		cost = 5
+
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = is_usca_tt
+				has_country_flag = ELS_central_america_formed
+			}
+			owns_state = 314 # El Salvador
+			owns_state = 313 # Guatemala
+			owns_state = 312 # Honduras
+			owns_state = 317 # Nicaragua
+			owns_state = 316 # Costa Rica
+		}
+
+		ai_will_do = {
+			factor = 10
+		}
+
+		completion_reward = {
+			add_political_power = 75
+			add_stability = 0.05
+			set_rule = { can_create_factions = yes }
+			custom_effect_tooltip = generic_skip_one_line_tt
+
+			# The Coffee Republic becomes the Central American Economy, both read the same ELS_coffee_* variables
+			custom_effect_tooltip = ELS_central_american_economy_tt
+			hidden_effect = {
+				remove_dynamic_modifier = { modifier = ELS_coffee_republic_dm }
+				add_dynamic_modifier = { modifier = ELS_central_american_economy_dm }
+			}
+			custom_effect_tooltip = generic_skip_one_line_tt
+
+			custom_effect_tooltip = ELS_modify_central_american_economy_tt
+			add_to_variable = { ELS_coffee_trade_laws_cost_factor = -0.5 tooltip = trade_laws_cost_factor_tt }
+			add_to_variable = { ELS_coffee_compliance_growth = 0.1 tooltip = compliance_growth_tt }
+		}
+	}
 
 }
