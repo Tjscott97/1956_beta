@@ -5632,7 +5632,7 @@ focus_tree = {
 		x = -1
 		y = 1
 		relative_position_id = ELS_beyond_coffee
-		cost = 10
+		cost = 5
 
 		available = {
 			NOT = { has_government = communism }
@@ -5677,7 +5677,7 @@ focus_tree = {
 		x = 1
 		y = 1
 		relative_position_id = ELS_beyond_coffee
-		cost = 10
+		cost = 5
 
 		available = {
 			has_government = communism
@@ -5717,7 +5717,7 @@ focus_tree = {
 
 	focus = {
 		id = ELS_arsenals_of_the_union
-		icon = GFX_goal_generic_construct_mil_factory
+		icon = GFX_goal_generic_military_factories_shine
 		prerequisite = { focus = ELS_trans_isthmian_railway }
 		x = 0
 		y = 1
@@ -5729,7 +5729,6 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			# 3 different random core states, same pattern as Chile's industry focuses
 			every_core_state = {
 				limit = {
 					is_owned_and_controlled_by = ROOT
@@ -5753,7 +5752,7 @@ focus_tree = {
 		id = ELS_the_pan_american_highway
 		icon = GFX_goal_generic_road
 		prerequisite = { focus = ELS_one_central_america }
-		x = -1
+		x = 0
 		y = 1
 		relative_position_id = ELS_one_central_america
 		cost = 5
@@ -5788,12 +5787,12 @@ focus_tree = {
 
 	focus = {
 		id = ELS_trans_isthmian_railway
-		icon = GFX_goal_generic_construct_infrastructure
+		icon = GFX_goal_COG_Jungle_Railroad_shine
 		prerequisite = { focus = ELS_the_pan_american_highway }
-		x = 0
+		x = -1
 		y = 1
 		relative_position_id = ELS_the_pan_american_highway
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 1
@@ -5856,6 +5855,286 @@ focus_tree = {
 			custom_effect_tooltip = ELS_modify_central_american_economy_tt
 			add_to_variable = { ELS_coffee_trade_opinion_factor = 0.1 tooltip = trade_opinion_factor_tt }
 			add_to_variable = { ELS_coffee_production_speed_naval_base_factor = 0.1 tooltip = production_speed_naval_base_factor_tt }
+		}
+	}
+
+	### Resources ###
+
+	focus = {
+		id = ELS_state_mining_corporation
+		icon = GFX_focus_generic_mining_industry
+		prerequisite = { focus = ELS_one_central_america }
+		x = 6
+		y = 1
+		relative_position_id = ELS_one_central_america
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		completion_reward = {
+			custom_effect_tooltip = ELS_modify_central_american_economy_tt
+			add_to_variable = { ELS_coffee_local_resources_factor = 0.1 tooltip = local_resources_factor_tt }
+			add_to_variable = { ELS_coffee_production_lack_of_resource_penalty_factor = -0.1 tooltip = production_lack_of_resource_penalty_factor_tt }
+		}
+	}
+
+	focus = {
+		id = ELS_alta_verapaz_oil
+		icon = GFX_goal_generic_oil_refinery
+		prerequisite = { focus = ELS_state_mining_corporation }
+		x = -1
+		y = 1
+		relative_position_id = ELS_state_mining_corporation
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		completion_reward = {
+			313 = {
+				add_resource = {
+					type = oil
+					amount = 8
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = fuel_silo
+					level = 1
+					instant_build = yes
+				}
+			}
+			custom_effect_tooltip = generic_skip_one_line_tt
+
+			custom_effect_tooltip = ELS_modify_central_american_economy_tt
+			add_to_variable = { ELS_coffee_fuel_gain_factor = 0.20 tooltip = fuel_gain_factor_tt }
+		}
+	}
+
+	focus = {
+		id = ELS_highland_mines
+		icon = GFX_focus_generic_steel
+		prerequisite = { focus = ELS_state_mining_corporation }
+		x = 1
+		y = 1
+		relative_position_id = ELS_state_mining_corporation
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		completion_reward = {
+			312 = {
+				add_resource = {
+					type = steel
+					amount = 8
+				}
+			}
+			316 = {
+				add_resource = {
+					type = chromium
+					amount = 4
+				}
+			}
+			313 = {
+				add_resource = {
+					type = steel
+					amount = 8
+				}
+				add_resource = {
+					type = chromium
+					amount = 4
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = ELS_panamanian_concessions
+		icon = GFX_goal_oil_agreement
+		prerequisite = { focus = ELS_state_mining_corporation }
+		x = 0
+		y = 3
+		relative_position_id = ELS_state_mining_corporation
+		cost = 5
+
+		available = {
+			controls_state = 304
+			controls_state = 937
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		completion_reward = {
+			304 = {
+				add_resource = {
+					type = oil
+					amount = 5
+				}
+			}
+			937 = {
+				add_resource = {
+					type = rubber
+					amount = 5
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = ELS_atlantic_rubber_plantations
+		icon = GFX_focus_generic_rubber
+		prerequisite = { focus = ELS_alta_verapaz_oil }
+		x = 0
+		y = 1
+		relative_position_id = ELS_alta_verapaz_oil
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		completion_reward = {
+			317 = {
+				add_resource = {
+					type = rubber
+					amount = 7
+				}
+			}
+			312 = {
+				add_resource = {
+					type = rubber
+					amount = 6
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = ELS_costa_rican_bauxite
+		icon = GFX_focus_generic_aluminum
+		prerequisite = { focus = ELS_highland_mines }
+		x = 0
+		y = 1
+		relative_position_id = ELS_highland_mines
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		completion_reward = {
+			316 = {
+				add_resource = {
+					type = aluminium
+					amount = 8
+				}
+			}
+		}
+	}
+
+	### Expansion ###
+
+	focus = {
+		id = ELS_purchase_belize
+		icon = GFX_goal_ELS_belize
+		prerequisite = { focus = ELS_the_pan_american_highway }
+		x = 2
+		y = 1
+		relative_position_id = ELS_the_pan_american_highway
+		cost = 5
+
+		available = {
+			311 = { is_owned_by = ENG }
+			NOT = { has_war_with = ENG }
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		completion_reward = {
+			custom_effect_tooltip = ELS_purchase_belize_tt
+			hidden_effect = {
+				set_variable = { ELS_current_offer = 6 }
+				ENG = { country_event = { id = el_salvador.24 days = 1 } }
+			}
+		}
+	}
+
+	focus = {
+		id = ELS_invite_panama
+		icon = GFX_goal_ELS_uca_panama
+		prerequisite = { focus = ELS_the_pan_american_highway }
+		mutually_exclusive = { focus = ELS_revolution_in_panama }
+		x = 1
+		y = 2
+		relative_position_id = ELS_the_pan_american_highway
+		cost = 10
+
+		available = {
+			NOT = { has_government = communism }
+			country_exists = PAN
+			PAN = { is_subject = no }
+			NOT = { has_war_with = PAN }
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		completion_reward = {
+			PAN = {
+				add_opinion_modifier = {
+					target = ROOT
+					modifier = ELS_invited_to_the_union
+				}
+			}
+			custom_effect_tooltip = generic_skip_one_line_tt
+
+			custom_effect_tooltip = ELS_invite_panama_tt
+			hidden_effect = {
+				set_variable = { ELS_current_offer = 7 }
+				PAN = { country_event = { id = el_salvador.25 days = 1 } }
+			}
+		}
+	}
+
+	focus = {
+		id = ELS_revolution_in_panama
+		icon = GFX_goal_generic_attack_panama_shine
+		prerequisite = { focus = ELS_the_pan_american_highway }
+		mutually_exclusive = { focus = ELS_invite_panama }
+		x = 3
+		y = 2
+		relative_position_id = ELS_the_pan_american_highway
+		cost = 10
+
+		available = {
+			has_government = communism
+			has_completed_focus = ELS_central_american_revolutionary_front
+			country_exists = PAN
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		completion_reward = {
+			PAN = {
+				add_popularity = {
+					ideology = communism
+					popularity = 0.1
+				}
+			}
+			custom_effect_tooltip = generic_skip_one_line_tt
+
+			custom_effect_tooltip = ELS_revolution_in_panama_tt
 		}
 	}
 

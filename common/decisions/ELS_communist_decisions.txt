@@ -101,11 +101,15 @@ ELS_export_the_revolution = {
 			original_tag = ELS
 		}
 
-		targets = { GUA HON NIC COS }
+		targets = { GUA HON NIC COS PAN }
 
 		target_trigger = {
 			FROM = { exists = yes }
 			NOT = { has_war_with = FROM }
+			OR = {
+				NOT = { FROM = { original_tag = PAN } }
+				has_completed_focus = ELS_revolution_in_panama
+			}
 		}
 
 		available = {
@@ -159,11 +163,15 @@ ELS_revolutionary_front = {
 			original_tag = ELS
 		}
 
-		targets = { GUA HON NIC COS }
+		targets = { GUA HON NIC COS PAN }
 
 		target_trigger = {
 			FROM = { exists = yes }
 			NOT = { has_war_with = FROM }
+			OR = {
+				NOT = { FROM = { original_tag = PAN } }
+				has_completed_focus = ELS_revolution_in_panama
+			}
 		}
 
 		available = {
@@ -192,19 +200,33 @@ ELS_revolutionary_front = {
 		}
 
 		complete_effect = {
-			FROM = {
-				set_politics = {
-					ruling_party = communism
-					elections_allowed = no
+			# Panama is only targetable after Revolution in Panama, when the union already exists, so it joins directly
+			if = {
+				limit = { FROM = { original_tag = PAN } }
+				annex_country = { target = FROM transfer_troops = yes }
+				every_owned_state = {
+					limit = {
+						is_core_of = PAN
+						NOT = { is_core_of = ROOT }
+					}
+					add_core_of = ROOT
 				}
-				add_popularity = {
-					ideology = communism
-					popularity = 0.1
-				}
-				country_event = { id = el_salvador.23 }
 			}
-			# The new government becomes our puppet, subjects join their overlord's faction automatically
-			puppet = FROM
+			else = {
+				FROM = {
+					set_politics = {
+						ruling_party = communism
+						elections_allowed = no
+					}
+					add_popularity = {
+						ideology = communism
+						popularity = 0.1
+					}
+					country_event = { id = el_salvador.23 }
+				}
+				# The new government becomes our puppet, subjects join their overlord's faction automatically
+				puppet = FROM
+			}
 		}
 	}
 }

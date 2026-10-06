@@ -434,6 +434,10 @@ opinion_modifiers = {
 		value = -30
 	}
 
+	ELS_invited_to_the_union = {
+		value = 25
+	}
+
 ###------> EST <><> <><> <><> <><> <><>
 	
 ###------> ETH <><> <><> <><> <><> <><>

@@ -360,6 +360,14 @@ country_event = {  #Offer accepted
         trigger = { check_variable = { ELS_current_offer = 5 } }
         text = el_salvador.10.d5
     }
+    desc = {
+        trigger = { check_variable = { ELS_current_offer = 6 } }
+        text = el_salvador.10.d6
+    }
+    desc = {
+        trigger = { check_variable = { ELS_current_offer = 7 } }
+        text = el_salvador.10.d7
+    }
     picture = GFX_report_event_generic_sign_treaty3
     is_triggered_only = yes
 
@@ -390,6 +398,14 @@ country_event = {  #Offer declined
     desc = {
         trigger = { check_variable = { ELS_current_offer = 5 } }
         text = el_salvador.11.d5
+    }
+    desc = {
+        trigger = { check_variable = { ELS_current_offer = 6 } }
+        text = el_salvador.11.d6
+    }
+    desc = {
+        trigger = { check_variable = { ELS_current_offer = 7 } }
+        text = el_salvador.11.d7
     }
     picture = GFX_report_event_generic_sign_treaty3
     is_triggered_only = yes
@@ -461,5 +477,140 @@ country_event = {  #Communist coup, sent to the target of ELS_stage_communist_co
 
     option = {
         name = el_salvador.23.a
+    }
+}
+
+country_event = {  #Purchase of Belize, sent to Britain by ELS_purchase_belize (FROM is El Salvador)
+    id = el_salvador.24
+    title = el_salvador.24.t
+    desc = el_salvador.24.d
+    picture = GFX_report_event_generic_sign_treaty1
+    is_triggered_only = yes
+
+    option = {
+        name = el_salvador.24.a # Sell
+
+        # Decline weight is 50, so: opinion 0 or less ~4%, above 0 ~17%, above 15 ~33%, above 30 50%, above 50 ~67%, above 75 80%
+        ai_chance = {
+            base = 2
+            modifier = {
+                add = 8
+                has_opinion = { target = FROM value > 0 }
+            }
+            modifier = {
+                add = 15
+                has_opinion = { target = FROM value > 15 }
+            }
+            modifier = {
+                add = 25
+                has_opinion = { target = FROM value > 30 }
+            }
+            modifier = {
+                add = 50
+                has_opinion = { target = FROM value > 50 }
+            }
+            modifier = {
+                add = 100
+                has_opinion = { target = FROM value > 75 }
+            }
+        }
+
+        hidden_effect = { ELS_offer_accepted_response = yes }
+
+        FROM = {
+            transfer_state = 311
+            add_state_core = 311
+            add_timed_idea = {
+                idea = r56_ELS_belize_payment
+                days = 180
+            }
+        }
+        add_offsite_building = {
+            type = industrial_complex
+            level = 1
+        }
+    }
+
+    option = {
+        name = el_salvador.24.b # Refuse
+
+        # Never refuses a democratic El Salvador it has over 30 opinion of
+        ai_chance = {
+            base = 50
+            modifier = {
+                factor = 0
+                FROM = { has_government = democratic }
+                has_opinion = { target = FROM value > 30 }
+            }
+        }
+
+        hidden_effect = { ELS_offer_declined_response = yes }
+    }
+}
+
+country_event = {  #Invitation to join Central America, sent to Panama by ELS_invite_panama (FROM is El Salvador)
+    id = el_salvador.25
+    title = el_salvador.25.t
+    desc = el_salvador.25.d
+    picture = GFX_report_event_generic_sign_treaty2
+    is_triggered_only = yes
+
+    option = {
+        name = el_salvador.25.a # Join
+
+        # Decline weight is 50, so: opinion 0 or less ~4%, above 0 ~17%, above 15 ~33%, above 30 50%, above 50 ~67%, above 75 80%
+        # With the same ideology: ~7%, ~29%, 50%, ~67%, 80%, ~89%
+        ai_chance = {
+            base = 2
+            modifier = {
+                add = 8
+                has_opinion = { target = FROM value > 0 }
+            }
+            modifier = {
+                add = 15
+                has_opinion = { target = FROM value > 15 }
+            }
+            modifier = {
+                add = 25
+                has_opinion = { target = FROM value > 30 }
+            }
+            modifier = {
+                add = 50
+                has_opinion = { target = FROM value > 50 }
+            }
+            modifier = {
+                add = 100
+                has_opinion = { target = FROM value > 75 }
+            }
+            modifier = {
+                factor = 2
+                has_government = FROM
+            }
+        }
+
+        hidden_effect = { ELS_offer_accepted_response = yes }
+
+        FROM = {
+            annex_country = { target = ROOT transfer_troops = yes }
+            hidden_effect = {
+                every_owned_state = {
+                    limit = {
+                        is_core_of = ROOT
+                        NOT = { is_core_of = PREV }
+                    }
+                    add_core_of = PREV
+                }
+            }
+        }
+    }
+
+    option = {
+        name = el_salvador.25.b # Refuse
+
+        ai_chance = {
+            base = 50
+        }
+
+        hidden_effect = { ELS_offer_declined_response = yes }
     }
 }

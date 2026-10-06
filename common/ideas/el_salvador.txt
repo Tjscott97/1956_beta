@@ -364,6 +364,22 @@ ideas = {
 			}
 		}
 
+		# Timed (180 days), added by el_salvador.24 when Britain sells Belize
+		r56_ELS_belize_payment = {
+
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = generic_economic_crisis
+
+			modifier = {
+				consumer_goods_factor = 0.15
+			}
+		}
+
 		# Timed (90 days), added by Arms for the Republic
 		r56_ELS_aid_to_the_republic = {
 

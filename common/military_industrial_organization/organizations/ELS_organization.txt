@@ -3,7 +3,7 @@
 
 # El Salvador's copy of the Soviet Tula Arms Plant, given by ELS_soviet_military_mission.
 # Based on SOV_tula_arms_plant_organization (SOV_organization.txt) without the three Soviet-only
-# "merge plant" traits, which need Soviet states and focuses. Kept in its own file so the Soviet one isn't touched.
+# "merge plant" traits, which need Soviet states and focuses.
 
 ELS_tula_arms_plant_organization = {
 	include = generic_infantry_equipment_organization

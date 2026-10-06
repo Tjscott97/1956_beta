@@ -38,4 +38,12 @@ defined_text = {
         trigger = { ELS = { check_variable = { ELS_current_offer = 5 } } }
         localization_key = ELS_draft_federal_constitution
     }
+    text = {
+        trigger = { ELS = { check_variable = { ELS_current_offer = 6 } } }
+        localization_key = ELS_purchase_belize
+    }
+    text = {
+        trigger = { ELS = { check_variable = { ELS_current_offer = 7 } } }
+        localization_key = ELS_invite_panama
+    }
 }

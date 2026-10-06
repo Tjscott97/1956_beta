@@ -126,4 +126,39 @@ ELS_central_american_federation = {
 			ELS_form_central_america_tooltip = yes
 		}
 	}
+
+	ELS_integrate_panama = {
+
+		icon = generic_form_nation
+
+		allowed = {
+			original_tag = ELS
+		}
+
+		visible = {
+			has_completed_focus = ELS_invite_panama
+			OR = {
+				NOT = { 304 = { is_core_of = ROOT } }
+				NOT = { 937 = { is_core_of = ROOT } }
+			}
+		}
+
+		available = {
+			controls_state = 304
+			controls_state = 937
+		}
+
+		cost = 50
+
+		fire_only_once = yes
+
+		ai_will_do = {
+			factor = 10
+		}
+
+		complete_effect = {
+			add_state_core = 304
+			add_state_core = 937
+		}
+	}
 }
