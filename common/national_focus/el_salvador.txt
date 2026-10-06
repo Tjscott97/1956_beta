@@ -5557,7 +5557,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			custom_effect_tooltip = ELS_modify_coffee_tt
+			custom_effect_tooltip = ELS_modify_central_american_economy_tt
 			add_to_variable = { ELS_coffee_political_power_factor = 0.1 tooltip = political_power_factor_tt }
 			add_to_variable = { ELS_coffee_stability_factor = 0.05 tooltip = stability_factor_tt }
 		}
@@ -5595,7 +5595,7 @@ focus_tree = {
 			}
 			custom_effect_tooltip = generic_skip_one_line_tt
 
-			custom_effect_tooltip = ELS_modify_coffee_tt
+			custom_effect_tooltip = ELS_modify_central_american_economy_tt
 			add_to_variable = { ELS_coffee_industrial_capacity_factory = 0.05 tooltip = industrial_capacity_factory_tt }
 			add_to_variable = { ELS_coffee_consumer_goods_factor = -0.05 tooltip = consumer_goods_factor_tt }
 		}
@@ -5617,7 +5617,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			custom_effect_tooltip = ELS_modify_coffee_tt
+			custom_effect_tooltip = ELS_modify_central_american_economy_tt
 			add_to_variable = { ELS_coffee_local_resources_factor = 0.05 tooltip = local_resources_factor_tt }
 			add_to_variable = { ELS_coffee_stability_factor = 0.05 tooltip = stability_factor_tt }
 			add_to_variable = { ELS_coffee_production_factory_efficiency_gain_factor = 0.05 tooltip = production_factory_efficiency_gain_factor_tt }
@@ -5664,7 +5664,7 @@ focus_tree = {
 				custom_effect_tooltip = generic_skip_one_line_tt
 			}
 
-			custom_effect_tooltip = ELS_modify_coffee_tt
+			custom_effect_tooltip = ELS_modify_central_american_economy_tt
 			add_to_variable = { ELS_coffee_trade_opinion_factor = 0.1 tooltip = trade_opinion_factor_tt }
 		}
 	}
@@ -5710,6 +5710,152 @@ focus_tree = {
 					}
 				}
 			}
+		}
+	}
+
+	### Infrastructure ###
+
+	focus = {
+		id = ELS_arsenals_of_the_union
+		icon = GFX_goal_generic_construct_mil_factory
+		prerequisite = { focus = ELS_trans_isthmian_railway }
+		x = 0
+		y = 1
+		relative_position_id = ELS_trans_isthmian_railway
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		completion_reward = {
+			# 3 different random core states, same pattern as Chile's industry focuses
+			every_core_state = {
+				limit = {
+					is_owned_and_controlled_by = ROOT
+				}
+				random_select_amount = 3
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+			custom_effect_tooltip = generic_skip_one_line_tt
+
+			custom_effect_tooltip = ELS_modify_central_american_economy_tt
+			add_to_variable = { ELS_coffee_production_speed_arms_factory_factor = 0.1 tooltip = production_speed_arms_factory_factor_tt }
+		}
+	}
+
+	focus = {
+		id = ELS_the_pan_american_highway
+		icon = GFX_goal_generic_road
+		prerequisite = { focus = ELS_one_central_america }
+		x = -1
+		y = 1
+		relative_position_id = ELS_one_central_america
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		completion_reward = {
+			every_owned_state = {
+				limit = {
+					OR = {
+						state = 314
+						state = 313
+						state = 312
+						state = 317
+						state = 316
+					}
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			custom_effect_tooltip = generic_skip_one_line_tt
+
+			custom_effect_tooltip = ELS_modify_central_american_economy_tt
+			add_to_variable = { ELS_coffee_production_speed_infrastructure_factor = 0.1 tooltip = production_speed_infrastructure_factor_tt }
+		}
+	}
+
+	focus = {
+		id = ELS_trans_isthmian_railway
+		icon = GFX_goal_generic_construct_infrastructure
+		prerequisite = { focus = ELS_the_pan_american_highway }
+		x = 0
+		y = 1
+		relative_position_id = ELS_the_pan_american_highway
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		completion_reward = {
+			custom_effect_tooltip = ELS_trans_isthmian_railway_tt
+			hidden_effect = {
+				build_railway = {
+					level = 2
+					build_only_on_allied = yes
+					fallback = yes
+					start_state = 313
+					target_state = 316
+				}
+			}
+			custom_effect_tooltip = generic_skip_one_line_tt
+
+			custom_effect_tooltip = ELS_modify_central_american_economy_tt
+			add_to_variable = { ELS_coffee_production_speed_rail_way_factor = 0.1 tooltip = production_speed_rail_way_factor_tt }
+		}
+	}
+
+	focus = {
+		id = ELS_survey_the_nicaraguan_canal
+		icon = GFX_goal_generic_construct_naval_dockyard
+		prerequisite = { focus = ELS_arsenals_of_the_union }
+		x = 0
+		y = 1
+		relative_position_id = ELS_arsenals_of_the_union
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		completion_reward = {
+			317 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = dockyard
+					level = 1
+					instant_build = yes
+				}
+				# Nicaragua's existing naval base
+				add_building_construction = {
+					type = naval_base
+					level = 2
+					province = 12738
+					instant_build = yes
+				}
+			}
+			custom_effect_tooltip = generic_skip_one_line_tt
+
+			custom_effect_tooltip = ELS_modify_central_american_economy_tt
+			add_to_variable = { ELS_coffee_trade_opinion_factor = 0.1 tooltip = trade_opinion_factor_tt }
+			add_to_variable = { ELS_coffee_production_speed_naval_base_factor = 0.1 tooltip = production_speed_naval_base_factor_tt }
 		}
 	}
 
