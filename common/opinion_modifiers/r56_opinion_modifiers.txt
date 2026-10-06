@@ -426,6 +426,14 @@ opinion_modifiers = {
 		value = 20
 	}
 
+	ELS_united_fruit_partnership = {
+		value = 20
+	}
+
+	ELS_nationalized_united_fruit = {
+		value = -30
+	}
+
 ###------> EST <><> <><> <><> <><> <><>
 	
 ###------> ETH <><> <><> <><> <><> <><>
