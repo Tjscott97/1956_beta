@@ -88,7 +88,7 @@ ELS_clandestine_network = {
 	}
 }
 
-# Unlocked by Fund the Revolutionary Cells. One decision targeting each Central American neighbour (FROM is the target).
+# Unlocked by Fund the Revolutionary Cells. One decision targeting each Central American neighbor (FROM is the target).
 # The civilian factory is only used while the decision is active (90 days), the same length as the idea it gives.
 
 ELS_export_the_revolution = {
@@ -150,8 +150,8 @@ ELS_export_the_revolution = {
 	}
 }
 
-# Unlocked by Central American Revolutionary Front. One decision targeting each Central American neighbour (FROM is the target).
-# All four neighbours are single-state countries, so a civil war isn't possible (sadly)
+# Unlocked by Central American Revolutionary Front. One decision targeting each Central American neighbor (FROM is the target).
+# All four neighbors are single-state countries, so a civil war isn't possible (sadly)
 
 ELS_revolutionary_front = {
 
