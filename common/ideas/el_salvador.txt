@@ -433,5 +433,30 @@ ideas = {
 				army_morale_factor = 0.05 # shown in game as Division Recovery Rate
 			}
 		}
+
+		### Navy ###
+
+		# Added by ELS_protect_the_trade_routes
+		r56_ELS_coffee_convoy_escorts = {
+
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = escort_effort_focus
+
+			modifier = {
+				convoy_escort_efficiency = 0.15
+				navy_submarine_detection_factor = 0.1
+			}
+
+			equipment_bonus = {
+				ship_hull_light = {
+					build_cost_ic = -0.1 instant = yes
+				}
+			}
+		}
 	}
 }
