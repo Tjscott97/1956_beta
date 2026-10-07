@@ -2499,6 +2499,10 @@ focus_tree = {
 					instant_build = yes
 				}
 			}
+			custom_effect_tooltip = generic_skip_one_line_tt
+
+			custom_effect_tooltip = ELS_modify_coffee_tt
+			add_to_variable = { ELS_coffee_industrial_capacity_factory = 0.05 tooltip = industrial_capacity_factory_tt }
 		}
 	}
 
