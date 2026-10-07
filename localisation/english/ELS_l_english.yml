@@ -145,6 +145,30 @@
  ELS_Naval_Doctrine:0 "Improve Naval Doctrine"
  ELS_Naval_Doctrine_desc:0 "New ships will be useless without proper tactics, we should improve our doctrine immediately!"
 
+#industry
+ ELS_industrial_promotion_law:0 "Industrial Promotion Law"
+ ELS_industrial_promotion_law_desc:0 "Our economy rises and falls with the price of coffee. Tax exemptions and cheap credit for new industries will encourage our landowners to invest their profits in factories as well as fincas."
+ ELS_textile_mills:0 "Textile Mills"
+ ELS_textile_mills_desc:0 "Cotton grows well on our Pacific coast, yet we sell it abroad and buy back the cloth. New mills will spin and weave it at home, and give work to thousands."
+ ELS_national_radio_network:0 "National Radio Network"
+ ELS_national_radio_network_desc:0 "A network of transmitters will carry the voice of the government to every town in the republic, and train a generation of technicians in the workings of radio."
+ ELS_harness_the_rio_lempa:0 "Harness the Río Lempa"
+ ELS_harness_the_rio_lempa_desc:0 "El Salvador has no coal, and the fuel for our factories must be bought abroad. A great dam across the Río Lempa will give us cheap hydroelectric power of our own."
+ ELS_national_arsenal:0 "National Arsenal"
+ ELS_national_arsenal_desc:0 "An army that must buy every cartridge abroad can be disarmed by a single embargo. A national arsenal will let us make the arms and ammunition our soldiers need."
+ ELS_technical_schools:0 "Technical Schools"
+ ELS_technical_schools_desc:0 "Our new factories need engineers, electricians and mechanics, not just laborers. Technical schools in the cities will train the skilled workers that industry demands."
+ ELS_production_development_institute:0 "Production Development Institute"
+ ELS_production_development_institute_desc:0 "A state institute will lend money to new enterprises, plan where factories should be built, and see that they are built quickly."
+ ELS_cement_works:0 "Cement Works"
+ ELS_cement_works_desc:0 "Every road, dam and factory we build needs cement. A national cement works will supply our builders without the cost of imports."
+ ELS_coffee_research_institute:0 "Coffee Research Institute"
+ ELS_coffee_research_institute_desc:0 "Funded by a tax on coffee exports, a research institute will study better strains, fertilizers and processing methods, and its laboratories will serve our scientists in every field."
+ ELS_national_research_center:0 "National Research Center"
+ ELS_national_research_center_desc:0 "Our engineers and scientists have shown what they can achieve. A national research center will bring them together under one roof to work on the technologies of tomorrow."
+ ELS_national_research_center_facility_tt:0 "We will choose to build a §YLand§!, §YAir§! or §YNaval§! research facility in §YEl Salvador§!."
+ ELS_national_research_center_research_tt:0 "We will choose a field of research to focus on, §YLand§!, §YAir§! or §YNaval§!, gaining two §Y100%§! research bonuses in that field."
+
 #political - historical
  ELS_state_of_the_nation:0 "State Of The Nation"
  ELS_state_of_the_nation_desc:0 ""
@@ -424,6 +448,13 @@
  el_salvador.25.d:0 "[FROM.GetNameDefCap] has invited us to join the union of Central America. Joining would end our independence, but would make us part of a nation that stretches across the isthmus, and free us from depending on the United States."
  el_salvador.25.a:0 "Join the union"
  el_salvador.25.b:0 "Panama will remain independent"
+
+###Events - Industry###
+ el_salvador.30.t:0 "The National Research Center"
+ el_salvador.30.d:0 "The National Research Center is ready to open its doors, but our budget will only equip it for one field of work. The army wants laboratories to develop new rifles and guns, our airmen ask for wind tunnels and test ranges, and the navy argues that our future lies on the Pacific. The choice is ours."
+ el_salvador.30.a:0 "Focus on land warfare"
+ el_salvador.30.b:0 "Focus on aviation"
+ el_salvador.30.c:0 "Focus on naval research"
 
 ###Decisions - Clandestine Network###
  ELS_clandestine_network:0 "Clandestine Network"

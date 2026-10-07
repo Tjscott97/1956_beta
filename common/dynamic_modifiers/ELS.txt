@@ -31,6 +31,7 @@ ELS_coffee_republic_dm = {
 	fascism_drift = ELS_coffee_fascism_drift
 	neutrality_drift = ELS_coffee_neutrality_drift
 	monthly_population = ELS_coffee_monthly_population
+	factory_energy_consumption = ELS_coffee_factory_energy_consumption
 
 
 	}
@@ -67,6 +68,7 @@ ELS_central_american_economy_dm = {
 	fascism_drift = ELS_coffee_fascism_drift
 	neutrality_drift = ELS_coffee_neutrality_drift
 	monthly_population = ELS_coffee_monthly_population
+	factory_energy_consumption = ELS_coffee_factory_energy_consumption
 
 	# New for the Central American Economy
 	compliance_growth = ELS_coffee_compliance_growth

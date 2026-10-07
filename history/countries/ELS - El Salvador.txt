@@ -139,6 +139,7 @@ set_variable = { ELS_coffee_communism_drift = 0 }
 set_variable = { ELS_coffee_fascism_drift = 0 }
 set_variable = { ELS_coffee_neutrality_drift = -0.01 }
 set_variable = { ELS_coffee_monthly_population = 0}
+set_variable = { ELS_coffee_factory_energy_consumption = 0 }
 
 # Only used by the Central American Economy (ELS_central_american_economy_dm)
 set_variable = { ELS_coffee_compliance_growth = 0 }
