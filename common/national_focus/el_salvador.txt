@@ -1033,7 +1033,7 @@ focus_tree = {
 		x = 2
 		y = 1
 		relative_position_id = ELS_industrial_promotion_law
-		cost = 10
+		cost = 7.2
 
 		available = {
 			314 = { is_fully_controlled_by = ROOT }
@@ -1444,7 +1444,7 @@ focus_tree = {
 
 	focus = {
 		id = ELS_study_civil_war
-		icon = GFX_goal_italy_study_the_spanish_civil_war
+		icon = GFX_goal_cuba_attack_nationalist_spain
 		prerequisite = { focus = ELS_support_the_franquistats }
 		x = 1
 		y = 1
@@ -2930,7 +2930,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = ELS_rebuild_the_party_cells
-		cost = 10
+		cost = 7.2
 
 		available_if_capitulated = yes
 
@@ -3358,7 +3358,7 @@ focus_tree = {
 		prerequisite = { focus = ELS_nationalize_healthcare }
 		prerequisite = { focus = ELS_national_literacy_campaign }
 		mutually_exclusive = { focus = ELS_spread_the_revolution }
-		x = -1
+		x = -2
 		y = 1
 		relative_position_id = ELS_nationalize_healthcare
 		cost = 10
@@ -3535,7 +3535,7 @@ focus_tree = {
 		prerequisite = { focus = ELS_nationalize_healthcare }
 		prerequisite = { focus = ELS_national_literacy_campaign }
 		mutually_exclusive = { focus = ELS_the_moscow_line }
-		x = 1
+		x = 2
 		y = 1
 		relative_position_id = ELS_nationalize_healthcare
 		cost = 10
@@ -3712,6 +3712,305 @@ focus_tree = {
 			custom_effect_tooltip = ELS_modify_coffee_tt
 			add_to_variable = { ELS_coffee_stability_factor = 0.05 tooltip = stability_factor_tt }
 			add_to_variable = { ELS_coffee_global_building_slots_factor = 0.15 tooltip = global_building_slots_factor_tt }
+		}
+	}
+
+	### War Goals - Authoritarian ###
+
+	focus = {
+		id = ELS_defend_the_hemisphere
+		icon = GFX_goal_generic_defence
+		prerequisite = { focus = ELS_join_allies }
+		x = 0
+		y = 1
+		relative_position_id = ELS_join_allies
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		completion_reward = {
+			add_war_support = 0.05
+			custom_effect_tooltip = ELS_defend_the_hemisphere_tt
+			hidden_effect = {
+				every_country = {
+					limit = {
+						OR = {
+							tag = GUA
+							tag = HON
+							tag = NIC
+							tag = COS
+							tag = PAN
+							tag = BLZ
+							tag = CUB
+							tag = HAI
+							tag = DOM
+							tag = JAM
+							tag = BAH
+							tag = TRI
+						}
+						has_government = fascism
+						NOT = { is_subject_of = ROOT }
+						NOT = { is_in_faction_with = ROOT }
+					}
+					ROOT = { create_wargoal = { type = topple_government target = PREV } }
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = ELS_settle_the_bolson_dispute
+		icon = GFX_goal_generic_attack_honduras
+		prerequisite = { focus = ELS_join_axis }
+		x = 0
+		y = 1
+		relative_position_id = ELS_join_axis
+		cost = 5
+
+		bypass = {
+			OR = {
+				NOT = { country_exists = HON }
+				HON = { is_subject_of = ROOT }
+				HON = { is_in_faction_with = ROOT }
+			}
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		completion_reward = {
+			add_war_support = 0.05
+			create_wargoal = {
+				type = annex_everything
+				target = HON
+			}
+		}
+	}
+
+	### War Goals - Democratic ###
+
+	focus = {
+		id = ELS_against_the_dictators
+		icon = GFX_goal_support_democracy
+		prerequisite = { focus = ELS_civilian_controlled_military focus = ELS_welfare_expansion }
+		x = 1
+		y = 1
+		relative_position_id = ELS_civilian_controlled_military
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		completion_reward = {
+			add_war_support = 0.05
+			custom_effect_tooltip = ELS_against_the_dictators_tt
+			hidden_effect = {
+				every_country = {
+					limit = {
+						OR = {
+							tag = GUA
+							tag = HON
+							tag = NIC
+							tag = COS
+							tag = PAN
+							tag = BLZ
+						}
+						NOT = { has_government = democratic }
+						NOT = { is_subject_of = ROOT }
+						NOT = { is_in_faction_with = ROOT }
+					}
+					ROOT = { create_wargoal = { type = topple_government target = PREV } }
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = ELS_morazans_sword
+		icon = GFX_focus_generic_strike_at_democracy1
+		prerequisite = { focus = ELS_draft_federal_constitution }
+		x = 0
+		y = 1
+		relative_position_id = ELS_draft_federal_constitution
+		cost = 5
+
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = is_usca_tt
+				has_country_flag = ELS_central_america_formed
+			}
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		completion_reward = {
+			add_war_support = 0.05
+			custom_effect_tooltip = ELS_morazans_sword_tt
+			hidden_effect = {
+				every_country = {
+					limit = {
+						OR = {
+							tag = GUA
+							tag = HON
+							tag = NIC
+							tag = COS
+						}
+						NOT = { is_subject_of = ROOT }
+						NOT = { is_in_faction_with = ROOT }
+					}
+					ROOT = { create_wargoal = { type = annex_everything target = PREV } }
+				}
+			}
+		}
+	}
+
+	### War Goals - Communist ###
+
+	focus = {
+		id = ELS_smash_reaction_in_the_isthmus
+		icon = GFX_goal_generic_red_army
+		prerequisite = { focus = ELS_the_moscow_line focus = ELS_spread_the_revolution }
+		x = 2
+		y = 1
+		relative_position_id = ELS_the_moscow_line
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		completion_reward = {
+			add_war_support = 0.05
+			custom_effect_tooltip = ELS_smash_reaction_in_the_isthmus_tt
+			hidden_effect = {
+				every_country = {
+					limit = {
+						OR = {
+							tag = GUA
+							tag = HON
+							tag = NIC
+							tag = COS
+							tag = PAN
+							tag = BLZ
+						}
+						OR = {
+							has_government = fascism
+							has_government = neutrality
+						}
+						NOT = { is_subject_of = ROOT }
+						NOT = { is_in_faction_with = ROOT }
+					}
+					ROOT = { create_wargoal = { type = puppet_wargoal_focus target = PREV } }
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = ELS_the_caribbean_revolution
+		icon = GFX_goal_CUB_caribbean_dominance
+		prerequisite = { focus = ELS_smash_reaction_in_the_isthmus }
+		x = 0
+		y = 1
+		relative_position_id = ELS_smash_reaction_in_the_isthmus
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		completion_reward = {
+			add_war_support = 0.05
+			custom_effect_tooltip = ELS_the_caribbean_revolution_tt
+			hidden_effect = {
+				every_country = {
+					limit = {
+						OR = {
+							tag = CUB
+							tag = HAI
+							tag = DOM
+							tag = JAM
+							tag = BAH
+							tag = TRI
+						}
+						OR = {
+							has_government = fascism
+							has_government = neutrality
+						}
+						NOT = { is_subject_of = ROOT }
+						NOT = { is_in_faction_with = ROOT }
+					}
+					ROOT = { create_wargoal = { type = puppet_wargoal_focus target = PREV } }
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = ELS_revolution_in_mexico
+		icon = GFX_focus_attack_mexico
+		prerequisite = { focus = ELS_the_caribbean_revolution }
+		x = 0
+		y = 1
+		relative_position_id = ELS_the_caribbean_revolution
+		cost = 5
+
+		bypass = {
+			OR = {
+				NOT = { country_exists = MEX }
+				MEX = { has_government = communism }
+				MEX = { is_subject_of = ROOT }
+				MEX = { is_in_faction_with = ROOT }
+			}
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		completion_reward = {
+			add_war_support = 0.05
+			create_wargoal = {
+				type = puppet_wargoal_focus
+				target = MEX
+			}
+		}
+	}
+
+	focus = {
+		id = ELS_strike_the_capitalist
+		icon = GFX_focus_generic_crush_capitalism
+		prerequisite = { focus = ELS_revolution_in_mexico }
+		x = 0
+		y = 1
+		relative_position_id = ELS_revolution_in_mexico
+		cost = 10
+
+		bypass = {
+			OR = {
+				NOT = { country_exists = USA }
+				USA = { has_government = communism }
+				USA = { is_subject_of = ROOT }
+				USA = { is_in_faction_with = ROOT }
+			}
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		completion_reward = {
+			add_war_support = 0.1
+			create_wargoal = {
+				type = puppet_wargoal_focus
+				target = USA
+			}
 		}
 	}
 
@@ -4255,7 +4554,7 @@ focus_tree = {
 			316 = {
 				add_resource = {
 					type = aluminium
-					amount = 8
+					amount = 12
 				}
 			}
 		}
@@ -4358,6 +4657,48 @@ focus_tree = {
 			custom_effect_tooltip = generic_skip_one_line_tt
 
 			custom_effect_tooltip = ELS_revolution_in_panama_tt
+		}
+	}
+
+	focus = {
+		id = ELS_seize_the_panama_canal
+		icon = GFX_focus_generic_attack_usa
+		prerequisite = { focus = ELS_revolution_in_panama }
+		x = 0
+		y = 1
+		relative_position_id = ELS_revolution_in_panama
+		cost = 5
+
+		available = {
+			controls_state = 937
+			685 = { is_owned_by = USA }
+			has_capitulated = no
+			NOT = { has_war_with = USA }
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		completion_reward = {
+			custom_effect_tooltip = ELS_seize_the_panama_canal_tt
+			hidden_effect = {
+				start_border_war = {
+					change_state_after_war = no
+					attacker = {
+						state = 937
+						num_provinces = 3
+						on_win = el_salvador.40
+						on_lose = el_salvador.43
+						on_cancel = el_salvador.44
+					}
+					defender = {
+						state = 685
+						num_provinces = 1
+						on_win = el_salvador.45
+					}
+				}
+			}
 		}
 	}
 

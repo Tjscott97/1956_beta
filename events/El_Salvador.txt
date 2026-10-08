@@ -726,3 +726,110 @@ country_event = {  #National Research Center, from ELS_national_research_center
         }
     }
 }
+
+### Panama Canal ###
+
+country_event = {  #Border war won, from ELS_seize_the_panama_canal
+    id = el_salvador.40
+    title = el_salvador.40.t
+    desc = el_salvador.40.d
+    picture = GFX_report_event_generic_military_parade
+    is_triggered_only = yes
+
+    option = {
+        name = el_salvador.40.a
+        army_experience = 5
+        custom_effect_tooltip = ELS_canal_usa_decides_tt
+        hidden_effect = {
+            USA = { country_event = { id = el_salvador.41 days = 1 } }
+        }
+    }
+}
+
+country_event = {  #USA decides the fate of the canal, FROM is El Salvador
+    id = el_salvador.41
+    title = el_salvador.41.t
+    desc = el_salvador.41.d
+    picture = GFX_report_event_generic_military_parade
+    is_triggered_only = yes
+
+    option = {
+        name = el_salvador.41.a # Give up the canal
+
+        ai_chance = {
+            base = 10
+            modifier = {
+                add = 40
+                has_war = yes
+            }
+        }
+
+        FROM = { transfer_state = 685 }
+        hidden_effect = {
+            FROM = { country_event = el_salvador.42 }
+        }
+    }
+
+    option = {
+        name = el_salvador.41.b # War
+
+        ai_chance = {
+            base = 90
+        }
+
+        declare_war_on = {
+            target = FROM
+            type = annex_everything
+        }
+    }
+}
+
+country_event = {  #USA gives up the canal
+    id = el_salvador.42
+    title = el_salvador.42.t
+    desc = el_salvador.42.d
+    picture = GFX_report_event_generic_sign_treaty1
+    is_triggered_only = yes
+
+    option = {
+        name = el_salvador.42.a
+        add_war_support = 0.05
+    }
+}
+
+country_event = {  #Border war lost
+    id = el_salvador.43
+    title = el_salvador.43.t
+    desc = el_salvador.43.d
+    picture = GFX_report_event_generic_military_parade
+    is_triggered_only = yes
+
+    option = {
+        name = el_salvador.43.a
+        add_war_support = -0.05
+    }
+}
+
+country_event = {  #Border war cancelled
+    id = el_salvador.44
+    title = el_salvador.44.t
+    desc = el_salvador.44.d
+    picture = GFX_report_event_generic_military_parade
+    is_triggered_only = yes
+
+    option = {
+        name = el_salvador.44.a
+    }
+}
+
+country_event = {  #For the USA, border war won
+    id = el_salvador.45
+    title = el_salvador.45.t
+    desc = el_salvador.45.d
+    picture = GFX_report_event_generic_military_parade
+    is_triggered_only = yes
+
+    option = {
+        name = el_salvador.45.a
+    }
+}
