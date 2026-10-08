@@ -32,6 +32,10 @@ shared_focus = {
 					original_tag = YUN
 					original_tag = XSM
 					original_tag = SIC
+					original_tag = XIC
+					original_tag = GDC
+					original_tag = HBC
+					original_tag = SND
 					original_tag = SIK
 					original_tag = KHM
 				}
@@ -79,28 +83,115 @@ shared_focus = {
 	}
 	offset = {
 		trigger = {
+			original_tag = CHI
+			has_country_flag = KMT_wjw_visible
+		}
+		y = 0
+		x = 2
+	}
+	offset = {
+		trigger = {
 			OR = {
 				original_tag = SHX
 				original_tag = GXC
 				original_tag = YUN
 				original_tag = XSM
 				original_tag = SIC
+				original_tag = XIC
+				original_tag = GDC
+				original_tag = HBC
+				original_tag = SND
 				original_tag = SIK
 				original_tag = KHM
 			}
 		}
-		x = -58
+		x = -8
 		y = -12
 	}
 	offset = {
 		trigger = {
 			OR = {
-				original_tag = XSM
+				original_tag = GXC
+				original_tag = GDC
+			}
+		}
+		x = 9
+	}
+	offset = {
+		trigger = {
+			OR = {
+				original_tag = GXC
+				original_tag = GDC
+			}
+			has_completed_focus = CHI_secure_internal_politics2
+		}
+		x = 11
+	}
+	offset = {
+		trigger = {
+			OR = {
+				original_tag = SHX
+				original_tag = GXC
+				original_tag = YUN
+				original_tag = SIC
+				original_tag = XIC
+				original_tag = GDC
+				original_tag = HBC
+				original_tag = SND
+			}
+			has_completed_focus = CHI_secure_internal_politics2
+		}
+		x = 21
+	}
+	offset = {
+		trigger = {
+			OR = {
+				original_tag = SHX
+				original_tag = GXC
+				original_tag = YUN
+				original_tag = SIC
+				original_tag = XIC
+				original_tag = GDC
+				original_tag = HBC
+				original_tag = SND
+			}
+			has_focus_tree = china_communist_focus
+		}
+		x = 0
+		y = 13
+	}
+	offset = {
+		trigger = {
+			OR = {
+				original_tag = GDC
+				original_tag = GXC
+			}
+			has_focus_tree = china_communist_focus
+		}
+		x = 0
+		y = 0
+	}
+	offset = {
+		trigger = {
+			OR = {
 				original_tag = SIK
 				original_tag = KHM
 			}
+			has_focus_tree = china_communist_focus
 		}
-		y = -1
+		x = 0
+		y = 13
+	}
+	offset = {
+		trigger = {
+			OR = {
+				original_tag = XSM
+				original_tag = KHM
+				original_tag = SIK
+			}
+			has_completed_focus = CHI_secure_internal_politics2
+		}
+		x = -26
 	}
 	offset = {
 		trigger = {
@@ -132,11 +223,15 @@ shared_focus = {
 				original_tag = YUN
 				original_tag = XSM
 				original_tag = SIC
+				original_tag = XIC
+				original_tag = GDC
+				original_tag = HBC
+				original_tag = SND
 				original_tag = SIK
 				original_tag = KHM
 			}
 		}
-		x = 30
+		x = 5
 	}
 	x =30
 	y = 10
@@ -163,6 +258,10 @@ shared_focus = {
 					original_tag = YUN
 					original_tag = XSM
 					original_tag = SIC
+					original_tag = XIC
+					original_tag = GDC
+					original_tag = HBC
+					original_tag = SND
 					original_tag = SIK
 					original_tag = KHM
 				}
@@ -271,11 +370,6 @@ shared_focus = {
 				}
 			}
 		}
-		hidden_effect = {
-			remove_power_balance = {
-				id = KMT_main_bop
-			}
-		}
 		add_ideas = KMT_chinese_resistance
 		add_ideas = KMT_unpopular_government
 		add_ideas = KMT_dues_to_our_overlord
@@ -351,11 +445,6 @@ shared_focus = {
 					}
 					promote_leader = yes
 				}
-			}
-		}
-		hidden_effect = {
-			remove_power_balance = {
-				id = KMT_main_bop
 			}
 		}
 		custom_effect_tooltip = generic_skip_one_line_tt
@@ -780,7 +869,7 @@ shared_focus = {
 				exists = yes
 				has_government = fascism
 				OR = {
-					has_completed_focus = KMT_the_tianmen_square_coup
+					has_completed_focus = KMT_redefine_democracy
 					has_completed_focus = CHI_the_national_unity_government
 				}
 			}
@@ -905,7 +994,7 @@ shared_focus = {
 	}
 	allow_branch = {
 		original_tag = CHI
-		NOT = { has_completed_focus = KMT_the_tianmen_square_coup }
+		NOT = { has_completed_focus = KMT_redefine_democracy }
 		NOT = { has_completed_focus = CHI_seek_japanese_support }
 		NOT = { has_country_flag = KMT_taiwan}
 		NOT = { has_completed_focus = MAN_bolster_nationalism}
@@ -916,9 +1005,7 @@ shared_focus = {
 	search_filters = { FOCUS_FILTER_POLITICAL }
 	relative_position_id = KMT_a_beacon_of_ideology_in_the_middle_kingdom
 	completion_reward = {
-		set_country_flag = KMT_fascism
-		mark_focus_tree_layout_dirty = yes
-		unlock_national_focus = KMT_the_tianmen_square_coup
+		#todo future project
 	}
 }
 shared_focus = {
@@ -956,9 +1043,6 @@ shared_focus = {
 	completion_reward = {
 		set_country_flag = KMT_commie_revolution
 		mark_focus_tree_layout_dirty = yes
-		remove_power_balance = {
-			id = KMT_main_bop
-		}
 		add_ideas = KMT_confucian_opposition
 		add_ideas = KMT_capitalist_opposition
 		add_ideas = KMT_disorganized_army
@@ -1162,6 +1246,7 @@ shared_focus = {
 	}
 	search_filters = { FOCUS_FILTER_INDUSTRY }
 	relative_position_id = KMT_chinese_five_year_plan
+
 	completion_reward = {
 		IF = {
 			limit = { has_idea = KMT_capitalist_opposition }
@@ -1214,14 +1299,33 @@ shared_focus = {
 	}
 }
 shared_focus = {
+	id = KMT_land_value_tax
+	icon = GFX_focus_SOV_breadbasket_of_the_union
+	prerequisite = { focus = KMT_enforce_trade_union_compliance focus = KMT_support_trade_unions }
+	available = {
+		has_government = communism
+	}
+	x = 1
+	y = 1
+	cost = 10
+	ai_will_do = {
+		factor = 2.1
+	}
+	search_filters = { FOCUS_FILTER_INDUSTRY }
+	relative_position_id = KMT_support_trade_unions
+	completion_reward = {
+		add_ideas = CHI_land_value_tax
+	}
+}
+shared_focus = {
 	id = KMT_seize_landholder_assets
 	icon = GFX_focus_prc_agrarian_socialism
 	prerequisite = { focus = KMT_consolidate_control_over_industry }
 	available = {
 		has_government = communism
 	}
-	x = 0
-	y = 2
+	x = 3
+	y = 1
 	cost = 5.8
 	ai_will_do = {
 		factor = 2.1
@@ -1233,25 +1337,6 @@ shared_focus = {
 			remove_idea = KMT_five_year_plan
 			add_idea = KMT_five_year_plan2
 		}
-	}
-}
-shared_focus = {
-	id = KMT_land_value_tax
-	icon = GFX_focus_SOV_breadbasket_of_the_union
-	prerequisite = { focus = KMT_seize_landholder_assets}
-	available = {
-		has_government = communism
-	}
-	x = 0
-	y = 1
-	cost = 10
-	ai_will_do = {
-		factor = 2.1
-	}
-	search_filters = { FOCUS_FILTER_INDUSTRY }
-	relative_position_id = KMT_seize_landholder_assets
-	completion_reward = {
-		add_ideas = CHI_land_value_tax
 	}
 }
 shared_focus = {
@@ -1271,7 +1356,10 @@ shared_focus = {
 	relative_position_id = KMT_declare_the_peoples_republic
 	completion_reward = {
 		remove_ideas = KMT_disorganized_army
+		custom_effect_tooltip = generic_skip_one_line_tt
+
 		army_experience = 50
+
 		add_doctrine_cost_reduction = {
 			name = land_doc_bonus
 			cost_reduction = 0.8
@@ -1336,6 +1424,7 @@ shared_focus = {
 	}
 	search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_STABILITY}
 	relative_position_id = KMT_a_great_purge
+
 	completion_reward = {
 		IF = {
 			limit = { has_idea = KMT_capitalist_opposition }
@@ -1364,10 +1453,12 @@ shared_focus = {
 	search_filters = { FOCUS_FILTER_MILITARY_IMPROVEMENT}
 	relative_position_id = KMT_a_great_purge
 	completion_reward = {
-		remove_ideas = KMT_disloyal_nra_elements
 		army_experience = -100
 		add_war_support = -0.05
 		add_manpower = -1000
+		custom_effect_tooltip = generic_skip_one_line_tt
+
+		remove_ideas = KMT_disloyal_nra_elements
 	}
 }
 shared_focus = {
@@ -1375,7 +1466,6 @@ shared_focus = {
 	icon = GFX_focus_RAJ_seven_shackles
 	prerequisite = { focus = KMT_purge_of_the_generals }
 	available = {
-		NOT = { has_completed_focus = KMT_disband_the_blueshirts }
 		has_government = communism
 	}
 	x = 0
@@ -1409,12 +1499,14 @@ shared_focus = {
 	search_filters = { FOCUS_FILTER_STABILITY }
 	relative_position_id = KMT_a_great_purge
 	completion_reward = {
-		remove_ideas = KMT_great_purge
 		add_stability = 0.1
 		add_popularity = {
 			ideology = communism
 			popularity = 0.1
 		}
+		custom_effect_tooltip = generic_skip_one_line_tt
+		
+		remove_ideas = KMT_great_purge
 	}
 }
 shared_focus = {
@@ -1461,6 +1553,8 @@ shared_focus = {
 	completion_reward = {
 		add_political_power = 50
 		add_stability = 0.05
+		custom_effect_tooltip = generic_skip_one_line_tt
+
 		add_ideas = KMT_unity_of_action
 	}
 }
@@ -1480,8 +1574,10 @@ shared_focus = {
 	search_filters = { FOCUS_FILTER_POLITICAL }
 	relative_position_id = KMT_build_up_the_red_army
 	completion_reward = {
-		add_ideas = SOV_politicized_military
 		add_war_support = 0.05
 		add_political_power = 100
+		custom_effect_tooltip = generic_skip_one_line_tt
+
+		add_ideas = SOV_politicized_military
 	}
 }

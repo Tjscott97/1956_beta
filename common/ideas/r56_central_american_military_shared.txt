@@ -172,7 +172,7 @@ ideas = {
 
 			removal_cost = -1
 
-			picture = generic_special_forces
+			picture = generic_guerilla_warfare
 
 			modifier = {
 				special_forces_cap = 0.05

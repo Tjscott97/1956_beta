@@ -338,7 +338,7 @@ ideas = {
 
 			removal_cost = -1
 
-			picture = MEX_conservative_politics_idea
+			picture = entrenched_old_guard_spirit
 
 			modifier = {
 				political_power_factor = -0.1

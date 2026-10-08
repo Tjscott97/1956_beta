@@ -7,7 +7,7 @@ country_event = {  #Joint Army Exercises
     id = el_salvador.1
     title = el_salvador.1.t
     desc = el_salvador.1.d
-    picture = GFX_news_event_generic 
+    picture = GFX_report_event_soldiers_marching
     is_triggered_only = yes 
 
     option = {
