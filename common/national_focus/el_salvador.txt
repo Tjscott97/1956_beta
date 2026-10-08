@@ -4392,6 +4392,20 @@ focus_tree = {
 		}
 
 		completion_reward = {
+			316 = {
+				add_resource = {
+					type = coal
+					amount = 8
+				}
+			}
+			312 = {
+				add_resource = {
+					type = coal
+					amount = 6
+				}
+			}
+			custom_effect_tooltip = generic_skip_one_line_tt
+
 			custom_effect_tooltip = ELS_modify_central_american_economy_tt
 			add_to_variable = { ELS_coffee_local_resources_factor = 0.1 tooltip = local_resources_factor_tt }
 			add_to_variable = { ELS_coffee_production_lack_of_resource_penalty_factor = -0.1 tooltip = production_lack_of_resource_penalty_factor_tt }

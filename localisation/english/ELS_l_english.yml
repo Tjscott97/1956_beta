@@ -320,7 +320,7 @@
  ELS_survey_the_nicaraguan_canal:0 "Survey the Nicaraguan Canal"
  ELS_survey_the_nicaraguan_canal_desc:0 "For a century, engineers have dreamed of a canal through Lake Nicaragua to rival Panama's. We will begin the survey, expand the ports of Nicaragua and show the world that the route is ours."
  ELS_state_mining_corporation:0 "State Mining Corporation"
- ELS_state_mining_corporation_desc:0 "The mountains of the isthmus hold iron, chromium and oil, but foreign companies have taken what little was ever dug up. A state mining corporation will survey our land and extract its wealth for the union."
+ ELS_state_mining_corporation_desc:0 "The mountains of the isthmus hold iron, chromium, coal and oil, but foreign companies have taken what little was ever dug up. A state mining corporation will survey our land and extract its wealth for the union."
  ELS_alta_verapaz_oil:0 "Alta Verapaz Oil"
  ELS_alta_verapaz_oil_desc:0 "Oil seeps have long been known in the highlands of Alta Verapaz. With proper drilling and a storage depot, Guatemala's oil can fuel the union's industry and army."
  ELS_highland_mines:0 "Highland Mines"
@@ -367,7 +367,7 @@
  ELS_strike_the_capitalist_desc:0 "Every dictator in Central America has been armed, financed or installed by Washington. As long as American capitalism stands, no revolution in the Americas will ever be safe. It is time to strike at the heart of the empire."
  ELS_seize_the_panama_canal:0 "Seize the Panama Canal"
  ELS_seize_the_panama_canal_desc:0 "The canal was dug by the hands of Central American workers, yet its profits flow to Wall Street and American soldiers guard its locks. With Panama free, the time has come to take back the Canal Zone."
- ELS_seize_the_panama_canal_tt:0 "A §Yborder war§! will begin over the §YPanama Canal Zone§!. If we win, the §YUnited States§! must choose between giving up the canal and declaring war on us."
+ ELS_seize_the_panama_canal_tt:0 "A §Yborder war§! will begin over the §YPanama Canal Zone§!. If we win, the §YUnited States§! must either give up the canal or declare war on us."
 
 ###Events###
  el_salvador.1.t:0 "Joint Army Exercises"
