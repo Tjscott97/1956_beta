@@ -20,8 +20,14 @@ shared_focus = {
 			type = infantry_equipment
 			amount = 300
 		}
+		add_tech_bonus = {
+			name = infantry_weapons_bonus
+			bonus = 0.5
+			uses = 1
+			category = infantry_weapons
+		}
 	}
-	search_filters = { FOCUS_FILTER_MILITARY_IMPROVEMENT }
+	search_filters = { FOCUS_FILTER_MILITARY_IMPROVEMENT FOCUS_FILTER_RESEARCH }
 }
 
 ### Foreign Military Mission ###
