@@ -2923,7 +2923,7 @@ focus_tree = {
 
 	focus = {
 		id = ELS_huelga_de_brazos_caidos
-		icon = GFX_focus_generic_great_peasant_strike_shine
+		icon = GFX_focus_generic_great_peasant_strike
 		prerequisite = { focus = ELS_return_of_miguel_marmol }
 		prerequisite = { focus = ELS_rebuild_the_party_cells }
 		prerequisite = { focus = ELS_organize_the_coffee_pickers }
@@ -3245,7 +3245,7 @@ focus_tree = {
 
 	focus = {
 		id = ELS_coffee_cooperatives
-		icon = GFX_goal_generic_coffee_plantations_shine
+		icon = GFX_goal_generic_coffee_plantations
 		prerequisite = { focus = ELS_expropriate_the_fourteen_families }
 		mutually_exclusive = { focus = ELS_collectivize_the_fincas }
 		x = 1
@@ -4092,22 +4092,18 @@ focus_tree = {
 		x = -1
 		y = 1
 		relative_position_id = ELS_the_peso_centroamericano
-		cost = 10
+		cost = 7.2
 
 		ai_will_do = {
 			factor = 1
 		}
 
 		completion_reward = {
-			313 = {
-				add_extra_state_shared_building_slots = 1
-				add_building_construction = {
-					type = industrial_complex
-					level = 1
-					instant_build = yes
+			every_core_state = {
+				limit = {
+					is_owned_and_controlled_by = ROOT
 				}
-			}
-			312 = {
+				random_select_amount = 3
 				add_extra_state_shared_building_slots = 1
 				add_building_construction = {
 					type = industrial_complex
@@ -4238,39 +4234,6 @@ focus_tree = {
 	### Infrastructure ###
 
 	focus = {
-		id = ELS_arsenals_of_the_union
-		icon = GFX_goal_generic_military_factories_shine
-		prerequisite = { focus = ELS_trans_isthmian_railway }
-		x = 0
-		y = 1
-		relative_position_id = ELS_trans_isthmian_railway
-		cost = 10
-
-		ai_will_do = {
-			factor = 1
-		}
-
-		completion_reward = {
-			every_core_state = {
-				limit = {
-					is_owned_and_controlled_by = ROOT
-				}
-				random_select_amount = 3
-				add_extra_state_shared_building_slots = 1
-				add_building_construction = {
-					type = arms_factory
-					level = 1
-					instant_build = yes
-				}
-			}
-			custom_effect_tooltip = generic_skip_one_line_tt
-
-			custom_effect_tooltip = ELS_modify_central_american_economy_tt
-			add_to_variable = { ELS_coffee_production_speed_arms_factory_factor = 0.1 tooltip = production_speed_arms_factory_factor_tt }
-		}
-	}
-
-	focus = {
 		id = ELS_the_pan_american_highway
 		icon = GFX_goal_generic_road
 		prerequisite = { focus = ELS_one_central_america }
@@ -4309,7 +4272,7 @@ focus_tree = {
 
 	focus = {
 		id = ELS_trans_isthmian_railway
-		icon = GFX_goal_COG_Jungle_Railroad_shine
+		icon = GFX_goal_COG_Jungle_Railroad
 		prerequisite = { focus = ELS_the_pan_american_highway }
 		x = -1
 		y = 1
@@ -4339,13 +4302,46 @@ focus_tree = {
 	}
 
 	focus = {
+		id = ELS_arsenals_of_the_union
+		icon = GFX_goal_generic_military_factories
+		prerequisite = { focus = ELS_trans_isthmian_railway }
+		x = 0
+		y = 1
+		relative_position_id = ELS_trans_isthmian_railway
+		cost = 7.2
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		completion_reward = {
+			every_core_state = {
+				limit = {
+					is_owned_and_controlled_by = ROOT
+				}
+				random_select_amount = 3
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+			custom_effect_tooltip = generic_skip_one_line_tt
+
+			custom_effect_tooltip = ELS_modify_central_american_economy_tt
+			add_to_variable = { ELS_coffee_production_speed_arms_factory_factor = 0.1 tooltip = production_speed_arms_factory_factor_tt }
+		}
+	}
+
+	focus = {
 		id = ELS_survey_the_nicaraguan_canal
 		icon = GFX_goal_generic_construct_naval_dockyard
 		prerequisite = { focus = ELS_arsenals_of_the_union }
 		x = 0
 		y = 1
 		relative_position_id = ELS_arsenals_of_the_union
-		cost = 10
+		cost = 7.2
 
 		ai_will_do = {
 			factor = 1
@@ -4629,7 +4625,7 @@ focus_tree = {
 
 	focus = {
 		id = ELS_revolution_in_panama
-		icon = GFX_goal_generic_attack_panama_shine
+		icon = GFX_goal_generic_attack_panama
 		prerequisite = { focus = ELS_the_pan_american_highway }
 		mutually_exclusive = { focus = ELS_invite_panama }
 		x = 3
