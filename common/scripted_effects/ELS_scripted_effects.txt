@@ -3,21 +3,20 @@
 
 ### Central American Offers ###
 # Used by the 5 Central American offer events (el_salvador.1 - el_salvador.5) to send El Salvador a report
-# for each country that answers. In the report events FROM is the country that answered.
-# Which offer the report is about comes from the ELS_current_offer variable, set in each focus.
+# for each country that answers. 
 
-# Scope: invited country, inside the accept option of an offer event
+# Invited country, inside the accept option of an offer event
 ELS_offer_accepted_response = {
 	ELS = { country_event = { id = el_salvador.10 } }
 }
 
-# Scope: invited country, inside the decline option of an offer event
+# Invited country, inside the decline option of an offer event
 ELS_offer_declined_response = {
 	ELS = { country_event = { id = el_salvador.11 } }
 }
 
 ### United States of Central America ###
-# Scope: El Salvador. Called when the first country joins the federation (Draft A Federal Constitution, el_salvador.5
+# Called when the first country joins the federation (Draft A Federal Constitution, el_salvador.5
 # or one of the integration decisions). Only does anything the first time it is called.
 ELS_form_central_america = {
 	if = {
@@ -30,11 +29,28 @@ ELS_form_central_america = {
 	}
 }
 
-# Scope: El Salvador. Same as ELS_form_central_america but shows a tooltip, for use in decisions
+#  Same as ELS_form_central_america but shows a tooltip, for use in decisions
 ELS_form_central_america_tooltip = {
 	if = {
 		limit = { NOT = { has_country_flag = ELS_central_america_formed } }
 		custom_effect_tooltip = ELS_form_central_america_tt
 		hidden_effect = { ELS_form_central_america = yes }
+	}
+}
+
+### Economy Law ###
+# Moves the economy law up one step, stopping at War Economy
+ELS_increase_economy_law = {
+	if = {
+		limit = { has_idea = civilian_economy }
+		add_ideas = low_economic_mobilisation
+	}
+	else_if = {
+		limit = { has_idea = low_economic_mobilisation }
+		add_ideas = partial_economic_mobilisation
+	}
+	else_if = {
+		limit = { has_idea = partial_economic_mobilisation }
+		add_ideas = war_economy
 	}
 }

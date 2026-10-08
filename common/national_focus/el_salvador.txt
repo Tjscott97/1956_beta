@@ -1104,6 +1104,9 @@ focus_tree = {
 		}
 
 		completion_reward = {
+			ELS_increase_economy_law = yes
+			custom_effect_tooltip = generic_skip_one_line_tt
+
 			random_owned_controlled_state = {
 				add_extra_state_shared_building_slots = 1
 				add_building_construction = {
@@ -1365,6 +1368,9 @@ focus_tree = {
 		}
 
 		completion_reward = {
+			ELS_increase_economy_law = yes
+			custom_effect_tooltip = generic_skip_one_line_tt
+
 			add_war_support = 0.1
 			custom_effect_tooltip = generic_skip_one_line_tt
 			custom_effect_tooltip = ELS_guard_spawn_tt
@@ -1378,7 +1384,7 @@ focus_tree = {
 				}
 			}
 		}
-		search_filters = { FOCUS_FILTER_HISTORICAL FOCUS_FILTER_WAR_SUPPORT FOCUS_FILTER_MANPOWER }
+		search_filters = { FOCUS_FILTER_HISTORICAL FOCUS_FILTER_WAR_SUPPORT FOCUS_FILTER_INDUSTRY FOCUS_FILTER_MANPOWER }
 	}
 
 	focus = {
@@ -1600,7 +1606,7 @@ focus_tree = {
 			}
 			custom_effect_tooltip = generic_skip_one_line_tt
 
-			add_ideas = war_economy	
+			ELS_increase_economy_law = yes
 			custom_effect_tooltip = generic_skip_one_line_tt
 
 			custom_effect_tooltip = ELS_modify_coffee_tt
@@ -2152,9 +2158,12 @@ focus_tree = {
 		}
 		
 		completion_reward = {
+			ELS_increase_economy_law = yes
+			custom_effect_tooltip = generic_skip_one_line_tt
+
 			add_ideas = r56_ELS_strengthen_the_republic
 		}
-		search_filters = { FOCUS_FILTER_POLITICAL }
+		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_INDUSTRY }
 	}
 
 	focus = {
@@ -2545,6 +2554,9 @@ focus_tree = {
 		}
 
 		completion_reward = {
+			ELS_increase_economy_law = yes
+			custom_effect_tooltip = generic_skip_one_line_tt
+
 			army_experience = 20
 			custom_effect_tooltip = generic_skip_one_line_tt
 			custom_effect_tooltip = ELS_joint_military_exercises_tt
@@ -2567,7 +2579,7 @@ focus_tree = {
 				}
 			}
 		}
-		search_filters = { FOCUS_FILTER_ALLIANCE }
+		search_filters = { FOCUS_FILTER_ALLIANCE FOCUS_FILTER_INDUSTRY }
 	}
 	
 	focus = {
@@ -3177,6 +3189,9 @@ focus_tree = {
 		}
 
 		completion_reward = {
+			ELS_increase_economy_law = yes
+			custom_effect_tooltip = generic_skip_one_line_tt
+
 			add_ideas = r56_ELS_peoples_militias
 			custom_effect_tooltip = generic_skip_one_line_tt
 
@@ -3209,7 +3224,7 @@ focus_tree = {
 				}
 			}
 		}
-		search_filters = { FOCUS_FILTER_MANPOWER FOCUS_FILTER_MILITARY_IMPROVEMENT }
+		search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_MANPOWER FOCUS_FILTER_MILITARY_IMPROVEMENT }
 	}
 
 	focus = {
@@ -3600,6 +3615,9 @@ focus_tree = {
 		}
 
 		completion_reward = {
+			ELS_increase_economy_law = yes
+			custom_effect_tooltip = generic_skip_one_line_tt
+
 			314 = {
 				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
@@ -3696,6 +3714,9 @@ focus_tree = {
 		}
 
 		completion_reward = {
+			ELS_increase_economy_law = yes
+			custom_effect_tooltip = generic_skip_one_line_tt
+
 			if = {
 				limit = { is_in_faction = no }
 				set_rule = {
@@ -3706,7 +3727,7 @@ focus_tree = {
 			}
 			unlock_decision_category_tooltip = ELS_revolutionary_front
 		}
-		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_ALLIANCE FOCUS_FILTER_ANNEXATION }
+		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_ALLIANCE FOCUS_FILTER_ANNEXATION FOCUS_FILTER_INDUSTRY }
 	}
 
 	focus = {
@@ -3909,6 +3930,9 @@ focus_tree = {
 		}
 
 		completion_reward = {
+			ELS_increase_economy_law = yes
+			custom_effect_tooltip = generic_skip_one_line_tt
+
 			add_war_support = 0.05
 			custom_effect_tooltip = ELS_against_the_dictators_tt
 			hidden_effect = {
@@ -3930,7 +3954,7 @@ focus_tree = {
 				}
 			}
 		}
-		search_filters = { FOCUS_FILTER_WAR_SUPPORT FOCUS_FILTER_ANNEXATION }
+		search_filters = { FOCUS_FILTER_WAR_SUPPORT FOCUS_FILTER_ANNEXATION FOCUS_FILTER_INDUSTRY }
 	}
 
 	focus = {
@@ -4432,6 +4456,9 @@ focus_tree = {
 		}
 
 		completion_reward = {
+			ELS_increase_economy_law = yes
+			custom_effect_tooltip = generic_skip_one_line_tt
+
 			every_core_state = {
 				limit = {
 					is_owned_and_controlled_by = ROOT
