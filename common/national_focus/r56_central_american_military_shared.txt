@@ -27,7 +27,7 @@ shared_focus = {
 			category = infantry_weapons
 		}
 	}
-	search_filters = { FOCUS_FILTER_MILITARY_IMPROVEMENT FOCUS_FILTER_RESEARCH }
+	search_filters = { FOCUS_FILTER_RESEARCH FOCUS_FILTER_ARMY_XP FOCUS_FILTER_MILITARY_EQUIPMENT }
 }
 
 ### Foreign Military Mission ###
@@ -80,7 +80,7 @@ shared_focus = {
 			add_skill_level = 1
 		}
 	}
-	search_filters = { FOCUS_FILTER_MILITARY_IMPROVEMENT }
+	search_filters = { FOCUS_FILTER_ARMY_XP FOCUS_FILTER_MILITARY_CHARACTER }
 }
 
 shared_focus = {
@@ -163,7 +163,7 @@ shared_focus = {
 	completion_reward = {
 		add_ideas = CENAM_soviet_advisers
 	}
-	search_filters = { FOCUS_FILTER_MILITARY_IMPROVEMENT }
+	search_filters = { FOCUS_FILTER_MANPOWER FOCUS_FILTER_MILITARY_IMPROVEMENT }
 }
 
 shared_focus = {
@@ -188,7 +188,7 @@ shared_focus = {
 			category = land_doctrine
 		}
 	}
-	search_filters = { FOCUS_FILTER_RESEARCH }
+	search_filters = { FOCUS_FILTER_RESEARCH FOCUS_FILTER_ARMY_XP }
 }
 
 ### Officer Corps ###
@@ -212,7 +212,7 @@ shared_focus = {
 			add_planning = 1
 		}
 	}
-	search_filters = { FOCUS_FILTER_MILITARY_IMPROVEMENT }
+	search_filters = { FOCUS_FILTER_ARMY_XP FOCUS_FILTER_MILITARY_CHARACTER }
 }
 
 shared_focus = {
@@ -252,7 +252,7 @@ shared_focus = {
 	completion_reward = {
 		add_ideas = CENAM_loyal_officer_corps
 	}
-	search_filters = { FOCUS_FILTER_STABILITY }
+	search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_STABILITY FOCUS_FILTER_MILITARY_IMPROVEMENT }
 }
 
 shared_focus = {
@@ -277,7 +277,7 @@ shared_focus = {
 			category = land_doctrine
 		}
 	}
-	search_filters = { FOCUS_FILTER_RESEARCH }
+	search_filters = { FOCUS_FILTER_RESEARCH FOCUS_FILTER_ARMY_XP }
 }
 
 shared_focus = {
@@ -313,7 +313,7 @@ shared_focus = {
 			custom_effect_tooltip = CENAM_field_maneuvers_tt
 		}
 	}
-	search_filters = { FOCUS_FILTER_MILITARY_IMPROVEMENT }
+	search_filters = { FOCUS_FILTER_ARMY_XP FOCUS_FILTER_MILITARY_IMPROVEMENT }
 }
 
 shared_focus = {
@@ -349,7 +349,7 @@ shared_focus = {
 			custom_effect_tooltip = CENAM_escuela_superior_de_guerra_tt
 		}
 	}
-	search_filters = { FOCUS_FILTER_MILITARY_IMPROVEMENT }
+	search_filters = { FOCUS_FILTER_ARMY_XP FOCUS_FILTER_MILITARY_IMPROVEMENT }
 }
 
 ### Land and People ###
@@ -419,7 +419,7 @@ shared_focus = {
 		custom_effect_tooltip = generic_skip_one_line_tt
 		add_ideas = CENAM_tropical_medicine_idea
 	}
-	search_filters = { FOCUS_FILTER_MILITARY_IMPROVEMENT }
+	search_filters = { FOCUS_FILTER_RESEARCH FOCUS_FILTER_MILITARY_IMPROVEMENT }
 }
 
 shared_focus = {
@@ -452,7 +452,7 @@ shared_focus = {
 		custom_effect_tooltip = HON_jungle_infant_effect
 		hidden_effect = { set_technology = { HON_jungle_infantry = 1 } }
 	}
-	search_filters = { FOCUS_FILTER_RESEARCH }
+	search_filters = { FOCUS_FILTER_RESEARCH FOCUS_FILTER_MILITARY_CHARACTER }
 }
 
 shared_focus = {
@@ -482,7 +482,7 @@ shared_focus = {
 			add_unit_leader_trait = hill_fighter
 		}
 	}
-	search_filters = { FOCUS_FILTER_RESEARCH }
+	search_filters = { FOCUS_FILTER_RESEARCH FOCUS_FILTER_MILITARY_CHARACTER }
 }
 
 shared_focus = {
@@ -509,7 +509,7 @@ shared_focus = {
 		custom_effect_tooltip = generic_skip_one_line_tt
 		add_ideas = CENAM_mule_trains_idea
 	}
-	search_filters = { FOCUS_FILTER_MILITARY_IMPROVEMENT }
+	search_filters = { FOCUS_FILTER_RESEARCH FOCUS_FILTER_MILITARY_IMPROVEMENT }
 }
 
 shared_focus = {
@@ -541,7 +541,7 @@ shared_focus = {
 			add_unit_leader_trait = guerilla_fighter
 		}
 	}
-	search_filters = { FOCUS_FILTER_RESEARCH }
+	search_filters = { FOCUS_FILTER_RESEARCH FOCUS_FILTER_MILITARY_IMPROVEMENT FOCUS_FILTER_MILITARY_CHARACTER }
 }
 
 ### Arms and Engineers ###
@@ -596,7 +596,7 @@ shared_focus = {
 			}
 		}
 	}
-	search_filters = { FOCUS_FILTER_RESEARCH }
+	search_filters = { FOCUS_FILTER_RESEARCH FOCUS_FILTER_MILITARY_EQUIPMENT }
 }
 
 shared_focus = {
@@ -630,7 +630,7 @@ shared_focus = {
 			}
 		}
 	}
-	search_filters = { FOCUS_FILTER_RESEARCH }
+	search_filters = { FOCUS_FILTER_RESEARCH FOCUS_FILTER_MILITARY_EQUIPMENT }
 }
 
 shared_focus = {
@@ -664,7 +664,7 @@ shared_focus = {
 			}
 		}
 	}
-	search_filters = { FOCUS_FILTER_RESEARCH FOCUS_FILTER_INDUSTRY }
+	search_filters = { FOCUS_FILTER_RESEARCH FOCUS_FILTER_MILITARY_EQUIPMENT }
 }
 
 shared_focus = {
@@ -698,7 +698,7 @@ shared_focus = {
 			}
 		}
 	}
-	search_filters = { FOCUS_FILTER_RESEARCH }
+	search_filters = { FOCUS_FILTER_RESEARCH FOCUS_FILTER_MILITARY_EQUIPMENT }
 }
 
 shared_focus = {
