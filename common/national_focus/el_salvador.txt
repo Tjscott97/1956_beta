@@ -50,6 +50,7 @@ focus_tree = {
 				}
 			}
 		}
+		search_filters = { FOCUS_FILTER_INDUSTRY }
 	}
 
 	### Air Defense ###
@@ -99,6 +100,7 @@ focus_tree = {
 				}
 			}
 		}
+		search_filters = { FOCUS_FILTER_RESEARCH }
 	}
 
 	focus = {
@@ -133,6 +135,7 @@ focus_tree = {
 				category = cat_anti_air
 			}
 		}
+		search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_RESEARCH }
 	}
 
 	### Civil and Maritime Aviation ###
@@ -162,6 +165,7 @@ focus_tree = {
 			custom_effect_tooltip = ELS_modify_coffee_tt
 			add_to_variable = { ELS_coffee_production_speed_air_base_factor = 0.25 tooltip = production_speed_air_base_factor_tt }
 		}
+		search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_RESEARCH }
 	}
 
 	focus = {
@@ -196,6 +200,7 @@ focus_tree = {
 				}
 			}
 		}
+		search_filters = { FOCUS_FILTER_RESEARCH }
 	}
 
 	### Ground Support ###
@@ -233,6 +238,7 @@ focus_tree = {
 				}
 			}
 		}
+		search_filters = { FOCUS_FILTER_RESEARCH }
 	}
 
 	focus = {
@@ -257,6 +263,7 @@ focus_tree = {
 				category = air_doctrine
 			}
 		}
+		search_filters = { FOCUS_FILTER_RESEARCH FOCUS_FILTER_MILITARY_IMPROVEMENT }
 	}
 
 	### Squadrons ###
@@ -339,6 +346,7 @@ focus_tree = {
 				}
 			}
 		}
+		search_filters = { FOCUS_FILTER_MILITARY_EQUIPMENT }
 	}
 
 	focus = {
@@ -395,6 +403,7 @@ focus_tree = {
 				}
 			}
 		}
+		search_filters = { FOCUS_FILTER_MILITARY_EQUIPMENT }
 	}
 
 	focus = {
@@ -418,6 +427,7 @@ focus_tree = {
 				add_idea = r56_ELS_fuerza_aerea_salvadorena
 			}
 		}
+		search_filters = { FOCUS_FILTER_MILITARY_IMPROVEMENT }
 	}
 
 	############################
@@ -451,6 +461,7 @@ focus_tree = {
 				producer = ROOT
 			}
 		}
+		search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_MILITARY_EQUIPMENT }
 	}
 
 	### Destroyers ###
@@ -501,6 +512,7 @@ focus_tree = {
 				}
 			}
 		}
+		search_filters = { FOCUS_FILTER_RESEARCH }
 	}
 
 	focus = {
@@ -526,6 +538,7 @@ focus_tree = {
 				add_skill_level = 1
 			}
 		}
+		search_filters = { FOCUS_FILTER_MILITARY_IMPROVEMENT }
 	}
 
 	focus = {
@@ -615,6 +628,7 @@ focus_tree = {
 				}
 			}
 		}
+		search_filters = { FOCUS_FILTER_MILITARY_EQUIPMENT }
 	}
 
 	### Trade Protection ###
@@ -644,6 +658,7 @@ focus_tree = {
 			custom_effect_tooltip = ELS_modify_coffee_tt
 			add_to_variable = { ELS_coffee_trade_opinion_factor = 0.1 tooltip = trade_opinion_factor_tt }
 		}
+		search_filters = { FOCUS_FILTER_INTERNATIONAL_TRADE FOCUS_FILTER_RESEARCH }
 	}
 
 	focus = {
@@ -677,6 +692,7 @@ focus_tree = {
 			custom_effect_tooltip = ELS_modify_coffee_tt
 			add_to_variable = { ELS_coffee_industrial_capacity_dockyard = 0.1 tooltip = industrial_capacity_dockyard_tt }
 		}
+		search_filters = { FOCUS_FILTER_INDUSTRY }
 	}
 
 	focus = {
@@ -704,6 +720,7 @@ focus_tree = {
 				}
 			}
 		}
+		search_filters = { FOCUS_FILTER_RESEARCH FOCUS_FILTER_MILITARY_IMPROVEMENT FOCUS_FILTER_MILITARY_EQUIPMENT }
 	}
 
 	### Submarines ###
@@ -753,6 +770,7 @@ focus_tree = {
 				}
 			}
 		}
+		search_filters = { FOCUS_FILTER_RESEARCH }
 	}
 
 	focus = {
@@ -788,6 +806,7 @@ focus_tree = {
 				}
 			}
 		}
+		search_filters = { FOCUS_FILTER_RESEARCH }
 	}
 
 	focus = {
@@ -872,6 +891,7 @@ focus_tree = {
 				}
 			}
 		}
+		search_filters = { FOCUS_FILTER_MILITARY_EQUIPMENT }
 	}
 
 	focus = {
@@ -951,6 +971,7 @@ focus_tree = {
 				}
 			}
 		}
+		search_filters = { FOCUS_FILTER_RESEARCH FOCUS_FILTER_MILITARY_EQUIPMENT }
 	}
 
 	################################
@@ -976,6 +997,7 @@ focus_tree = {
 				category = industry
 			}
 		}
+		search_filters = { FOCUS_FILTER_RESEARCH }
 	}
 
 	focus = {
@@ -1001,6 +1023,7 @@ focus_tree = {
 				}
 			}
 		}
+		search_filters = { FOCUS_FILTER_INDUSTRY }
 	}
 
 	focus = {
@@ -1024,6 +1047,7 @@ focus_tree = {
 				category = electronics
 			}
 		}
+		search_filters = { FOCUS_FILTER_RESEARCH }
 	}
 
 	focus = {
@@ -1063,6 +1087,7 @@ focus_tree = {
 			custom_effect_tooltip = ELS_modify_coffee_tt
 			add_to_variable = { ELS_coffee_factory_energy_consumption = -0.1 tooltip = factory_energy_consumption_tt }
 		}
+		search_filters = { FOCUS_FILTER_INDUSTRY }
 	}
 
 	focus = {
@@ -1092,6 +1117,7 @@ focus_tree = {
 			custom_effect_tooltip = ELS_modify_coffee_tt
 			add_to_variable = { ELS_coffee_industrial_capacity_factory = 0.05 tooltip = industrial_capacity_factory_tt }
 		}
+		search_filters = { FOCUS_FILTER_INDUSTRY }
 	}
 
 	focus = {
@@ -1121,6 +1147,7 @@ focus_tree = {
 				category = electronics
 			}
 		}
+		search_filters = { FOCUS_FILTER_RESEARCH }
 	}
 
 	focus = {
@@ -1141,6 +1168,7 @@ focus_tree = {
 			add_to_variable = { ELS_coffee_production_speed_industrial_complex_factor = 0.1 tooltip = production_speed_industrial_complex_factor_tt }
 			add_to_variable = { ELS_coffee_production_speed_arms_factory_factor = 0.1 tooltip = production_speed_arms_factory_factor_tt }
 		}
+		search_filters = { FOCUS_FILTER_INDUSTRY }
 	}
 
 	focus = {
@@ -1169,6 +1197,7 @@ focus_tree = {
 			custom_effect_tooltip = ELS_modify_coffee_tt
 			add_to_variable = { ELS_coffee_production_speed_buildings_factor = 0.05 tooltip = production_speed_buildings_factor_tt }
 		}
+		search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_RESEARCH }
 	}
 
 	focus = {
@@ -1192,6 +1221,7 @@ focus_tree = {
 			custom_effect_tooltip = ELS_modify_coffee_tt
 			add_to_variable = { ELS_coffee_research_speed_factor = 0.05 tooltip = research_speed_factor_tt }
 		}
+		search_filters = { FOCUS_FILTER_RESEARCH }
 	}
 
 	focus = {
@@ -1222,6 +1252,7 @@ focus_tree = {
 			}
 			hidden_effect = { country_event = el_salvador.30 }
 		}
+		search_filters = { FOCUS_FILTER_RESEARCH }
 	}
 
 	#################################
@@ -1247,6 +1278,7 @@ focus_tree = {
 		completion_reward = {
 			add_political_power = 100
 		}
+		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_HISTORICAL }
 	}
 
 	### Maximiliano section ###
@@ -1283,6 +1315,7 @@ focus_tree = {
 			custom_effect_tooltip = generic_skip_one_line_tt
 			add_ideas = r56_ELS_maximiliano_regime
 		}
+		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_HISTORICAL }
 	}
 
 	focus = {
@@ -1310,6 +1343,7 @@ focus_tree = {
 			    		popularity = -0.05
 					}
 		}
+		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_HISTORICAL FOCUS_FILTER_STABILITY }
 	}
 
 	focus = {
@@ -1344,6 +1378,7 @@ focus_tree = {
 				}
 			}
 		}
+		search_filters = { FOCUS_FILTER_HISTORICAL FOCUS_FILTER_WAR_SUPPORT FOCUS_FILTER_MANPOWER }
 	}
 
 	focus = {
@@ -1373,6 +1408,7 @@ focus_tree = {
 			custom_effect_tooltip = generic_skip_one_line_tt
 			add_ideas = r56i_laws_security_order
 		}
+		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_HISTORICAL FOCUS_FILTER_STABILITY }
 	}
 
 	focus = {
@@ -1400,6 +1436,7 @@ focus_tree = {
 					elections_allowed = no
 			}
 		}
+		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_HISTORICAL }
 	}
 
 	focus = {
@@ -1440,6 +1477,7 @@ focus_tree = {
 				}
 			}
 		}
+		search_filters = { FOCUS_FILTER_HISTORICAL FOCUS_FILTER_MILITARY_EQUIPMENT }
 	}
 
 	focus = {
@@ -1476,6 +1514,7 @@ focus_tree = {
    			 	}
 			}
 		}
+		search_filters = { FOCUS_FILTER_HISTORICAL FOCUS_FILTER_RESEARCH }
 	}
 
 	focus = {
@@ -1499,6 +1538,7 @@ focus_tree = {
 			}
 			
 		}
+		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_HISTORICAL FOCUS_FILTER_STABILITY FOCUS_FILTER_RESEARCH }
 	}
 
 	focus = {
@@ -1532,6 +1572,7 @@ focus_tree = {
 				}
 			}
 		}
+		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_HISTORICAL FOCUS_FILTER_STABILITY FOCUS_FILTER_RESEARCH FOCUS_FILTER_MANPOWER FOCUS_FILTER_MILITARY_IMPROVEMENT }
 	}
 
 	focus = {
@@ -1566,6 +1607,7 @@ focus_tree = {
 			add_to_variable = { ELS_coffee_fascism_drift = 0.01 tooltip = fascism_drift_tt }
 			add_to_variable = { ELS_coffee_production_speed_arms_factory_factor = 0.1 tooltip = production_speed_arms_factory_factor_tt }	
 		}
+		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_HISTORICAL FOCUS_FILTER_INDUSTRY }
 	}
 
 	focus = {
@@ -1599,6 +1641,7 @@ focus_tree = {
 				}
 			}
 		}
+		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_HISTORICAL FOCUS_FILTER_STABILITY FOCUS_FILTER_RESEARCH FOCUS_FILTER_MANPOWER FOCUS_FILTER_MILITARY_IMPROVEMENT }
 	}
 
 	focus = {
@@ -1651,6 +1694,7 @@ focus_tree = {
 				upgrade_intelligence_agency = upgrade_form_department            
 			}
 		}
+		search_filters = { FOCUS_FILTER_HISTORICAL FOCUS_FILTER_RESEARCH FOCUS_FILTER_MILITARY_IMPROVEMENT }
 	}
 
 	focus = {
@@ -1681,6 +1725,7 @@ focus_tree = {
 			custom_effect_tooltip = ELS_modify_coffee_tt
 			add_to_variable = { ELS_coffee_stability_factor = 0.15 tooltip = stability_factor_tt }
 		}	
+		search_filters = { FOCUS_FILTER_HISTORICAL FOCUS_FILTER_STABILITY FOCUS_FILTER_INDUSTRY }
 	}
 
 	focus = {
@@ -1702,6 +1747,7 @@ focus_tree = {
 			add_to_variable = { ELS_coffee_political_power_factor = 0.15 tooltip = political_power_factor_tt }
 			add_to_variable = { ELS_coffee_neutrality_drift = 0.01 tooltip = neutrality_drift_tt }
 		}	
+		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_HISTORICAL }
 	}
 
 	focus = {
@@ -1723,6 +1769,7 @@ focus_tree = {
 			add_to_variable = { ELS_coffee_production_factory_max_efficiency_factor = 0.1 tooltip = production_factory_max_efficiency_factor_tt }
 			add_to_variable = { ELS_coffee_production_factory_efficiency_gain_factor = 0.1 tooltip = production_factory_efficiency_gain_factor_tt }
 		}	
+		search_filters = { FOCUS_FILTER_HISTORICAL FOCUS_FILTER_INDUSTRY }
 	}
 
 	focus = {
@@ -1746,6 +1793,7 @@ focus_tree = {
 			add_to_variable = { ELS_coffee_trade_laws_cost_factor = -1 tooltip = trade_laws_cost_factor_tt }
 			add_to_variable = { ELS_coffee_local_resources_factor = 0.15 tooltip = local_resources_factor_tt }
 		}	
+		search_filters = { FOCUS_FILTER_HISTORICAL FOCUS_FILTER_INTERNATIONAL_TRADE FOCUS_FILTER_RESOURCES }
 	}
 
 	focus = {
@@ -1781,6 +1829,7 @@ focus_tree = {
 			add_to_variable = { ELS_coffee_stability_factor = 0.15 tooltip = stability_factor_tt }
 			add_to_variable = { ELS_coffee_production_speed_industrial_complex_factor = 0.15 tooltip = production_speed_industrial_complex_factor_tt }
 		}
+		search_filters = { FOCUS_FILTER_STABILITY FOCUS_FILTER_INDUSTRY }
 	}
 
 	focus = {
@@ -1817,6 +1866,7 @@ focus_tree = {
 				}
 			}
 		}
+		search_filters = { FOCUS_FILTER_ALLIANCE FOCUS_FILTER_INDUSTRY }
 	}
 
 	focus = {
@@ -1853,6 +1903,7 @@ focus_tree = {
 				}
 			}
 		}
+		search_filters = { FOCUS_FILTER_HISTORICAL FOCUS_FILTER_ALLIANCE FOCUS_FILTER_INDUSTRY }
 	}
 
 
@@ -1889,6 +1940,7 @@ focus_tree = {
 			#custom_effect_tooltip = available_political_advisor		
 			activate_advisor = ELS_arturo_araujo
 		}
+		search_filters = { FOCUS_FILTER_POLITICAL }
 	}
 
 	focus = {
@@ -1917,6 +1969,7 @@ focus_tree = {
 			add_to_variable = { ELS_coffee_political_power_factor = 0.05 tooltip = political_power_factor_tt }
 			add_to_variable = { ELS_coffee_democratic_drift = 0.01 tooltip = democratic_drift_tt }
 		}
+		search_filters = { FOCUS_FILTER_POLITICAL }
 	}
 
 	focus = {
@@ -1945,6 +1998,7 @@ focus_tree = {
 			add_to_variable = { ELS_coffee_political_power_factor = 0.05 tooltip = political_power_factor_tt }
 			add_to_variable = { ELS_coffee_stability_factor = 0.05 tooltip = stability_factor_tt }
 		}
+		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_STABILITY }
 	}
 
 	focus = {
@@ -1977,6 +2031,7 @@ focus_tree = {
 			add_to_variable = { ELS_coffee_stability_factor = 0.05 tooltip = stability_factor_tt }
 			add_to_variable = { ELS_coffee_democratic_drift = 0.01 tooltip = democratic_drift_tt }
 		}
+		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_STABILITY }
 	}
 
 	focus = {
@@ -1998,6 +2053,7 @@ focus_tree = {
 			add_to_variable = { ELS_coffee_production_factory_max_efficiency_factor = 0.05 tooltip = production_factory_max_efficiency_factor_tt }
 			add_to_variable = { ELS_coffee_production_factory_efficiency_gain_factor = 0.05 tooltip = production_factory_efficiency_gain_factor_tt }
 		}
+		search_filters = { FOCUS_FILTER_INDUSTRY }
 	}
 
 	focus = {
@@ -2028,6 +2084,7 @@ focus_tree = {
 			add_to_variable = { ELS_coffee_political_power_factor = 0.05 tooltip = political_power_factor_tt }
 			add_to_variable = { ELS_coffee_monthly_population = 0.3 tooltip = monthly_population_tt }
 		}
+		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_INDUSTRY FOCUS_FILTER_MANPOWER }
 	}
 
 	focus = {
@@ -2050,6 +2107,7 @@ focus_tree = {
 			custom_effect_tooltip = ELS_modify_coffee_tt
 			add_to_variable = { ELS_coffee_research_speed_factor = 0.05 tooltip = research_speed_factor_tt }
 		}
+		search_filters = { FOCUS_FILTER_RESEARCH }
 	}
 
 	focus = {
@@ -2071,6 +2129,7 @@ focus_tree = {
 			add_to_variable = { ELS_coffee_local_resources_factor = 0.15 tooltip = local_resources_factor_tt }
 			add_to_variable = { ELS_coffee_global_building_slots_factor = 0.15 tooltip = global_building_slots_factor_tt }
 		}
+		search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_RESOURCES }
 	}
 
 	### El Salvador - Democratic ###
@@ -2095,6 +2154,7 @@ focus_tree = {
 		completion_reward = {
 			add_ideas = r56_ELS_strengthen_the_republic
 		}
+		search_filters = { FOCUS_FILTER_POLITICAL }
 	}
 
 	focus = {
@@ -2125,6 +2185,7 @@ focus_tree = {
 			add_to_variable = { ELS_coffee_production_speed_buildings_factor = 0.1 tooltip = production_speed_buildings_factor_tt }
 			add_to_variable = { ELS_coffee_consumer_goods_factor = -0.1 tooltip = consumer_goods_factor_tt }
 		}
+		search_filters = { FOCUS_FILTER_INDUSTRY }
 	}
 
 	focus = {
@@ -2148,6 +2209,7 @@ focus_tree = {
 			add_to_variable = { ELS_coffee_political_power_factor = 0.1 tooltip = political_power_factor_tt }
 			add_to_variable = { ELS_coffee_stability_factor = 0.1 tooltip = stability_factor_tt }
 		}
+		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_STABILITY FOCUS_FILTER_RESEARCH }
 	}
 
 	focus = {
@@ -2169,6 +2231,7 @@ focus_tree = {
 			add_to_variable = { ELS_coffee_industrial_capacity_dockyard = 0.05 tooltip = industrial_capacity_dockyard_tt }
 			add_to_variable = { ELS_coffee_line_change_production_efficiency_factor = 0.1 tooltip = line_change_production_efficiency_factor_tt }
 		}
+		search_filters = { FOCUS_FILTER_INDUSTRY }
 	}
 
 	focus = {
@@ -2191,6 +2254,7 @@ focus_tree = {
 			add_to_variable = { ELS_coffee_trade_opinion_factor = 0.5 tooltip = trade_opinion_factor_tt }
 			add_to_variable = { ELS_coffee_trade_laws_cost_factor = -1 tooltip = trade_laws_cost_factor_tt }
 		}
+		search_filters = { FOCUS_FILTER_INTERNATIONAL_TRADE FOCUS_FILTER_INDUSTRY FOCUS_FILTER_RESOURCES }
 	}
 
 	focus = {
@@ -2213,6 +2277,7 @@ focus_tree = {
 			custom_effect_tooltip = ELS_modify_coffee_tt
 			add_to_variable = { ELS_coffee_research_speed_factor = 0.1 tooltip = research_speed_factor_tt }
 		}
+		search_filters = { FOCUS_FILTER_RESEARCH }
 	}
 
 	focus = {
@@ -2234,6 +2299,7 @@ focus_tree = {
 			add_to_variable = { ELS_coffee_production_factory_max_efficiency_factor = 0.1 tooltip = production_factory_max_efficiency_factor_tt }
 			add_to_variable = { ELS_coffee_global_building_slots_factor = 0.25 tooltip = global_building_slots_factor_tt }
 		}
+		search_filters = { FOCUS_FILTER_INDUSTRY }
 	}
 
 	focus = {
@@ -2267,6 +2333,7 @@ focus_tree = {
 			custom_effect_tooltip = ELS_modify_coffee_tt
 			add_to_variable = { ELS_coffee_production_speed_arms_factory_factor = 0.2 tooltip = production_speed_arms_factory_factor_tt }
 		}
+		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_INDUSTRY FOCUS_FILTER_MILITARY_IMPROVEMENT }
 	}
 
 	### Central America - Democratic ###
@@ -2347,6 +2414,7 @@ focus_tree = {
         		years = 1
     		}
 		}
+		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_ALLIANCE }
 	}
 
 	focus = {
@@ -2451,6 +2519,7 @@ focus_tree = {
 			}
 			custom_effect_tooltip = ELS_regional_development_tt
 		}
+		search_filters = { FOCUS_FILTER_ALLIANCE FOCUS_FILTER_INDUSTRY }
 	}
 
 	focus = {
@@ -2498,6 +2567,7 @@ focus_tree = {
 				}
 			}
 		}
+		search_filters = { FOCUS_FILTER_ALLIANCE }
 	}
 	
 	focus = {
@@ -2545,6 +2615,7 @@ focus_tree = {
 				}
 			}
 		}
+		search_filters = { FOCUS_FILTER_ALLIANCE FOCUS_FILTER_INDUSTRY }
 	}
 
 	focus = {
@@ -2599,6 +2670,7 @@ focus_tree = {
 				}
 			}
 		}
+		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_ALLIANCE }
 	}
 
 	focus = {
@@ -2645,6 +2717,7 @@ focus_tree = {
 				}
 			}
 		}
+		search_filters = { FOCUS_FILTER_ALLIANCE FOCUS_FILTER_ANNEXATION }
 	}
 
 	focus = {
@@ -2730,6 +2803,7 @@ focus_tree = {
 				}
 			}
 		}
+		search_filters = { FOCUS_FILTER_ALLIANCE FOCUS_FILTER_ANNEXATION }
 	}
 
 	### Shared - Democratic ###
@@ -2766,6 +2840,7 @@ focus_tree = {
 				}
 			}
 		}
+		search_filters = { FOCUS_FILTER_MILITARY_EQUIPMENT }
 	}
 
 	focus = {
@@ -2796,6 +2871,7 @@ focus_tree = {
 			add_to_variable = { ELS_coffee_stability_factor = -0.05 tooltip = stability_factor_tt }
 			add_to_variable = { ELS_coffee_monthly_population = 0.15 tooltip = monthly_population_tt }
 		}
+		search_filters = { FOCUS_FILTER_STABILITY FOCUS_FILTER_MANPOWER }
 	}
 	
 
@@ -2830,6 +2906,7 @@ focus_tree = {
 			    		popularity = 0.1
 					}
 		}
+		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_STABILITY }
 	}
 
 	focus = {
@@ -2864,6 +2941,7 @@ focus_tree = {
 				activate_advisor = ELS_miguel_marmol
 			}
 		}
+		search_filters = { FOCUS_FILTER_POLITICAL }
 	}
 
 	focus = {
@@ -2890,6 +2968,7 @@ focus_tree = {
 			custom_effect_tooltip = generic_skip_one_line_tt
 			unlock_decision_category_tooltip = ELS_clandestine_network
 		}
+		search_filters = { FOCUS_FILTER_POLITICAL }
 	}
 
 	focus = {
@@ -2919,6 +2998,7 @@ focus_tree = {
 			add_to_variable = { ELS_coffee_communism_drift = 0.01 tooltip = communism_drift_tt }
 			add_to_variable = { ELS_coffee_stability_factor = -0.05 tooltip = stability_factor_tt }
 		}
+		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_STABILITY }
 	}
 
 	focus = {
@@ -2953,6 +3033,7 @@ focus_tree = {
 				country_event = { id = el_salvador.21 }
 			}
 		}
+		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_INDUSTRY FOCUS_FILTER_MILITARY_IMPROVEMENT }
 	}
 
 	focus = {
@@ -2987,6 +3068,7 @@ focus_tree = {
 				}
 			}
 		}
+		search_filters = { FOCUS_FILTER_MILITARY_EQUIPMENT }
 	}
 
 	focus = {
@@ -3040,6 +3122,7 @@ focus_tree = {
 				days = 90
 			}
 		}
+		search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_MILITARY_EQUIPMENT }
 	}
 
 	focus = {
@@ -3077,6 +3160,7 @@ focus_tree = {
 
 			country_event = { id = el_salvador.22 }
 		}
+		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_INDUSTRY FOCUS_FILTER_MANPOWER }
 	}
 
 	focus = {
@@ -3125,6 +3209,7 @@ focus_tree = {
 				}
 			}
 		}
+		search_filters = { FOCUS_FILTER_MANPOWER FOCUS_FILTER_MILITARY_IMPROVEMENT }
 	}
 
 	focus = {
@@ -3180,6 +3265,7 @@ focus_tree = {
 				}
 			}
 		}
+		search_filters = { FOCUS_FILTER_MANPOWER FOCUS_FILTER_MILITARY_IMPROVEMENT }
 	}
 
 	focus = {
@@ -3215,6 +3301,7 @@ focus_tree = {
 			add_to_variable = { ELS_coffee_production_factory_efficiency_gain_factor = 0.05 tooltip = production_factory_efficiency_gain_factor_tt }
 			add_to_variable = { ELS_coffee_industrial_capacity_factory = 0.05 tooltip = industrial_capacity_factory_tt }
 		}
+		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_INDUSTRY FOCUS_FILTER_MILITARY_IMPROVEMENT }
 	}
 
 	focus = {
@@ -3241,6 +3328,7 @@ focus_tree = {
 			add_to_variable = { ELS_coffee_stability_factor = -0.1 tooltip = stability_factor_tt }
 			add_to_variable = { ELS_coffee_monthly_population = -0.1 tooltip = monthly_population_tt }
 		}
+		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_STABILITY FOCUS_FILTER_INDUSTRY FOCUS_FILTER_RESOURCES FOCUS_FILTER_MANPOWER }
 	}
 
 	focus = {
@@ -3265,6 +3353,7 @@ focus_tree = {
 			add_to_variable = { ELS_coffee_consumer_goods_factor = -0.05 tooltip = consumer_goods_factor_tt }
 			add_to_variable = { ELS_coffee_stability_factor = 0.05 tooltip = stability_factor_tt }
 		}
+		search_filters = { FOCUS_FILTER_STABILITY FOCUS_FILTER_INDUSTRY FOCUS_FILTER_RESOURCES }
 	}
 
 	focus = {
@@ -3306,6 +3395,7 @@ focus_tree = {
 			custom_effect_tooltip = ELS_modify_coffee_tt
 			add_to_variable = { ELS_coffee_political_power_factor = 0.2 tooltip = political_power_factor_tt }
 		}
+		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_INDUSTRY }
 	}
 
 	focus = {
@@ -3326,6 +3416,7 @@ focus_tree = {
 			add_to_variable = { ELS_coffee_stability_factor = 0.05 tooltip = stability_factor_tt }
 			add_to_variable = { ELS_coffee_monthly_population = 0.3 tooltip = monthly_population_tt }
 		}
+		search_filters = { FOCUS_FILTER_STABILITY FOCUS_FILTER_MANPOWER }
 	}
 
 	focus = {
@@ -3349,6 +3440,7 @@ focus_tree = {
 			add_to_variable = { ELS_coffee_stability_factor = 0.05 tooltip = stability_factor_tt }
 			add_to_variable = { ELS_coffee_research_speed_factor = 0.05 tooltip = research_speed_factor_tt }
 		}
+		search_filters = { FOCUS_FILTER_STABILITY FOCUS_FILTER_RESEARCH }
 	}
 
 	focus = {
@@ -3400,6 +3492,7 @@ focus_tree = {
 			# Generic faction request, accepted automatically when both countries are communist
 			SOV = { country_event = generic.2 }
 		}
+		search_filters = { FOCUS_FILTER_ALLIANCE }
 	}
 
 	focus = {
@@ -3440,6 +3533,7 @@ focus_tree = {
 			add_to_variable = { ELS_coffee_industrial_capacity_dockyard = 0.05 tooltip = industrial_capacity_dockyard_tt }
 			add_to_variable = { ELS_coffee_production_factory_max_efficiency_factor = 0.05 tooltip = production_factory_max_efficiency_factor_tt }
 		}
+		search_filters = { FOCUS_FILTER_INDUSTRY }
 	}
 
 	focus = {
@@ -3489,6 +3583,7 @@ focus_tree = {
 				}
 			}
 		}
+		search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_MILITARY_EQUIPMENT }
 	}
 
 	focus = {
@@ -3526,6 +3621,7 @@ focus_tree = {
 			add_to_variable = { ELS_coffee_production_speed_buildings_factor = 0.1 tooltip = production_speed_buildings_factor_tt }
 			add_to_variable = { ELS_coffee_consumer_goods_factor = 0.05 tooltip = consumer_goods_factor_tt }
 		}
+		search_filters = { FOCUS_FILTER_INDUSTRY }
 	}
 
 	focus = {
@@ -3564,6 +3660,7 @@ focus_tree = {
 				}
 			}
 		}
+		search_filters = { FOCUS_FILTER_POLITICAL }
 	}
 
 	focus = {
@@ -3582,6 +3679,7 @@ focus_tree = {
 		completion_reward = {
 			unlock_decision_category_tooltip = ELS_export_the_revolution
 		}
+		search_filters = { FOCUS_FILTER_POLITICAL }
 	}
 
 	focus = {
@@ -3608,6 +3706,7 @@ focus_tree = {
 			}
 			unlock_decision_category_tooltip = ELS_revolutionary_front
 		}
+		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_ALLIANCE FOCUS_FILTER_ANNEXATION }
 	}
 
 	focus = {
@@ -3693,6 +3792,7 @@ focus_tree = {
 			add_state_core = 317
 			add_state_core = 316
 		}
+		search_filters = { FOCUS_FILTER_ANNEXATION }
 	}
 
 	focus = {
@@ -3713,6 +3813,7 @@ focus_tree = {
 			add_to_variable = { ELS_coffee_stability_factor = 0.05 tooltip = stability_factor_tt }
 			add_to_variable = { ELS_coffee_global_building_slots_factor = 0.15 tooltip = global_building_slots_factor_tt }
 		}
+		search_filters = { FOCUS_FILTER_STABILITY FOCUS_FILTER_INDUSTRY }
 	}
 
 	### War Goals - Authoritarian ###
@@ -3758,6 +3859,7 @@ focus_tree = {
 				}
 			}
 		}
+		search_filters = { FOCUS_FILTER_WAR_SUPPORT FOCUS_FILTER_ANNEXATION }
 	}
 
 	focus = {
@@ -3788,6 +3890,7 @@ focus_tree = {
 				target = HON
 			}
 		}
+		search_filters = { FOCUS_FILTER_WAR_SUPPORT FOCUS_FILTER_ANNEXATION }
 	}
 
 	### War Goals - Democratic ###
@@ -3827,6 +3930,7 @@ focus_tree = {
 				}
 			}
 		}
+		search_filters = { FOCUS_FILTER_WAR_SUPPORT FOCUS_FILTER_ANNEXATION }
 	}
 
 	focus = {
@@ -3868,6 +3972,7 @@ focus_tree = {
 				}
 			}
 		}
+		search_filters = { FOCUS_FILTER_WAR_SUPPORT FOCUS_FILTER_ANNEXATION }
 	}
 
 	### War Goals - Communist ###
@@ -3910,6 +4015,7 @@ focus_tree = {
 				}
 			}
 		}
+		search_filters = { FOCUS_FILTER_WAR_SUPPORT FOCUS_FILTER_ANNEXATION }
 	}
 
 	focus = {
@@ -3950,6 +4056,7 @@ focus_tree = {
 				}
 			}
 		}
+		search_filters = { FOCUS_FILTER_WAR_SUPPORT FOCUS_FILTER_ANNEXATION }
 	}
 
 	focus = {
@@ -3981,6 +4088,7 @@ focus_tree = {
 				target = MEX
 			}
 		}
+		search_filters = { FOCUS_FILTER_WAR_SUPPORT FOCUS_FILTER_ANNEXATION }
 	}
 
 	focus = {
@@ -4012,6 +4120,7 @@ focus_tree = {
 				target = USA
 			}
 		}
+		search_filters = { FOCUS_FILTER_WAR_SUPPORT FOCUS_FILTER_ANNEXATION }
 	}
 
 	#############################################
@@ -4061,6 +4170,7 @@ focus_tree = {
 			add_to_variable = { ELS_coffee_trade_laws_cost_factor = -0.5 tooltip = trade_laws_cost_factor_tt }
 			add_to_variable = { ELS_coffee_compliance_growth = 0.1 tooltip = compliance_growth_tt }
 		}
+		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_STABILITY FOCUS_FILTER_ALLIANCE FOCUS_FILTER_INTERNATIONAL_TRADE }
 	}
 
 	### Economy ###
@@ -4083,6 +4193,7 @@ focus_tree = {
 			add_to_variable = { ELS_coffee_political_power_factor = 0.1 tooltip = political_power_factor_tt }
 			add_to_variable = { ELS_coffee_stability_factor = 0.05 tooltip = stability_factor_tt }
 		}
+		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_STABILITY }
 	}
 
 	focus = {
@@ -4117,6 +4228,7 @@ focus_tree = {
 			add_to_variable = { ELS_coffee_industrial_capacity_factory = 0.05 tooltip = industrial_capacity_factory_tt }
 			add_to_variable = { ELS_coffee_consumer_goods_factor = -0.05 tooltip = consumer_goods_factor_tt }
 		}
+		search_filters = { FOCUS_FILTER_INDUSTRY }
 	}
 
 	### Cash Crops ###
@@ -4140,6 +4252,7 @@ focus_tree = {
 			add_to_variable = { ELS_coffee_stability_factor = 0.05 tooltip = stability_factor_tt }
 			add_to_variable = { ELS_coffee_production_factory_efficiency_gain_factor = 0.05 tooltip = production_factory_efficiency_gain_factor_tt }
 		}
+		search_filters = { FOCUS_FILTER_STABILITY FOCUS_FILTER_INDUSTRY FOCUS_FILTER_RESOURCES }
 	}
 
 	focus = {
@@ -4185,6 +4298,7 @@ focus_tree = {
 			custom_effect_tooltip = ELS_modify_central_american_economy_tt
 			add_to_variable = { ELS_coffee_trade_opinion_factor = 0.1 tooltip = trade_opinion_factor_tt }
 		}
+		search_filters = { FOCUS_FILTER_INTERNATIONAL_TRADE FOCUS_FILTER_INDUSTRY }
 	}
 
 	focus = {
@@ -4229,6 +4343,7 @@ focus_tree = {
 				}
 			}
 		}
+		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_INDUSTRY }
 	}
 
 	### Infrastructure ###
@@ -4268,6 +4383,7 @@ focus_tree = {
 			custom_effect_tooltip = ELS_modify_central_american_economy_tt
 			add_to_variable = { ELS_coffee_production_speed_infrastructure_factor = 0.1 tooltip = production_speed_infrastructure_factor_tt }
 		}
+		search_filters = { FOCUS_FILTER_INDUSTRY }
 	}
 
 	focus = {
@@ -4299,6 +4415,7 @@ focus_tree = {
 			custom_effect_tooltip = ELS_modify_central_american_economy_tt
 			add_to_variable = { ELS_coffee_production_speed_rail_way_factor = 0.1 tooltip = production_speed_rail_way_factor_tt }
 		}
+		search_filters = { FOCUS_FILTER_INDUSTRY }
 	}
 
 	focus = {
@@ -4332,6 +4449,7 @@ focus_tree = {
 			custom_effect_tooltip = ELS_modify_central_american_economy_tt
 			add_to_variable = { ELS_coffee_production_speed_arms_factory_factor = 0.1 tooltip = production_speed_arms_factory_factor_tt }
 		}
+		search_filters = { FOCUS_FILTER_INDUSTRY }
 	}
 
 	focus = {
@@ -4374,6 +4492,7 @@ focus_tree = {
 			add_to_variable = { ELS_coffee_trade_opinion_factor = 0.1 tooltip = trade_opinion_factor_tt }
 			add_to_variable = { ELS_coffee_production_speed_naval_base_factor = 0.1 tooltip = production_speed_naval_base_factor_tt }
 		}
+		search_filters = { FOCUS_FILTER_INTERNATIONAL_TRADE FOCUS_FILTER_INDUSTRY }
 	}
 
 	### Resources ###
@@ -4410,6 +4529,7 @@ focus_tree = {
 			add_to_variable = { ELS_coffee_local_resources_factor = 0.1 tooltip = local_resources_factor_tt }
 			add_to_variable = { ELS_coffee_production_lack_of_resource_penalty_factor = -0.1 tooltip = production_lack_of_resource_penalty_factor_tt }
 		}
+		search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_RESOURCES }
 	}
 
 	focus = {
@@ -4443,6 +4563,7 @@ focus_tree = {
 			custom_effect_tooltip = ELS_modify_central_american_economy_tt
 			add_to_variable = { ELS_coffee_fuel_gain_factor = 0.20 tooltip = fuel_gain_factor_tt }
 		}
+		search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_RESOURCES }
 	}
 
 	focus = {
@@ -4482,6 +4603,7 @@ focus_tree = {
 				}
 			}
 		}
+		search_filters = { FOCUS_FILTER_RESOURCES }
 	}
 
 	focus = {
@@ -4516,6 +4638,7 @@ focus_tree = {
 				}
 			}
 		}
+		search_filters = { FOCUS_FILTER_RESOURCES }
 	}
 
 	focus = {
@@ -4545,6 +4668,7 @@ focus_tree = {
 				}
 			}
 		}
+		search_filters = { FOCUS_FILTER_RESOURCES }
 	}
 
 	focus = {
@@ -4568,6 +4692,7 @@ focus_tree = {
 				}
 			}
 		}
+		search_filters = { FOCUS_FILTER_RESOURCES }
 	}
 
 	### Expansion ###
@@ -4597,6 +4722,7 @@ focus_tree = {
 				ENG = { country_event = { id = el_salvador.24 days = 1 } }
 			}
 		}
+		search_filters = { FOCUS_FILTER_ANNEXATION }
 	}
 
 	focus = {
@@ -4635,6 +4761,7 @@ focus_tree = {
 				PAN = { country_event = { id = el_salvador.25 days = 1 } }
 			}
 		}
+		search_filters = { FOCUS_FILTER_ANNEXATION }
 	}
 
 	focus = {
@@ -4668,6 +4795,7 @@ focus_tree = {
 
 			custom_effect_tooltip = ELS_revolution_in_panama_tt
 		}
+		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_ANNEXATION }
 	}
 
 	focus = {
@@ -4710,6 +4838,7 @@ focus_tree = {
 				}
 			}
 		}
+		search_filters = { FOCUS_FILTER_ANNEXATION }
 	}
 
 }
