@@ -187,6 +187,31 @@ ideas = {
 			}
 		}
 
+		# Given by ELS_secret_police instead of r56_ELS_secret_police without La Resistance
+		r56_ELS_secret_police_no_dlc = {
+
+			picture = generic_secret_police
+
+			allowed = {
+				original_tag = ELS
+			}
+
+			allowed_civil_war = {
+				NOT = {
+					has_government = communism
+					has_government = democratic
+				}
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				civilian_intel_to_others = -15
+				army_intel_to_others = -15
+				root_out_resistance_effectiveness_factor = 0.15
+			}
+		}
+
 		r56_ELS_neutrality_idea = {
 
 			allowed = {
