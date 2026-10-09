@@ -4680,6 +4680,13 @@ focus_tree = {
 
 			custom_effect_tooltip = ELS_modify_central_american_economy_tt
 			add_to_variable = { ELS_coffee_trade_opinion_factor = 0.1 tooltip = trade_opinion_factor_tt }
+			if = {
+				limit = { has_dlc = "Arms Against Tyranny" }
+				custom_effect_tooltip = generic_skip_one_line_tt
+				mio:ELS_irca_organization = {
+					complete_mio_trait = ELS_mio_trait_united_fruit_capital
+				}
+			}
 		}
 		search_filters = { FOCUS_FILTER_INTERNATIONAL_TRADE FOCUS_FILTER_INDUSTRY }
 	}
@@ -4723,6 +4730,13 @@ focus_tree = {
 						target = ROOT
 						modifier = ELS_nationalized_united_fruit
 					}
+				}
+			}
+			if = {
+				limit = { has_dlc = "Arms Against Tyranny" }
+				custom_effect_tooltip = generic_skip_one_line_tt
+				mio:ELS_irca_organization = {
+					complete_mio_trait = ELS_mio_trait_nationalized_railways
 				}
 			}
 		}
