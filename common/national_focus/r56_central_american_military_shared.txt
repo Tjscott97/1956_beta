@@ -3,7 +3,10 @@
 
 shared_focus = {
 	id = CENAM_armies_of_the_isthmus
-	icon = GFX_focus_generic_jungle_troops
+	icon = {
+		GFX_goal_ELS_coa_army = { original_tag = ELS }
+		GFX_focus_generic_jungle_troops = yes
+	}
 	x = 7
 	y = 0
 	cost = 5
