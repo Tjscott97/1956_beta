@@ -3367,7 +3367,7 @@ focus_tree = {
 				SPD = {
 					add_equipment_to_stockpile = {
 						type = infantry_equipment
-						amount = 1000
+						amount = 800
 						producer = ELS
 					}
 					add_equipment_to_stockpile = {
@@ -3391,7 +3391,7 @@ focus_tree = {
 					SPR = {
 						add_equipment_to_stockpile = {
 							type = infantry_equipment
-							amount = 1000
+							amount = 800
 							producer = ELS
 						}
 						add_equipment_to_stockpile = {
