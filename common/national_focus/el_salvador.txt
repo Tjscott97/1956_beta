@@ -3472,7 +3472,7 @@ focus_tree = {
 
 			division_template = {
 				name = "Milicias Populares"
-				is_locked = no
+				is_locked = yes
 				force_allow_recruiting = yes
 				regiments = {
 					militia = { x = 0 y = 0 }
@@ -3511,6 +3511,10 @@ focus_tree = {
 		relative_position_id = ELS_peoples_militias
 		cost = 5
 
+		available = {
+			has_tech = tech_engineers
+		}
+
 		ai_will_do = {
 			factor = 1
 		}
@@ -3522,14 +3526,13 @@ focus_tree = {
 			}
 			custom_effect_tooltip = generic_skip_one_line_tt
 
-			custom_effect_tooltip = ELS_militia_expand_spawn_tt
 			hidden_effect = {
 				# Recreate the template if the player deleted or renamed it since People's Militias
 				if = {
 					limit = { NOT = { has_template = "Milicias Populares" } }
 					division_template = {
 						name = "Milicias Populares"
-						is_locked = no
+						is_locked = yes
 						force_allow_recruiting = yes
 						regiments = {
 							militia = { x = 0 y = 0 }
@@ -3546,6 +3549,21 @@ focus_tree = {
 						}
 					}
 				}
+			}
+			custom_effect_tooltip = ELS_militia_template_support_tt
+			hidden_effect = {
+				add_units_to_division_template = {
+					template_name = "Milicias Populares"
+					support = {
+						artillery = 0
+						engineer = 0
+					}
+				}
+			}
+			custom_effect_tooltip = generic_skip_one_line_tt
+
+			custom_effect_tooltip = ELS_militia_expand_spawn_tt
+			hidden_effect = {
 				capital_scope = {
 					create_unit = {
 						division = "division_template = \"Milicias Populares\" start_experience_factor = 0.1 start_equipment_factor = 1.0"

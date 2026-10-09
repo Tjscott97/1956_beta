@@ -376,6 +376,7 @@ shared_focus = {
 			}
 			division_template = {
 				name = "Reservas Rurales"
+				is_locked = yes
 				regiments = {
 					irregular_infantry = { x = 0 y = 0 }
 					irregular_infantry = { x = 0 y = 1 }
