@@ -739,6 +739,7 @@ country_event = {  #Border war won, from ELS_seize_the_panama_canal
     option = {
         name = el_salvador.40.a
         army_experience = 5
+        685 = { add_core_of = ROOT }
         custom_effect_tooltip = ELS_canal_usa_decides_tt
         hidden_effect = {
             USA = { country_event = { id = el_salvador.41 days = 1 } }
