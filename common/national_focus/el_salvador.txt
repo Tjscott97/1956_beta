@@ -3901,21 +3901,8 @@ focus_tree = {
 				amount = 50
 				producer = SOV
 			}
-
-			# El Salvador's copy of the Tula Arms Plant
-			if = {
-				limit = {
-					has_dlc = "Arms Against Tyranny"
-				}
-				custom_effect_tooltip = generic_skip_one_line_tt
-				custom_effect_tooltip = invites_mio_tt
-				show_mio_tooltip = ELS_tula_arms_plant_organization
-				mio:ELS_tula_arms_plant_organization = {
-					add_mio_size = 3
-				}
-			}
 		}
-		search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_MILITARY_EQUIPMENT }
+		search_filters = { FOCUS_FILTER_MILITARY_EQUIPMENT }
 	}
 
 	focus = {

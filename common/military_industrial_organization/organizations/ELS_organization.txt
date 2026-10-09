@@ -1,75 +1,6 @@
 ### El Salvador Military Industrial Organizations ###
 ### By Tjscott ###
 
-# El Salvador's copy of the Soviet Tula Arms Plant, given by ELS_soviet_military_mission.
-# Based on SOV_tula_arms_plant_organization (SOV_organization.txt) without the three Soviet-only
-# "merge plant" traits, which need Soviet states and focuses.
-
-ELS_tula_arms_plant_organization = {
-	include = generic_infantry_equipment_organization
-	icon = GFX_idea_tula_arms_plant
-
-	allowed = {
-		original_tag = ELS
-	}
-
-	visible = {
-		FROM = { has_completed_focus = ELS_soviet_military_mission }
-	}
-
-	available = {
-		# When in a Foreign MIO, countries need to be at peace with original country
-		FROM = { NOT = { has_war_with = SOV } }
-	}
-
-	tree_header_text = {
-		text = mio_header_design_and_production
-		x = 2.5
-	}
-
-	tree_header_text = {
-		text = mio_header_anti_tank
-		x = 7
-	}
-
-	initial_trait = {
-		name = generic_mio_initial_trait_infantry_manufacturer
-
-		organization_modifier = {
-			military_industrial_organization_research_bonus = 0.05
-		}
-
-		production_bonus = {
-			production_efficiency_cap_factor = 0.03
-		}
-
-		equipment_bonus = {
-			soft_attack = 0.03
-		}
-	}
-
-	override_trait = {
-		token = generic_mio_trait_armor_piercing_rounds
-
-		position = { x=0 y=2 }
-		relative_position_id = generic_mio_trait_quality_materials
-	}
-
-	override_trait = {
-		token = generic_mio_trait_advanced_barrel_forging
-
-		position = { x=1 y=2 }
-		relative_position_id = generic_mio_trait_drum_pattern_sights
-	}
-
-	override_trait = {
-		token = generic_mio_trait_reinforced_stocks
-
-		position = { x=3 y=0 }
-		relative_position_id = generic_mio_trait_drum_pattern_sights
-	}
-}
-
 # The army's armory workshop
 ELS_maestranza_organization = {
 	name = ELS_maestranza
@@ -162,8 +93,7 @@ ELS_taca_organization = {
 	}
 }
 
-# International Railways of Central America. The two unique traits are El Salvador only, one for each choice between
-# ELS_partner_with_united_fruit and ELS_nationalize_united_fruit
+# International Railways of Central America. The two unique traits are El Salvador only.
 ELS_irca_organization = {
 	name = ELS_irca
 	include = generic_train_organization_r56_NSB
