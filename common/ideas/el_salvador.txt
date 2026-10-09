@@ -484,6 +484,25 @@ ideas = {
 			}
 		}
 
+		### Union ###
+
+		# Timed idea from ELS_seize_the_panama_canal
+		r56_ELS_canal_offensive = {
+
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = GER_attack_usa
+
+			targeted_modifier = {
+				tag = USA
+				attack_bonus_against = 0.15
+			}
+		}
+
 		### Air ###
 
 		# Added by ELS_battlefield_support, swapped for r56_ELS_fuerza_aerea_salvadorena by ELS_fuerza_aerea_salvadorena

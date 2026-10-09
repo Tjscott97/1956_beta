@@ -5181,6 +5181,12 @@ focus_tree = {
 		}
 
 		completion_reward = {
+			add_timed_idea = {
+				idea = r56_ELS_canal_offensive
+				days = 30
+			}
+			custom_effect_tooltip = generic_skip_one_line_tt
+
 			custom_effect_tooltip = ELS_seize_the_panama_canal_tt
 			hidden_effect = {
 				start_border_war = {
