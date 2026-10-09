@@ -2884,20 +2884,51 @@ focus_tree = {
 
 		available = {
 			SPR_scw_in_progress = yes
-			country_exists = SPR
-			NOT = { has_war_with = SPR }
+			if = {
+				limit = { NOT = { has_global_flag = spanish_civil_war } }
+				custom_trigger_tooltip = {
+					tooltip = POR_spr_tooltip_country_exist_tt
+					country_exists = SPR
+				}
+				custom_trigger_tooltip = {
+					tooltip = POR_spr_tooltip_at_peace_tt
+					NOT = { has_war_with = SPR }
+				}
+			}
+			else = {
+				country_exists = SPD
+				NOT = { has_war_with = SPD }
+			}
 		}
 		completion_reward = {
 			add_ideas = PHI_volunteers_in_the_war_republican
-			add_relation_rule_override = {
-				target = SPR
-				can_send_volunteers = yes 
+			if = {
+				limit = { country_exists = SPD }
+				add_relation_rule_override = {
+					target = SPD
+					can_send_volunteers = yes 
+				}
+				SPD = {
+					add_equipment_to_stockpile = {
+						type = infantry_equipment
+						amount = 300
+						producer = ELS
+					}
+				}
 			}
-			SPR = {
-				add_equipment_to_stockpile = {
-					type = infantry_equipment
-					amount = 300
-					producer = ELS
+			else = {
+				effect_tooltip = {
+					add_relation_rule_override = {
+						target = SPR
+						can_send_volunteers = yes 
+					}
+					SPR = {
+						add_equipment_to_stockpile = {
+							type = infantry_equipment
+							amount = 300
+							producer = ELS
+						}
+					}
 				}
 			}
 		}
@@ -2919,8 +2950,21 @@ focus_tree = {
 
 		available = {
 			SPR_scw_in_progress = yes
-			country_exists = SPR
-			NOT = { has_war_with = SPR }
+			if = {
+				limit = { NOT = { has_global_flag = spanish_civil_war } }
+				custom_trigger_tooltip = {
+					tooltip = POR_spr_tooltip_country_exist_tt
+					country_exists = SPR
+				}
+				custom_trigger_tooltip = {
+					tooltip = POR_spr_tooltip_at_peace_tt
+					NOT = { has_war_with = SPR }
+				}
+			}
+			else = {
+				country_exists = SPD
+				NOT = { has_war_with = SPD }
+			}
 		}
 		completion_reward = {
 			314 = {
@@ -3112,20 +3156,51 @@ focus_tree = {
 
 		available = {
 			SPR_scw_in_progress = yes
-			country_exists = SPR
-			NOT = { has_war_with = SPR }
+			if = {
+				limit = { NOT = { has_global_flag = spanish_civil_war } }
+				custom_trigger_tooltip = {
+					tooltip = POR_spr_tooltip_country_exist_tt
+					country_exists = SPR
+				}
+				custom_trigger_tooltip = {
+					tooltip = POR_spr_tooltip_at_peace_tt
+					NOT = { has_war_with = SPR }
+				}
+			}
+			else = {
+				country_exists = SPD
+				NOT = { has_war_with = SPD }
+			}
 		}
 		completion_reward = {
 			add_ideas = PHI_volunteers_in_the_war_republican
-			add_relation_rule_override = {
-				target = SPR
-				can_send_volunteers = yes
+			if = {
+				limit = { country_exists = SPD }
+				add_relation_rule_override = {
+					target = SPD
+					can_send_volunteers = yes
+				}
+				SPD = {
+					add_equipment_to_stockpile = {
+						type = infantry_equipment
+						amount = 300
+						producer = ELS
+					}
+				}
 			}
-			SPR = {
-				add_equipment_to_stockpile = {
-					type = infantry_equipment
-					amount = 300
-					producer = ELS
+			else = {
+				effect_tooltip = {
+					add_relation_rule_override = {
+						target = SPR
+						can_send_volunteers = yes
+					}
+					SPR = {
+						add_equipment_to_stockpile = {
+							type = infantry_equipment
+							amount = 300
+							producer = ELS
+						}
+					}
 				}
 			}
 		}
@@ -3147,8 +3222,21 @@ focus_tree = {
 
 		available = {
 			SPR_scw_in_progress = yes
-			country_exists = SPR
-			NOT = { has_war_with = SPR }
+			if = {
+				limit = { NOT = { has_global_flag = spanish_civil_war } }
+				custom_trigger_tooltip = {
+					tooltip = POR_spr_tooltip_country_exist_tt
+					country_exists = SPR
+				}
+				custom_trigger_tooltip = {
+					tooltip = POR_spr_tooltip_at_peace_tt
+					NOT = { has_war_with = SPR }
+				}
+			}
+			else = {
+				country_exists = SPD
+				NOT = { has_war_with = SPD }
+			}
 			# spanish_civil_war is set by the Spain events the day the war starts
 			custom_trigger_tooltip = {
 				tooltip = ELS_scw_over_a_year_tt
@@ -3159,21 +3247,45 @@ focus_tree = {
 			}
 		}
 		completion_reward = {
-			SPR = {
-				add_equipment_to_stockpile = {
-					type = infantry_equipment
-					amount = 600
-					producer = ELS
+			if = {
+				limit = { country_exists = SPD }
+				SPD = {
+					add_equipment_to_stockpile = {
+						type = infantry_equipment
+						amount = 600
+						producer = ELS
+					}
+					add_equipment_to_stockpile = {
+						type = support_equipment
+						amount = 200
+						producer = ELS
+					}
+					add_equipment_to_stockpile = {
+						type = artillery_equipment
+						amount = 100
+						producer = ELS
+					}
 				}
-				add_equipment_to_stockpile = {
-					type = support_equipment
-					amount = 200
-					producer = ELS
-				}
-				add_equipment_to_stockpile = {
-					type = artillery_equipment
-					amount = 100
-					producer = ELS
+			}
+			else = {
+				effect_tooltip = {
+					SPR = {
+						add_equipment_to_stockpile = {
+							type = infantry_equipment
+							amount = 600
+							producer = ELS
+						}
+						add_equipment_to_stockpile = {
+							type = support_equipment
+							amount = 200
+							producer = ELS
+						}
+						add_equipment_to_stockpile = {
+							type = artillery_equipment
+							amount = 100
+							producer = ELS
+						}
+					}
 				}
 			}
 			custom_effect_tooltip = generic_skip_one_line_tt
@@ -3184,6 +3296,120 @@ focus_tree = {
 			}
 		}
 		search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_MILITARY_EQUIPMENT }
+	}
+
+	focus = {
+		id = ELS_solidarity_until_victory
+		icon = GFX_focus_spr_no_pasaran
+		prerequisite = { focus = ELS_aid_for_the_republic }
+		x = -1
+		y = 1
+		relative_position_id = ELS_aid_for_the_republic
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+			SPR_scw_in_progress = yes
+			if = {
+				limit = { NOT = { has_global_flag = spanish_civil_war } }
+				custom_trigger_tooltip = {
+					tooltip = POR_spr_tooltip_country_exist_tt
+					country_exists = SPR
+				}
+				custom_trigger_tooltip = {
+					tooltip = POR_spr_tooltip_at_peace_tt
+					NOT = { has_war_with = SPR }
+				}
+			}
+			else = {
+				country_exists = SPD
+				NOT = { has_war_with = SPD }
+			}
+			custom_trigger_tooltip = {
+				tooltip = ELS_scw_over_two_years_tt
+				has_global_flag = {
+					flag = spanish_civil_war
+					days > 730
+				}
+			}
+		}
+
+		completion_reward = {
+			if = {
+				limit = { country_exists = SPD }
+				SPD = {
+					add_equipment_to_stockpile = {
+						type = infantry_equipment
+						amount = 1000
+						producer = ELS
+					}
+					add_equipment_to_stockpile = {
+						type = support_equipment
+						amount = 300
+						producer = ELS
+					}
+					add_equipment_to_stockpile = {
+						type = artillery_equipment
+						amount = 150
+						producer = ELS
+					}
+					add_opinion_modifier = {
+						target = ROOT
+						modifier = ELS_solidarity_with_the_republic
+					}
+				}
+			}
+			else = {
+				effect_tooltip = {
+					SPR = {
+						add_equipment_to_stockpile = {
+							type = infantry_equipment
+							amount = 1000
+							producer = ELS
+						}
+						add_equipment_to_stockpile = {
+							type = support_equipment
+							amount = 300
+							producer = ELS
+						}
+						add_equipment_to_stockpile = {
+							type = artillery_equipment
+							amount = 150
+							producer = ELS
+						}
+						add_opinion_modifier = {
+							target = ROOT
+							modifier = ELS_solidarity_with_the_republic
+						}
+					}
+				}
+			}
+			SOV = {
+				add_opinion_modifier = {
+					target = ROOT
+					modifier = ELS_solidarity_with_the_republic
+				}
+			}
+			custom_effect_tooltip = generic_skip_one_line_tt
+
+			add_popularity = {
+				ideology = communism
+				popularity = 0.05
+			}
+			add_war_support = 0.05
+			add_timed_idea = {
+				idea = r56_ELS_aid_to_the_republic
+				days = 180
+			}
+			custom_effect_tooltip = generic_skip_one_line_tt
+
+			custom_effect_tooltip = ELS_solidarity_until_victory_tt
+			set_country_flag = ELS_solidarity_until_victory
+		}
+		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_WAR_SUPPORT FOCUS_FILTER_INDUSTRY FOCUS_FILTER_MILITARY_EQUIPMENT }
 	}
 
 	focus = {

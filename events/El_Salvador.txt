@@ -833,3 +833,60 @@ country_event = {  #For the USA, border war won
         name = el_salvador.45.a
     }
 }
+
+### Spanish Civil War ###
+### Fire once the Spanish Civil War ends, for countries that took ELS_solidarity_until_victory ###
+
+country_event = {  #The Republic wins
+    id = el_salvador.50
+    title = el_salvador.50.t
+    desc = el_salvador.50.d
+    picture = GFX_report_event_generic_sign_treaty1
+    fire_only_once = yes
+
+    trigger = {
+        has_country_flag = ELS_solidarity_until_victory
+        has_global_flag = republican_victory
+    }
+
+    mean_time_to_happen = {
+        days = 3
+    }
+
+    option = {
+        name = el_salvador.50.a
+        add_stability = 0.05
+        add_offsite_building = {
+            type = industrial_complex
+            level = 1
+        }
+    }
+}
+
+country_event = {  #The Republic falls
+    id = el_salvador.51
+    title = el_salvador.51.t
+    desc = el_salvador.51.d
+    picture = GFX_report_event_soldiers_marching
+    fire_only_once = yes
+
+    trigger = {
+        has_country_flag = ELS_solidarity_until_victory
+        has_global_flag = scw_over
+        NOT = { has_global_flag = republican_victory }
+    }
+
+    mean_time_to_happen = {
+        days = 3
+    }
+
+    option = {
+        name = el_salvador.51.a
+        army_experience = 15
+        314 = { add_manpower = 15000 }
+        add_popularity = {
+            ideology = communism
+            popularity = 0.05
+        }
+    }
+}

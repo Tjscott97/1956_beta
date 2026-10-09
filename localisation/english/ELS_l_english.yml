@@ -58,10 +58,12 @@
  ELS_united_fruit_partnership:0 "Partnered with United Fruit"
  ELS_nationalized_united_fruit:0 "Nationalized United Fruit"
  ELS_invited_to_the_union:0 "Invited to join Central America"
- 
+ ELS_solidarity_with_the_republic:0 "Solidarity with the Republic"
+
 ###Tooltips###
  ELS_guard_spawn_tt:0 "§YNational Guard§! unit will be created in §YEl Salvador§!"
  ELS_scw_over_a_year_tt:0 "The §YSpanish Civil War§! has been going on for over a year"
+ ELS_scw_over_two_years_tt:0 "The §YSpanish Civil War§! has been going on for over two years"
  ELS_spread_the_revolution_tt:0 "([GUA.GetFlag]§YGuatemala§!, [HON.GetFlag]§YHonduras§!, [NIC.GetFlag]§YNicaragua§!, [COS.GetFlag]§YCosta Rica§!) Gains §G+10%§! §Ycommunist§! popularity"
  ELS_militia_spawn_tt:0 "§Y2§! §YMilicias Populares§! units will be created in §YEl Salvador§!"
  ELS_militia_expand_spawn_tt:0 "§Y1§! more §YMilicias Populares§! unit will be created in §YEl Salvador§!"
@@ -231,7 +233,7 @@
  ELS_welfare_expansion_desc:0 ""
  ELS_civilian_controlled_military:0 "Civilian Control Of The Military"
  ELS_civilian_controlled_military_desc:0 ""
- 
+
 
 #political - democratic central america
  ELS_central_american_cooperation:0 "Central American Cooperation"
@@ -270,6 +272,9 @@
  ELS_international_brigades_desc:0 "Workers from across the world are traveling to Spain to defend the Republic against fascism. Salvadoran comrades will stand with them, and our factories will send what arms we can spare."
  ELS_aid_for_the_republic:0 "Aid for the Republic"
  ELS_aid_for_the_republic_desc:0 "The war in Spain has dragged on for over a year, and the Republic is running short of everything. We will send rifles and equipment from our own stockpiles, even if our workers must tighten their belts to pay for it."
+ ELS_solidarity_until_victory:0 "Solidarity Until Victory"
+ ELS_solidarity_until_victory_desc:0 "Two years on, the Spanish Republic still stands, but its armies are short of everything. The workers of El Salvador will tighten their belts once more, so that Republican Spain can fight on until victory."
+ ELS_solidarity_until_victory_tt:0 "When the §YSpanish Civil War§! ends, we will learn whether our sacrifice was worth it."
  ELS_dissolve_the_guardia_nacional:0 "Dissolve the Guardia Nacional"
  ELS_dissolve_the_guardia_nacional_desc:0 "The Guardia Nacional carried out La Matanza and has terrorized the countryside ever since. It will be disbanded, and the officers who served the old regime will answer for their crimes."
  ELS_peoples_militias:0 "People's Militias"
@@ -489,6 +494,14 @@
  el_salvador.45.t:0 "Attack on the Canal Repulsed"
  el_salvador.45.d:0 "Central American troops attacked our garrison in the Panama Canal Zone, but were thrown back with heavy losses. The canal remains safely in our hands."
  el_salvador.45.a:0 "The canal is secure"
+
+###Events - Spanish Civil War###
+ el_salvador.50.t:0 "The Republic Triumphs"
+ el_salvador.50.d:0 "The Spanish Republic has won its long war against fascism. In Madrid, the government has not forgotten the shipments that crossed the ocean from El Salvador when the Republic needed them most, and Spanish credits and orders for our goods are already arriving."
+ el_salvador.50.a:0 "¡Viva la República!"
+ el_salvador.51.t:0 "The Republic Has Fallen"
+ el_salvador.51.d:0 "Despite everything we sent, the Spanish Republic has been defeated. Thousands of its soldiers and party members have fled into exile, and many have found their way to El Salvador. Hardened by years of war, they are eager to carry on the struggle in their new home."
+ el_salvador.51.a:0 "Their fight is now ours"
 
 ###Decisions - Clandestine Network###
  ELS_clandestine_network:0 "Clandestine Network"

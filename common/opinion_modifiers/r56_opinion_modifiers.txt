@@ -438,6 +438,10 @@ opinion_modifiers = {
 		value = 25
 	}
 
+	ELS_solidarity_with_the_republic = {
+		value = 25
+	}
+
 ###------> EST <><> <><> <><> <><> <><>
 	
 ###------> ETH <><> <><> <><> <><> <><>
