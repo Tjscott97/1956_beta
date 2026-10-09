@@ -164,6 +164,12 @@ focus_tree = {
 
 			custom_effect_tooltip = ELS_modify_coffee_tt
 			add_to_variable = { ELS_coffee_production_speed_air_base_factor = 0.25 tooltip = production_speed_air_base_factor_tt }
+			if = {
+				limit = { has_dlc = "Arms Against Tyranny" }
+				custom_effect_tooltip = generic_skip_one_line_tt
+				custom_effect_tooltip = available_mio_tt
+				show_mio_tooltip = ELS_taca_organization
+			}
 		}
 		search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_RESEARCH }
 	}
@@ -1097,7 +1103,7 @@ focus_tree = {
 		x = -2
 		y = 2
 		relative_position_id = ELS_industrial_promotion_law
-		cost = 5
+		cost = 7.2
 
 		ai_will_do = {
 			factor = 1
@@ -1108,10 +1114,10 @@ focus_tree = {
 			custom_effect_tooltip = generic_skip_one_line_tt
 
 			random_owned_controlled_state = {
-				add_extra_state_shared_building_slots = 1
+				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 					type = arms_factory
-					level = 1
+					level = 2
 					instant_build = yes
 				}
 			}
@@ -1119,6 +1125,15 @@ focus_tree = {
 
 			custom_effect_tooltip = ELS_modify_coffee_tt
 			add_to_variable = { ELS_coffee_industrial_capacity_factory = 0.05 tooltip = industrial_capacity_factory_tt }
+			if = {
+				limit = { has_dlc = "Arms Against Tyranny" }
+				custom_effect_tooltip = generic_skip_one_line_tt
+				show_mio_tooltip = ELS_maestranza_organization
+				mio:ELS_maestranza_organization = {
+					add_mio_size = 1
+					add_mio_funds = 500
+				}
+			}
 		}
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 	}
@@ -1139,13 +1154,13 @@ focus_tree = {
 		completion_reward = {
 			add_tech_bonus = {
 				name = industrial_bonus
-				bonus = 0.5
+				bonus = 0.75
 				uses = 1
 				category = industry
 			}
 			add_tech_bonus = {
 				name = electronics_bonus
-				bonus = 0.5
+				bonus = 0.75
 				uses = 1
 				category = electronics
 			}
@@ -1189,6 +1204,15 @@ focus_tree = {
 		}
 
 		completion_reward = {
+			random_owned_controlled_state = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			custom_effect_tooltip = generic_skip_one_line_tt
 			add_tech_bonus = {
 				name = construction_tech_bonus
 				bonus = 0.75
@@ -4773,6 +4797,15 @@ focus_tree = {
 
 			custom_effect_tooltip = ELS_modify_central_american_economy_tt
 			add_to_variable = { ELS_coffee_production_speed_rail_way_factor = 0.1 tooltip = production_speed_rail_way_factor_tt }
+			if = {
+				limit = { has_dlc = "Arms Against Tyranny" }
+				custom_effect_tooltip = generic_skip_one_line_tt
+				show_mio_tooltip = ELS_irca_organization
+				mio:ELS_irca_organization = {
+					add_mio_size = 1
+					add_mio_funds = 500
+				}
+			}
 		}
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 	}
@@ -4950,8 +4983,8 @@ focus_tree = {
 			}
 			316 = {
 				add_resource = {
-					type = chromium
-					amount = 4
+					type = tungsten
+					amount = 6
 				}
 			}
 			313 = {

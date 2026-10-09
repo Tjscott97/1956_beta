@@ -546,6 +546,17 @@
  ELS_USCA_communism:0 "United Socialist States of Central America"
  ELS_USCA_communism_DEF:0 "the United Socialist States of Central America"
 
+###Military Industrial Organizations###
+ ELS_maestranza:0 "Maestranza de la Fuerza Armada"
+ ELS_mio_initial_trait_army_workshops:0 "Army Workshops"
+ ELS_taca:0 "TACA de El Salvador"
+ ELS_mio_initial_trait_ilopango_maintenance_base:0 "Ilopango Maintenance Base"
+ ELS_mio_trait_jungle_airstrips:0 "Jungle Airstrips"
+ ELS_mio_trait_commercial_air_network:0 "Commercial Air Network"
+ ELS_irca:0 "International Railways of Central America"
+ ELS_mio_trait_united_fruit_capital:0 "United Fruit Capital"
+ ELS_mio_trait_nationalized_railways:0 "Nationalized Railways"
+
 ###Coffee Republic Modifier###
  ELS_coffee_republic_dm:0 "Coffee Republic"
  ELS_coffee_republic_dm_desc:0 "Coffee was first cultivated in El Salvador for domestic use in the early 19th century. By mid-century its commercial promise was evident, and the seeds for today's 'Coffee Republic' that El Salvador was to become were first sown. Coffee trade was monopolized in the late 19th century, leading to increasing inequalities between the working class and the elites, the so-called 'Fourteen Families', which at one point held almost 90% of all land within El Salvador, thus putting a lot of pressure on both the internal and external politics of the country. Just four years ago, it seemed as if things had reached a breaking point, the peasants were unsatisfied with their low pay, and decreasing quality of life, for which they blamed the land-owning elites. Thus, in January of 1932, the peasants launched a revolt that will come to be known as 'La Matanza'. Although this revolt was brutally crushed by the military regime, the spirit of rebellion against the elites lives on in the hearts and minds of many Salvadorans..."
