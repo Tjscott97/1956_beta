@@ -166,7 +166,7 @@ ELS_taca_organization = {
 # ELS_partner_with_united_fruit and ELS_nationalize_united_fruit
 ELS_irca_organization = {
 	name = ELS_irca
-	include = generic_train_organization
+	include = generic_train_organization_r56_NSB
 	icon = GFX_idea_generic_build_infrastructure
 
 	allowed = {
@@ -181,7 +181,7 @@ ELS_irca_organization = {
 		name = ELS_mio_trait_united_fruit_capital
 		icon = GFX_generic_mio_department_icon_facilities
 		special_trait_background = yes
-		position = { x = 1 y = 0 }
+		position = { x = 4 y = 0 }
 		mutually_exclusive = { ELS_mio_trait_nationalized_railways }
 
 		visible = {
@@ -203,7 +203,7 @@ ELS_irca_organization = {
 		name = ELS_mio_trait_nationalized_railways
 		icon = GFX_military_industrial_organization_train_equipment
 		special_trait_background = yes
-		position = { x = 2 y = 0 }
+		position = { x = 5 y = 0 }
 		mutually_exclusive = { ELS_mio_trait_united_fruit_capital }
 		limit_to_equipment_type = { train_equipment }
 
