@@ -56,6 +56,10 @@ shared_focus = {
 
 	ai_will_do = {
 		factor = 5
+		modifier = {
+			is_historical_focus_on = yes
+			factor = 10
+		}
 	}
 
 	completion_reward = {
@@ -107,6 +111,10 @@ shared_focus = {
 
 	ai_will_do = {
 		factor = 5
+		modifier = {
+			is_historical_focus_on = yes
+			factor = 0
+		}
 	}
 
 	completion_reward = {
@@ -161,6 +169,10 @@ shared_focus = {
 
 	ai_will_do = {
 		factor = 5
+		modifier = {
+			is_historical_focus_on = yes
+			factor = 0
+		}
 	}
 
 	completion_reward = {
@@ -230,6 +242,16 @@ shared_focus = {
 
 	ai_will_do = {
 		factor = 5
+		modifier = {
+			is_historical_focus_on = yes
+			original_tag = COS
+			factor = 10
+		}
+		modifier = {
+			is_historical_focus_on = yes
+			NOT = { original_tag = COS }
+			factor = 0
+		}
 	}
 
 	completion_reward = {
@@ -250,6 +272,20 @@ shared_focus = {
 
 	ai_will_do = {
 		factor = 5
+		modifier = {
+			is_historical_focus_on = yes
+			OR = {
+				original_tag = ELS
+				original_tag = GUA
+				original_tag = NIC
+			}
+			factor = 10
+		}
+		modifier = {
+			is_historical_focus_on = yes
+			original_tag = COS
+			factor = 0
+		}
 	}
 
 	completion_reward = {
