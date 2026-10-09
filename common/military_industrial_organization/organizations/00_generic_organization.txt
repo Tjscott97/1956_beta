@@ -7098,7 +7098,7 @@ generic_infantry_equipment_organization = {
 	icon = GFX_idea_generic_infantry_equipment_manufacturer_2
 
 	allowed = {
-		NOT = { OR = { tag = GER tag = ENG tag = SOV tag = FRA tag = ITA tag = JAP tag = USA tag = BEL tag = CZE tag = HUN tag = YUG tag = ROM tag = MEX tag = TUR tag = EST tag = ISR original_tag = AUS tag = LIE  tag = LUX tag = URG tag = COL tag = VEN tag = PER  tag = PRU tag = ARG tag = MAL tag = IRE tag = PHI tag = SIA tag = FRI tag = BLR tag = KOR tag = BRA} }
+		NOT = { OR = { tag = GER tag = ENG tag = SOV tag = FRA tag = ITA tag = JAP tag = USA tag = BEL tag = CZE tag = HUN tag = YUG tag = ROM tag = MEX tag = TUR tag = EST tag = ISR original_tag = AUS tag = LIE  tag = LUX tag = URG tag = COL tag = VEN tag = PER  tag = PRU tag = ARG tag = MAL tag = IRE tag = PHI tag = SIA tag = FRI tag = BLR tag = KOR tag = BRA tag = ELS } }
 		NOT = {
 			AND = {
 				tag = POL
