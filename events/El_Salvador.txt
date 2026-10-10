@@ -117,7 +117,7 @@ country_event = {  #Customs Union
         ROOT = {
             add_opinion_modifier = {
                 target = FROM
-                modifier = customs_union_opinion
+                modifier = ELS_customs_union_opinion
             }
         }
 

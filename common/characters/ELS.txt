@@ -106,7 +106,7 @@ characters={
 				has_completed_focus = ELS_bring_araujo_home		
 			}
 			traits = {
-				former_president 
+				ELS_former_president 
 			}
 		}
 	}

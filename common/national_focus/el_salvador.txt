@@ -2473,42 +2473,42 @@ focus_tree = {
 				GUA = {
 					add_opinion_modifier = {
 						target = ROOT
-						modifier = central_american_cooperation
+						modifier = ELS_central_american_cooperation_opinion
 					}
 				}
 				add_opinion_modifier = {
 					target = GUA
-					modifier = central_american_cooperation
+					modifier = ELS_central_american_cooperation_opinion
 				}
 				HON = {
 					add_opinion_modifier = {
 						target = ROOT
-						modifier = central_american_cooperation
+						modifier = ELS_central_american_cooperation_opinion
 					}
 				}
 				add_opinion_modifier = {
 					target = HON
-					modifier = central_american_cooperation
+					modifier = ELS_central_american_cooperation_opinion
 				}
 				NIC = {
 					add_opinion_modifier = {
 						target = ROOT
-						modifier = central_american_cooperation
+						modifier = ELS_central_american_cooperation_opinion
 					}
 				}
 				add_opinion_modifier = {
 					target = NIC
-					modifier = central_american_cooperation
+					modifier = ELS_central_american_cooperation_opinion
 				}
 				COS = {
 					add_opinion_modifier = {
 						target = ROOT
-						modifier = central_american_cooperation
+						modifier = ELS_central_american_cooperation_opinion
 					}
 				}
 				add_opinion_modifier = {
 					target = COS
-					modifier = central_american_cooperation
+					modifier = ELS_central_american_cooperation_opinion
 				}
 			}
 			custom_effect_tooltip = ELS_central_american_cooperation_tt

@@ -51,9 +51,9 @@
  r56_ELS_fuerza_aerea_salvadorena_desc:0 "Our air force has grown into a proud and capable service, with skilled pilots and the experience to use them well."
 
 ###Opinion Modifiers###
- central_american_cooperation:0 "Central American Cooperation"
+ ELS_central_american_cooperation_opinion:0 "Central American Cooperation"
  joint_army_exercises_opinion:0 "Joint Army Exercises"
- customs_union_opinion:0 "Invited Us To Customs Union"
+ ELS_customs_union_opinion:0 "Invited Us To Customs Union"
  regional_development_opinion:0 "Regional Development"
  ELS_repudiated_loan:0 "Repudiated the 1922 Loan"
  ELS_ties_with_moscow:0 "Ties with Moscow"
