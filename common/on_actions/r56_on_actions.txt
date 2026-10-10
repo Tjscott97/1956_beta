@@ -11984,6 +11984,30 @@ on_actions = {
 					}
 				}
 			}
+			ELS = {
+				if = {
+					limit = {
+						OR = {
+							AND = {
+								is_historical_focus_on = no
+								has_game_rule = {
+									rule = ELS_ai_behavior
+									option = DEFAULT
+								}
+							}
+							has_game_rule = {
+								rule = ELS_ai_behavior
+								option = RANDOM
+							}
+						}
+					}
+					random_list = {
+						60 = { set_country_flag = ELS_AI_RANDOM_HISTORICAL }
+						25 = { set_country_flag = ELS_AI_RANDOM_DEMOCRATIC }
+						15 = { set_country_flag = ELS_AI_RANDOM_COMMUNIST }
+					}
+				}
+			}
 			HON = {
 				if = {
 					limit = {

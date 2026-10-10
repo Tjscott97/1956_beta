@@ -116,6 +116,16 @@
  COLLECTION_ELS_CARIBBEAN_REVOLUTION_STATES_RED:0 "Caribbean states held by communists or our faction"
 
 
+###Game Rules###
+ ELS_AI_BEHAVIOR:0 "@ELS El Salvador"
+ ELS_RULE_OPTION_HISTORICAL:0 "$ELS_continue_consilidation$"
+ ELS_RULE_OPTION_HISTORICAL_AI_DESC:0 "Martínez stays in power and keeps El Salvador neutral, joining the Allies once the United States enters the war."
+ ELS_RULE_OPTION_DEMOCRATIC:0 "$ELS_bring_araujo_home$"
+ ELS_RULE_OPTION_DEMOCRATIC_AI_DESC:0 "Arturo Araujo returns from exile to restore democracy, then works to reunite Central America as a federation."
+ ELS_RULE_OPTION_COMMUNIST:0 "$ELS_vengeance_for_la_matanza$"
+ ELS_RULE_OPTION_COMMUNIST_AI_DESC:0 "Miguel Mármol and the communists avenge La Matanza and spread the revolution across Central America."
+
+
 ###Focus###
 
 #airforce
