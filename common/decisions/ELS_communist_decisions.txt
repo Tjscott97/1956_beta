@@ -191,7 +191,7 @@ ELS_revolutionary_front = {
 			}
 		}
 
-		cost = 100
+		cost = 50
 
 		fire_only_once = no
 
