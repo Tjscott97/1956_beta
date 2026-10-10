@@ -64,6 +64,7 @@ ideas = {
 			modifier = {
 				army_org_factor = 0.05
 				experience_gain_army_factor = 0.05
+				conscription = 0.005
 			}
 		}
 
@@ -98,6 +99,7 @@ ideas = {
 			modifier = {
 				army_org_factor = 0.05
 				experience_gain_army_factor = 0.05
+				conscription = 0.005
 				initiative_factor = 0.05
 				org_loss_when_moving = -0.05
 			}
@@ -116,6 +118,7 @@ ideas = {
 			modifier = {
 				army_org_factor = 0.05
 				experience_gain_army_factor = 0.05
+				conscription = 0.005
 				initiative_factor = 0.05
 				org_loss_when_moving = -0.05
 				coordination_bonus = 0.05

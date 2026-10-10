@@ -80,6 +80,42 @@
  ELS_revolutionary_front_faction:0 "Central American Revolutionary Front"
 
 
+###Faction Goals###
+ ELS_central_american_unity_goal_name:0 "Central American Unity"
+ ELS_central_american_unity_goal_desc:0 "Divided, the republics of the isthmus are easy prey for foreign companies and greater powers. If every one of them stands with us in the pact, none of us will have to stand alone."
+ ELS_unite_central_america_goal_name:0 "Unite Central America"
+ ELS_unite_central_america_goal_desc:0 "Central America was once a single republic, and Morazán died trying to keep it whole. Divided, our five nations are easy prey for foreign companies and greater powers. Only as one union can we stand on our own."
+ ELS_panama_joins_the_union_goal_name:0 "Panama Joins the Union"
+ ELS_panama_joins_the_union_goal_desc:0 "Panama was never part of the old federation, but it shares our isthmus and our future. Bringing Panama into the union would carry our borders to the edge of South America."
+ ELS_central_american_miracle_goal_name:0 "Central American Miracle"
+ ELS_central_american_miracle_goal_desc:0 "For a century our economy has been coffee, bananas and little else. If the union is to stand among the nations of the world, it must build factories, mills and workshops of its own."
+ ELS_central_american_miracle_tech_bonus:0 "$ELS_central_american_miracle_goal_name$ Goal Bonus"
+ ELS_central_american_miracle_factories_tt:0 "Factories owned by the faction leader"
+ ELS_central_american_miracle_target_tt:0 "Factories needed"
+ ELS_the_pan_american_highway_goal_name:0 "The Pan-American Highway"
+ ELS_the_pan_american_highway_goal_desc:0 "A highway running the length of the isthmus would bind our nations together more tightly than any treaty. Every capital must be linked by modern roads, so that goods, people and soldiers can move freely from Guatemala to Costa Rica."
+ ELS_wings_over_the_isthmus_goal_name:0 "Wings over the Isthmus"
+ ELS_wings_over_the_isthmus_goal_desc:0 "Mountains and jungle divide the isthmus, but the sky does not. A strong air force can reach any corner of Central America within hours and keep foreign bombers away from our cities."
+ ELS_bring_belize_home_goal_name:0 "Bring Belize Home"
+ ELS_bring_belize_home_goal_desc:0 "British Honduras has been claimed by Guatemala since the colony was founded. As long as a European flag flies over Belize, Central America is not truly free."
+ ELS_belize_held_by_faction_tt:0 "§YBelize§! is held by our faction"
+ ELS_guard_the_gulf_of_fonseca_goal_name:0 "Guard the Gulf of Fonseca"
+ ELS_guard_the_gulf_of_fonseca_goal_desc:0 "The Gulf of Fonseca is shared by El Salvador, Honduras and Nicaragua, and the Bryan-Chamorro Treaty gave the United States the right to build a naval base there. A fleet of our own will make sure that no foreign power ever controls it."
+ ELS_riches_of_the_isthmus_goal_name:0 "Riches of the Isthmus"
+ ELS_riches_of_the_isthmus_goal_desc:0 "Beneath our forests and mountains lie the oil and rubber that foreign companies have long been eager to take. If our faction can draw them out of the ground itself, our armies and factories will never go without fuel or tires."
+ ELS_the_caribbean_revolution_goal_name:0 "The Caribbean Revolution"
+ ELS_the_caribbean_revolution_goal_desc:0 "Cuba, Haiti and the Dominican Republic are ruled by dictators who serve the American sugar companies. The revolution that freed Central America must cross the sea and free the Caribbean as well."
+ COLLECTION_ELS_CENTRAL_AMERICAN_CAPITAL_STATES:0 "Capital states of Guatemala, Honduras, Nicaragua and Costa Rica"
+ COLLECTION_ELS_CENTRAL_AMERICAN_CAPITAL_STATES_OWNED:0 "Central American capital states owned by us"
+ COLLECTION_ELS_CENTRAL_AMERICAN_CAPITAL_STATES_IN_FACTION:0 "Central American capital states held by our faction"
+ COLLECTION_ELS_PANAMANIAN_STATES:0 "States of Panama"
+ COLLECTION_ELS_PANAMANIAN_STATES_OWNED:0 "Panamanian states owned by us"
+ COLLECTION_ELS_ISTHMUS_CAPITAL_STATES:0 "Capital states of Central America"
+ COLLECTION_ELS_ISTHMUS_CAPITAL_STATES_CONNECTED:0 "Central American capitals held by our faction with level 5 infrastructure"
+ COLLECTION_ELS_CARIBBEAN_REVOLUTION_STATES:0 "States of Cuba, Haiti and the Dominican Republic"
+ COLLECTION_ELS_CARIBBEAN_REVOLUTION_STATES_RED:0 "Caribbean states held by communists or our faction"
+
+
 ###Focus###
 
 #airforce

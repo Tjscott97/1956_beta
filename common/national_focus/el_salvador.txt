@@ -1182,6 +1182,16 @@ focus_tree = {
 		}
 
 		completion_reward = {
+			random_owned_controlled_state = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			custom_effect_tooltip = generic_skip_one_line_tt
+			
 			custom_effect_tooltip = ELS_modify_coffee_tt
 			add_to_variable = { ELS_coffee_production_speed_industrial_complex_factor = 0.1 tooltip = production_speed_industrial_complex_factor_tt }
 			add_to_variable = { ELS_coffee_production_speed_arms_factory_factor = 0.1 tooltip = production_speed_arms_factory_factor_tt }
@@ -2761,8 +2771,12 @@ focus_tree = {
 			set_rule = { 
 				can_create_factions = yes 
 			}
-			ELS = {
-    			create_faction = ELS_central_america_faction
+			if = {
+				limit = { has_dlc = "No Compromise, No Surrender" }
+				create_faction_from_template = faction_template_ELS_central_american_federation
+			}
+			else = {
+				create_faction = ELS_central_america_faction
 			}
 
 			custom_effect_tooltip = generic_skip_one_line_tt
@@ -4100,7 +4114,13 @@ focus_tree = {
 				set_rule = {
 					can_create_factions = yes
 				}
-				create_faction = ELS_revolutionary_front_faction
+				if = {
+					limit = { has_dlc = "No Compromise, No Surrender" }
+					create_faction_from_template = faction_template_ELS_revolutionary_front
+				}
+				else = {
+					create_faction = ELS_revolutionary_front_faction
+				}
 				custom_effect_tooltip = generic_skip_one_line_tt
 			}
 			unlock_decision_category_tooltip = ELS_revolutionary_front
